@@ -1,172 +1,1226 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شناسنامه خاندان گوگوشویلی | مرجع دیجیتال خاندان‌های گرجی</title>
-    <style>
-        :root {
-            --burgundy: #7d1f2b;
-            --dark-burgundy: #3f1820;
-            --black: #292522;
-            --cream: #f5f1e8;
-            --gold: #b88a44;
-            --light-gold: #ead9b7;
-            --white: #ffffff;
-        }
+<!-- =========================================================
+     GOGOSHVILI FAMILY
+     خاندان گوگوشویلی
+     გოგოშვილი
+     Gogoshvili
+========================================================= -->
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: Tahoma, Arial, sans-serif; background: var(--cream); color: var(--black); line-height: 1.9; }
-        a { color: inherit; text-decoration: none; }
+<section id="gogoshvili-family" class="family-page">
 
-        header {
-            background: linear-gradient(135deg, var(--dark-burgundy), var(--burgundy));
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        header h1 { font-size: 1.8rem; margin-bottom: 8px; }
-        header p { color: #f4dddd; font-size: 0.95rem; }
+<style>
+.family-page {
+    --family-primary: #7b1e24;
+    --family-secondary: #b08d57;
+    --family-dark: #242424;
+    --family-light: #f7f4ee;
+    --family-card: #ffffff;
+    --family-border: #e3ddd2;
 
-        nav {
-            background: var(--black);
-            color: white;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 12px 20px;
-            flex-wrap: wrap;
-        }
-        nav a:hover { color: var(--light-gold); }
+    max-width: 1150px;
+    margin: 35px auto;
+    padding: 0 20px;
 
-        .container { width: min(1000px, 92%); margin: 30px auto; }
-        .back-link {
-            display: inline-block;
-            background: var(--burgundy);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        .back-link:hover { background: var(--dark-burgundy); }
+    font-family:
+        Tahoma,
+        Arial,
+        "Noto Sans Georgian",
+        sans-serif;
 
-        .family-card-main {
-            background: white;
-            border-top: 6px solid var(--gold);
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-            margin-bottom: 25px;
-        }
-        .family-title { color: var(--burgundy); font-size: 1.8rem; }
-        .georgian-title { color: var(--gold); font-size: 1.3rem; margin-bottom: 15px; direction: ltr; display: inline-block; }
-        
-        .badge-status {
-            background: #e2e3e5;
-            color: #383d41;
-            font-weight: bold;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
+    color: var(--family-dark);
+    line-height: 1.95;
+}
 
-        .grid-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .info-box {
-            background: #faf8f5;
-            border: 1px solid #e8e1d5;
-            border-radius: 8px;
-            padding: 20px;
-        }
-        .info-box h3 {
-            color: var(--burgundy);
-            border-bottom: 2px solid var(--light-gold);
-            padding-bottom: 8px;
-            margin-bottom: 12px;
-            font-size: 1.1rem;
-        }
-        .info-list { list-style: none; }
-        .info-list li { padding: 8px 0; border-bottom: 1px solid #eee; font-size: 0.95rem; }
-        .info-list li:last-child { border-bottom: none; }
+/* ================= HERO ================= */
 
-        .notice-box {
-            background: #e8f4fd;
-            border-right: 5px solid #0275d8;
-            color: #0c5460;
-            padding: 15px;
-            border-radius: 6px;
-            margin-top: 25px;
-            font-size: 0.95rem;
-        }
+.family-hero {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(123,30,36,.97),
+            rgba(74,24,28,.97)
+        );
 
-        footer {
-            background: var(--black);
-            color: #ccc;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            font-size: 0.85rem;
-        }
-    </style>
-</head>
-<body>
+    color: white;
+    border-radius: 22px;
+    padding: 55px 30px;
+    text-align: center;
+    margin-bottom: 25px;
 
-    <header>
-        <h1>مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی</h1>
-        <p>ثبت، حفظ و پژوهش در اسناد و تبارنامه‌های گرجیان</p>
-    </header>
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
 
-    <nav>
-        <a href="../index.html">صفحه اصلی</a>
-        <a href="../index.html#cardsWrapper">بانک خاندان‌ها</a>
-    </nav>
+.family-hero h1 {
+    margin: 0;
+    font-size: 42px;
+}
 
-    <main class="container">
-        <a href="../index.html" class="back-link">← بازگشت به فهرست خاندان‌ها</a>
+.family-georgian-name {
+    font-size: 30px;
+    margin-top: 8px;
+}
 
-        <div class="family-card-main">
-            <span class="badge-status">در مرحله گردآوری و پژوهش مقدماتی</span>
-            <h1 class="family-title">شناسنامه خاندان گوگوشویلی</h1>
-            <div class="georgian-title">გოგოშვილი (Gogoshvili)</div>
-            <p>پرونده این خاندان در حال حاضر در دست بررسی منابع تاریخی و تطبیق روایات شفاهی توسط پژوهشگران است.</p>
+.family-english-name {
+    font-size: 20px;
+    opacity: .9;
+}
 
-            <div class="grid-info">
-                <div class="info-box">
-                    <h3>مشخصات خاندانی</h3>
-                    <ul class="info-list">
-                        <li><strong>خاستگاه اولیه:</strong> شرق گرجستان</li>
-                        <li><strong>محل‌های استقرار:</strong> فریدن، نجف‌آباد، تهران</li>
-                        <li><strong>وضعیت تبارنامه:</strong> در حال بازخوانی اطلاعات و شاخه‌ها</li>
-                        <li><strong>وضعیت اعتبارسنجی:</strong> در حال بررسی (نیازمند اسناد تکمیلی)</li>
-                    </ul>
-                </div>
+.family-subtitle {
+    max-width: 800px;
+    margin: 20px auto 0;
+    font-size: 18px;
+}
 
-                <div class="info-box">
-                    <h3>اسناد و مدارک موجود</h3>
-                    <ul class="info-list">
-                        <li><strong>اسناد ثبت‌شده:</strong> ۱ سند اولیه‌ی شناسایی</li>
-                        <li><strong>پژوهشگر / ثبت‌کننده:</strong> موسسه مهرا</li>
-                    </ul>
-                </div>
-            </div>
+/* ================= LANGUAGE ================= */
 
-            <div class="notice-box">
-                <strong>فراخوان تکمیل اطلاعات:</strong> چنانچه از اعضای محترم خاندان گوگوشویلی هستید یا اسنادی از نسل‌های پیشین دارید، لطفاً از طریق بخش ثبت پایگاه، اطلاعات و شجره‌نامه خانوادگی خود را ارسال فرمایید تا در آرشیو ثبت و پس از اعتبارسنجی منتشر گردد.
-            </div>
+.family-language-bar {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.family-language-bar button {
+    border: 1px solid var(--family-border);
+    background: white;
+    color: var(--family-dark);
+
+    padding: 10px 24px;
+    margin: 4px;
+
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+
+    transition: .2s;
+}
+
+.family-language-bar button:hover,
+.family-language-bar button.active {
+    background: var(--family-primary);
+    color: white;
+    border-color: var(--family-primary);
+}
+
+/* ================= LOCAL MENU ================= */
+
+.family-local-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.family-local-nav a {
+    text-decoration: none;
+    color: var(--family-primary);
+
+    background: white;
+    border: 1px solid var(--family-border);
+
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.family-local-nav a:hover {
+    background: var(--family-light);
+}
+
+/* ================= CONTENT ================= */
+
+.family-content {
+    background: var(--family-card);
+
+    border-radius: 18px;
+    padding: 35px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+
+    border: 1px solid var(--family-border);
+}
+
+.family-content h2 {
+    color: var(--family-primary);
+
+    font-size: 27px;
+
+    margin-top: 42px;
+
+    border-bottom: 2px solid var(--family-border);
+
+    padding-bottom: 8px;
+}
+
+.family-content h2:first-child {
+    margin-top: 0;
+}
+
+.family-content p {
+    font-size: 17px;
+    margin: 12px 0;
+}
+
+.family-content li {
+    margin: 6px 0;
+}
+
+/* ================= INFO CARDS ================= */
+
+.family-info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(210px, 1fr));
+
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.family-info-card {
+    background: var(--family-light);
+
+    border-right: 4px solid var(--family-secondary);
+
+    padding: 18px;
+
+    border-radius: 10px;
+}
+
+.family-info-card strong {
+    display: block;
+
+    color: var(--family-primary);
+
+    margin-bottom: 5px;
+}
+
+/* ================= PEOPLE ================= */
+
+.family-person {
+    background: var(--family-light);
+
+    border: 1px solid var(--family-border);
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    margin: 12px 0;
+}
+
+.family-person strong {
+    color: var(--family-primary);
+    font-size: 19px;
+}
+
+/* ================= SOURCES ================= */
+
+.family-source {
+    background: #faf8f3;
+
+    border: 1px solid var(--family-border);
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin-top: 15px;
+}
+
+.family-source a {
+    color: var(--family-primary);
+}
+
+/* ================= RESEARCH STATUS ================= */
+
+.family-status {
+    margin-top: 30px;
+
+    padding: 18px;
+
+    background: #f5f5f5;
+
+    border-radius: 12px;
+
+    border-right: 4px solid var(--family-secondary);
+}
+
+/* ================= LANGUAGE SECTIONS ================= */
+
+.family-language {
+    display: none;
+}
+
+.family-language.active {
+    display: block;
+}
+
+.family-fa {
+    direction: rtl;
+    text-align: right;
+}
+
+.family-ka,
+.family-en {
+    direction: ltr;
+    text-align: left;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .family-page {
+        padding: 0 12px;
+    }
+
+    .family-hero {
+        padding: 40px 18px;
+    }
+
+    .family-hero h1 {
+        font-size: 30px;
+    }
+
+    .family-georgian-name {
+        font-size: 24px;
+    }
+
+    .family-content {
+        padding: 22px;
+    }
+
+    .family-content p {
+        font-size: 16px;
+    }
+}
+</style>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="family-hero">
+
+    <h1>
+        خاندان گوگوشویلی
+    </h1>
+
+    <div class="family-georgian-name">
+        გოგოშვილი
+    </div>
+
+    <div class="family-english-name">
+        Gogoshvili
+    </div>
+
+    <div class="family-subtitle">
+        نام خانوادگی گرجی با سابقه حضور در مناطق مختلف گرجستان
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     LANGUAGE BUTTONS
+========================================================= -->
+
+<nav class="family-language-bar">
+
+    <button
+        class="active"
+        onclick="showGogoshviliLanguage('fa', this)">
+        فارسی
+    </button>
+
+    <button
+        onclick="showGogoshviliLanguage('ka', this)">
+        ქართული
+    </button>
+
+    <button
+        onclick="showGogoshviliLanguage('en', this)">
+        English
+    </button>
+
+</nav>
+
+
+<!-- =========================================================
+     LOCAL NAVIGATION
+========================================================= -->
+
+<nav class="family-local-nav">
+
+    <a href="#gogo-intro">معرفی</a>
+
+    <a href="#gogo-name">نام و ریشه</a>
+
+    <a href="#gogo-history">پیشینه تاریخی</a>
+
+    <a href="#gogo-distribution">پراکندگی</a>
+
+    <a href="#gogo-kakheti">کاختی</a>
+
+    <a href="#gogo-people">چهره‌ها</a>
+
+    <a href="#gogo-genealogy">شجره‌نامه</a>
+
+    <a href="#gogo-archives">اسناد و منابع</a>
+
+</nav>
+
+
+<!-- =========================================================
+     PERSIAN
+========================================================= -->
+
+<article
+    id="gogoshvili-fa"
+    class="family-content family-language family-fa active">
+
+
+    <h2 id="gogo-intro">
+        معرفی خاندان گوگوشویلی
+    </h2>
+
+    <p>
+        گوگوشویلی
+        (<strong>გოგოშვილი</strong>)
+        یکی از نام‌های خانوادگی گرجی است که در منابع مربوط
+        به تبارشناسی و تاریخ اجتماعی گرجستان ثبت شده است.
+    </p>
+
+    <p>
+        شکل گرجی این نام «გოგოშვილი» و شکل لاتین رایج آن
+        <strong>Gogoshvili</strong> است.
+    </p>
+
+    <div class="family-info-grid">
+
+        <div class="family-info-card">
+            <strong>نام فارسی</strong>
+            گوگوشویلی
         </div>
-    </main>
 
-    <footer>
-        <p>موسسه مهرا — مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی</p>
-    </footer>
+        <div class="family-info-card">
+            <strong>نام گرجی</strong>
+            გოგოშვილი
+        </div>
 
-</body>
-</html>
+        <div class="family-info-card">
+            <strong>نام لاتین</strong>
+            Gogoshvili
+        </div>
+
+        <div class="family-info-card">
+            <strong>کشور تاریخی</strong>
+            گرجستان
+        </div>
+
+        <div class="family-info-card">
+            <strong>حوزه پژوهش</strong>
+            تاریخ و تبارشناسی
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         NAME AND ORIGIN
+    ====================================================== -->
+
+    <h2 id="gogo-name">
+        نام و ریشه
+    </h2>
+
+    <p>
+        از نظر ساختار زبانی، «گوگوشویلی» از دو بخش تشکیل شده است:
+        «گوگو» و پسوند «شویلی» (შვილი).
+    </p>
+
+    <p>
+        پسوند «شویلی» در نام‌های خانوادگی گرجی معنای
+        «فرزند» یا «پسر» دارد و در ساخت بسیاری از نام‌های
+        خانوادگی گرجی دیده می‌شود.
+    </p>
+
+    <p>
+        درباره منشأ دقیق بخش «گوگو» و اینکه آیا این نام در
+        تمام شاخه‌های گوگوشویلی به یک نیای واحد اشاره دارد،
+        نیاز به بررسی منابع تاریخی و تبارشناختی بیشتری وجود دارد.
+    </p>
+
+
+    <!-- =====================================================
+         HISTORY
+    ====================================================== -->
+
+    <h2 id="gogo-history">
+        پیشینه تاریخی
+    </h2>
+
+    <p>
+        نام گوگوشویلی در منابع تبارشناختی گرجی ثبت شده و
+        حضور این نام در مناطق مختلف شرق گرجستان مستند است.
+    </p>
+
+    <p>
+        در پایگاه «Georgian Genealogy» نام گوگوشویلی برای
+        چندین محل در کاختی ثبت شده است؛ از جمله
+        بودبه، ددوفلیس‌تسقارو، واردیسوبانی، تلاوی،
+        کاردانخی و سیغناخی.
+    </p>
+
+    <div class="family-status">
+
+        <strong>
+            نکته پژوهشی:
+        </strong>
+
+        <p>
+            ثبت یک نام خانوادگی در چند منطقه لزوماً به معنای
+            وجود یک شاخه واحد و یک نیای مشترک برای همه افراد
+            آن نام نیست. این موضوع باید با اسناد خانوادگی
+            و آرشیوی بررسی شود.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         DISTRIBUTION
+    ====================================================== -->
+
+    <h2 id="gogo-distribution">
+        پراکندگی خاندان و نام خانوادگی
+    </h2>
+
+    <p>
+        داده‌های جمعیتی موجود نشان می‌دهد که نام خانوادگی
+        Gogoshvili در گرجستان بیشترین حضور را دارد.
+    </p>
+
+    <p>
+        در داده‌های موجود، بخش قابل توجهی از حاملان این نام
+        در شیدا کارتلی، کاختی و تفلیس ثبت شده‌اند.
+    </p>
+
+    <div class="family-info-grid">
+
+        <div class="family-info-card">
+            <strong>شیدا کارتلی</strong>
+            یکی از مناطق دارای تمرکز این نام
+        </div>
+
+        <div class="family-info-card">
+            <strong>کاختی</strong>
+            منطقه مهم تاریخی و جمعیتی
+        </div>
+
+        <div class="family-info-card">
+            <strong>تفلیس</strong>
+            یکی از مراکز حضور معاصر
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         KAKHETI
+    ====================================================== -->
+
+    <h2 id="gogo-kakheti">
+        گوگوشویلی‌های کاختی
+    </h2>
+
+    <p>
+        کاختی یکی از مهم‌ترین مناطق مرتبط با پراکندگی
+        گوگوشویلی‌هاست.
+    </p>
+
+    <p>
+        منابع تبارشناختی، این نام را در چندین آبادی کاختی
+        ثبت کرده‌اند؛ از جمله:
+    </p>
+
+    <ul>
+
+        <li>بودبه</li>
+
+        <li>ددوفلیس‌تسقارو</li>
+
+        <li>واردیسوبانی</li>
+
+        <li>تلاوی</li>
+
+        <li>کاردانخی</li>
+
+        <li>سیغناخی</li>
+
+    </ul>
+
+    <p>
+        این پراکندگی، کاختی را به یکی از مناطق مهم برای
+        پژوهش درباره تاریخ این نام خانوادگی تبدیل می‌کند.
+    </p>
+
+
+    <!-- =====================================================
+         NOTABLE PEOPLE
+    ====================================================== -->
+
+    <h2 id="gogo-people">
+        افراد و چهره‌های شناخته‌شده
+    </h2>
+
+    <div class="family-person">
+
+        <strong>
+            گوگیا گوگوشویلی
+        </strong>
+
+        <p>
+            გიორგი (გოგია) ზაალის ძე გოგოშვილი
+            (۱۹۰۹–۲۰۰۶)
+        </p>
+
+        <p>
+            بر اساس مجموعه «Iverieli» کتابخانه ملی پارلمانی
+            گرجستان، گوگیا گوگوشویلی در مدرسه روستای بودبه
+            در منطقه سیغناخی به عنوان آموزگار امور نظامی
+            فعالیت داشت و از شرکت‌کنندگان جنگ جهانی دوم بود.
+        </p>
+
+    </div>
+
+
+    <div class="family-person">
+
+        <strong>
+            پِلاگیا گوگوشویلی
+        </strong>
+
+        <p>
+            პელაგია (პელო) ზაალის ასული გოგოშვილი
+            (۱۹۲۰–۱۹۹۵)
+        </p>
+
+        <p>
+            بر اساس آرشیو تصویری کتابخانه ملی گرجستان،
+            پِلاگیا گوگوشویلی آموزگار شیمی و فیزیک مدرسه
+            متوسطه روستای بودبه بوده است.
+        </p>
+
+    </div>
+
+
+    <div class="family-person">
+
+        <strong>
+            تاتیانا گوگوشویلی
+        </strong>
+
+        <p>
+            ტატიანა ანტონის ასული გოგოშვილი
+            (۱۹۰۵–۱۹۵۹)
+        </p>
+
+        <p>
+            نام تاتیانا گوگوشویلی در فرهنگ/فهرست پزشکان
+            گرجستان ثبت شده و او به عنوان دندان‌پزشک
+            معرفی شده است.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         GENEALOGY
+    ====================================================== -->
+
+    <h2 id="gogo-genealogy">
+        شجره‌نامه خاندان گوگوشویلی
+    </h2>
+
+    <p>
+        شجره‌نامه گوگوشویلی باید به صورت مرحله‌ای و بر اساس
+        شاخه‌های منطقه‌ای تهیه شود.
+    </p>
+
+    <p>
+        با توجه به پراکندگی نام در چندین منطقه، در این پایگاه
+        هر شاخه محلی باید جداگانه شناسایی شود و سپس ارتباط
+        احتمالی میان شاخه‌ها بررسی گردد.
+    </p>
+
+    <div class="family-status">
+
+        <strong>
+            وضعیت شجره‌نامه:
+        </strong>
+
+        <p>
+            در حال پژوهش و نیازمند اسناد خانوادگی،
+            کلیسایی، ثبتی و آرشیوی.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         ARCHIVES
+    ====================================================== -->
+
+    <h2 id="gogo-archives">
+        اسناد و منابع
+    </h2>
+
+
+    <div class="family-source">
+
+        <strong>
+            منبع تبارشناسی گرجی
+        </strong>
+
+        <p>
+            Georgian Genealogy — اطلاعات مربوط به پراکندگی
+            نام گوگوشویلی در مناطق گرجستان.
+        </p>
+
+        <a
+            href="https://www.geogen.ge/ge/treasurege/82/4306/"
+            target="_blank"
+            rel="noopener">
+
+            مشاهده منبع
+
+        </a>
+
+    </div>
+
+
+    <div class="family-source">
+
+        <strong>
+            کتابخانه ملی پارلمانی گرجستان
+        </strong>
+
+        <p>
+            مجموعه Iverieli شامل اسناد و تصاویر تاریخی
+            مرتبط با اعضای خانواده گوگوشویلی از منطقه بودبه.
+        </p>
+
+        <a
+            href="https://dspace.nplg.gov.ge/handle/1234/92067"
+            target="_blank"
+            rel="noopener">
+
+            مشاهده سند گوگیا گوگوشویلی
+
+        </a>
+
+        <br><br>
+
+        <a
+            href="https://dspace.nplg.gov.ge/handle/1234/92044"
+            target="_blank"
+            rel="noopener">
+
+            مشاهده سند پِلاگیا گوگوشویلی
+
+        </a>
+
+    </div>
+
+
+    <div class="family-source">
+
+        <strong>
+            آمار پراکندگی نام خانوادگی
+        </strong>
+
+        <p>
+            داده‌های موجود نشان می‌دهد Gogoshvili در گرجستان
+            بیشترین فراوانی را دارد و در شیدا کارتلی،
+            کاختی و تفلیس حضور قابل توجهی دارد.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         RESEARCH NOTE
+    ====================================================== -->
+
+    <div class="family-status">
+
+        <strong>
+            یادداشت پژوهشی مرجع دیجیتال:
+        </strong>
+
+        <p>
+            صفحه گوگوشویلی در حال حاضر بر اساس داده‌های قابل
+            دسترسی درباره نام خانوادگی و افراد مستند تنظیم شده است.
+            ادعای وجود یک نیای مشترک، اشرافی بودن کل خاندان
+            یا ارتباط قطعی میان شاخه‌های مختلف تا زمان یافتن
+            اسناد معتبر وارد پایگاه نخواهد شد.
+        </p>
+
+    </div>
+
+</article>
+
+
+<!-- =========================================================
+     GEORGIAN
+========================================================= -->
+
+<article
+    id="gogoshvili-ka"
+    class="family-content family-language family-ka">
+
+
+    <h2>
+        გოგოშვილების საგვარეულო
+    </h2>
+
+    <p>
+        გოგოშვილი ქართული გვარია, რომელიც საქართველოს
+        ისტორიულ და გენეალოგიურ მასალებშია წარმოდგენილი.
+    </p>
+
+    <p>
+        გვარის ქართული ფორმაა
+        <strong>გოგოშვილი</strong>,
+        ხოლო ლათინური ტრანსლიტერაციაა
+        <strong>Gogoshvili</strong>.
+    </p>
+
+
+    <h2>
+        გვარის წარმოშობა
+    </h2>
+
+    <p>
+        გვარი გოგოშვილი შედგება ფუძე „გოგო“-სა და
+        სუფიქს „შვილი“-სგან.
+    </p>
+
+    <p>
+        ქართულ გვარებში „შვილი“ შთამომავლობასა და
+        შვილობას აღნიშნავს.
+    </p>
+
+    <p>
+        გვარის ფუძის ზუსტი წარმოშობისა და ყველა გოგოშვილის
+        ერთი საერთო წინაპრის დადგენა დამატებით ისტორიულ
+        და გენეალოგიურ კვლევას საჭიროებს.
+    </p>
+
+
+    <h2>
+        ისტორიული გავრცელება
+    </h2>
+
+    <p>
+        ქართული გენეალოგიის მონაცემებში გოგოშვილის გვარი
+        დაფიქსირებულია კახეთის რამდენიმე დასახლებაში,
+        მათ შორის ბოდბეში, დედოფლისწყაროში, ვარდისუბანში,
+        თელავში, კარდანახში და სიღნაღში.
+    </p>
+
+
+    <h2>
+        კახეთი
+    </h2>
+
+    <p>
+        კახეთი გოგოშვილების ისტორიული და თანამედროვე
+        გავრცელების ერთ-ერთი მნიშვნელოვანი რეგიონია.
+    </p>
+
+    <ul>
+        <li>ბოდბე</li>
+        <li>დედოფლისწყარო</li>
+        <li>ვარდისუბანი</li>
+        <li>თელავი</li>
+        <li>კარდანახი</li>
+        <li>სიღნაღი</li>
+    </ul>
+
+
+    <h2>
+        ცნობილი წარმომადგენლები
+    </h2>
+
+    <p>
+        ეროვნული ბიბლიოთეკის მასალებში დაცულია რამდენიმე
+        დოკუმენტი და ფოტო, რომელიც გოგოშვილის გვარის
+        წარმომადგენლებს უკავშირდება.
+    </p>
+
+    <div class="family-person">
+
+        <strong>
+            გოგია გოგოშვილი
+        </strong>
+
+        <p>
+            გიორგი (გოგია) ზაალის ძე გოგოშვილი
+            (1909–2006).
+        </p>
+
+        <p>
+            იგი ბოდბის საშუალო სკოლაში სამხედრო საქმის
+            პედაგოგად მუშაობდა და მეორე მსოფლიო ომის
+            მონაწილე იყო.
+        </p>
+
+    </div>
+
+
+    <div class="family-person">
+
+        <strong>
+            პელაგია გოგოშვილი
+        </strong>
+
+        <p>
+            პელაგია (პელო) ზაალის ასული გოგოშვილი
+            (1920–1995).
+        </p>
+
+        <p>
+            იგი ბოდბის საშუალო სკოლის ქიმიისა და ფიზიკის
+            პედაგოგი იყო.
+        </p>
+
+    </div>
+
+
+    <div class="family-person">
+
+        <strong>
+            ტატიანა გოგოშვილი
+        </strong>
+
+        <p>
+            ტატიანა ანტონის ასული გოგოშვილი
+            (1905–1959).
+        </p>
+
+        <p>
+            ეროვნული ბიბლიოთეკის ექიმთა მონაცემებში იგი
+            სტომატოლოგად არის მოხსენიებული.
+        </p>
+
+    </div>
+
+
+    <h2>
+        გენეალოგია
+    </h2>
+
+    <p>
+        გოგოშვილების გენეალოგიური ხე ეტაპობრივად უნდა
+        შეივსოს რეგიონული შტოების მიხედვით.
+    </p>
+
+    <p>
+        სხვადასხვა დასახლებაში მცხოვრები ოჯახების
+        ურთიერთკავშირის დასადგენად საჭიროა საარქივო,
+        საეკლესიო და საოჯახო დოკუმენტების შედარება.
+    </p>
+
+
+    <h2>
+        დოკუმენტები და წყაროები
+    </h2>
+
+    <p>
+        კვლევაში გამოყენებული იქნება ქართული გენეალოგიური
+        მასალა, ეროვნული ბიბლიოთეკის არქივი და სხვა
+        ისტორიული დოკუმენტები.
+    </p>
+
+
+    <div class="family-status">
+
+        <strong>
+            კვლევის სტატუსი:
+        </strong>
+
+        <p>
+            გვარის არსებობა და სხვადასხვა რეგიონში გავრცელება
+            დადასტურებულია, ხოლო სრული გენეალოგიური სტრუქტურა
+            დამატებით კვლევას საჭიროებს.
+        </p>
+
+    </div>
+
+</article>
+
+
+<!-- =========================================================
+     ENGLISH
+========================================================= -->
+
+<article
+    id="gogoshvili-en"
+    class="family-content family-language family-en">
+
+
+    <h2>
+        The Gogoshvili Family
+    </h2>
+
+    <p>
+        Gogoshvili
+        (<strong>გოგოშვილი</strong>)
+        is a Georgian surname documented in Georgian historical
+        and genealogical materials.
+    </p>
+
+    <p>
+        The Georgian form is
+        <strong>გოგოშვილი</strong>,
+        while the common Latin transliteration is
+        <strong>Gogoshvili</strong>.
+    </p>
+
+
+    <h2>
+        Name and Origin
+    </h2>
+
+    <p>
+        The surname Gogoshvili consists of the root
+        “Gogo” and the Georgian suffix “shvili”
+        (შვილი).
+    </p>
+
+    <p>
+        The suffix “shvili” expresses descent or
+        child/offspring in Georgian surnames.
+    </p>
+
+    <p>
+        The precise origin of the root and whether all
+        Gogoshvili families descend from one common ancestor
+        requires further historical and genealogical research.
+    </p>
+
+
+    <h2>
+        Historical Distribution
+    </h2>
+
+    <p>
+        Georgian genealogical data records the Gogoshvili
+        surname in several settlements of Kakheti, including
+        Bodbe, Dedoplistsqaro, Vardisubani, Telavi,
+        Kardanakhi and Sighnaghi.
+    </p>
+
+
+    <h2>
+        Kakheti
+    </h2>
+
+    <p>
+        Kakheti is one of the important historical and
+        contemporary regions associated with the Gogoshvili
+        surname.
+    </p>
+
+    <ul>
+        <li>Bodbe</li>
+        <li>Dedoplistsqaro</li>
+        <li>Vardisubani</li>
+        <li>Telavi</li>
+        <li>Kardanakhi</li>
+        <li>Sighnaghi</li>
+    </ul>
+
+
+    <h2>
+        Notable Individuals
+    </h2>
+
+    <div class="family-person">
+
+        <strong>
+            Goghia Gogoshvili
+        </strong>
+
+        <p>
+            Giorgi (Goghia) Zaalis dze Gogoshvili
+            (1909–2006).
+        </p>
+
+        <p>
+            According to the National Parliamentary Library
+            of Georgia, he worked as a military studies teacher
+            at the secondary school of Bodbe and participated
+            in World War II.
+        </p>
+
+    </div>
+
+
+    <div class="family-person">
+
+        <strong>
+            Pelagia Gogoshvili
+        </strong>
+
+        <p>
+            Pelagia (Pelo) Zaalis asuli Gogoshvili
+            (1920–1995).
+        </p>
+
+        <p>
+            She was a chemistry and physics teacher at the
+            secondary school of Bodbe.
+        </p>
+
+    </div>
+
+
+    <div class="family-person">
+
+        <strong>
+            Tatiana Gogoshvili
+        </strong>
+
+        <p>
+            Tatiana Antonis asuli Gogoshvili
+            (1905–1959).
+        </p>
+
+        <p>
+            She is recorded in the Georgian medical reference
+            collection as a dentist.
+        </p>
+
+    </div>
+
+
+    <h2>
+        Genealogy
+    </h2>
+
+    <p>
+        The genealogy of the Gogoshvili families should be
+        developed gradually according to regional branches.
+    </p>
+
+    <p>
+        Establishing connections between families living in
+        different settlements requires comparison of archival,
+        church and family documents.
+    </p>
+
+
+    <h2>
+        Documents and Sources
+    </h2>
+
+    <p>
+        Research will include Georgian genealogical materials,
+        National Parliamentary Library collections and
+        historical archival documents.
+    </p>
+
+
+    <div class="family-status">
+
+        <strong>
+            Research Status:
+        </strong>
+
+        <p>
+            The existence and regional distribution of the surname
+            are documented, while its complete genealogical
+            structure requires further research.
+        </p>
+
+    </div>
+
+</article>
+
+</section>
+
+
+<!-- =========================================================
+     LANGUAGE SCRIPT
+========================================================= -->
+
+<script>
+
+function showGogoshviliLanguage(language, button) {
+
+    const page =
+        document.getElementById("gogoshvili-family");
+
+    if (!page) return;
+
+
+    const languages =
+        page.querySelectorAll(".family-language");
+
+
+    languages.forEach(function(section) {
+
+        section.classList.remove("active");
+
+    });
+
+
+    const selected =
+        page.querySelector(
+            "#gogoshvili-" + language
+        );
+
+
+    if (selected) {
+
+        selected.classList.add("active");
+
+    }
+
+
+    const buttons =
+        page.querySelectorAll(
+            ".family-language-bar button"
+        );
+
+
+    buttons.forEach(function(btn) {
+
+        btn.classList.remove("active");
+
+    });
+
+
+    if (button) {
+
+        button.classList.add("active");
+
+    }
+
+
+    if (language === "fa") {
+
+        page.setAttribute("dir", "rtl");
+
+    } else {
+
+        page.setAttribute("dir", "ltr");
+
+    }
+
+}
+
+</script>
