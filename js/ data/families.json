@@ -1,0 +1,42 @@
+json
+[
+  {
+    "id": "baratashvili",
+    "name_fa": "باراتاشویلی",
+    "name_ka": "ბარათაშვილი",
+    "name_en": "Baratashvili",
+    "origin_fa": "گرجستان (کارتلی)",
+    "locations_fa": ["فریدون‌شهر", "اصفهان", "تفلیس"],
+    "summary_fa": "یکی از کهن‌ترین و نامدارترین خاندان‌های گرجی با اسناد و پیشینه مستند تاریخی.",
+    "access": "plus",
+    "tree_available": true,
+    "documents_count": 5,
+    "verified": true
+  },
+  {
+    "id": "unikashvili",
+    "name_fa": "اونیکاشویلی",
+    "name_ka": "უნიკაშვილი",
+    "name_en": "Unikashvili",
+    "origin_fa": "استان کاختی",
+    "locations_fa": ["بهشهر", "گیلان", "شیراز"],
+    "summary_fa": "دارای شجره‌نامه مدون و ارتباطات شاخه‌های خاندانی در ایران و قفقاز.",
+    "access": "premium",
+    "tree_available": true,
+    "documents_count": 3,
+    "verified": true
+  },
+  {
+    "id": "gogoshvili",
+    "name_fa": "گوگوشویلی",
+    "name_ka": "გოგოშვილი",
+    "name_en": "Gogoshvili",
+    "origin_fa": "شرق گرجستان",
+    "locations_fa": ["فریدن", "نجف‌آباد", "تهران"],
+    "summary_fa": "اسناد هویتی و سلسله‌انساب این خاندان در مرحله بازخوانی و تنظیم آرشیو است.",
+    "access": "plus",
+    "tree_available": false,
+    "documents_count": 1,
+    "verified": false
+  }
+]
