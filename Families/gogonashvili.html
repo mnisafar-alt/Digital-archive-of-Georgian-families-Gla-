@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 
@@ -6,22 +5,27 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-<title>خاندان گوگوشویلی</title>
+<title>خاندان گوگوشویلی | مرجع دیجیتال خاندان‌های گرجی</title>
+
+<meta name="description"
+content="پرونده تاریخی و تبارشناسی خاندان گوگوشویلی">
 
 <style>
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Tahoma, "Segoe UI", Arial, sans-serif;
     background: #f5f1e8;
-    color: #292522;
-    line-height: 2;
+    color: #2c2925;
+    line-height: 1.9;
 }
 
 header {
@@ -32,84 +36,133 @@ header {
 }
 
 header h1 {
-    margin: 0 0 10px;
-    font-size: 30px;
+    font-size: 32px;
+    margin-bottom: 8px;
 }
 
 header p {
-    margin: 0;
     color: #d8bd7a;
     font-size: 21px;
 }
 
 nav {
     background: #292522;
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    padding: 12px 18px;
     font-size: 14px;
 }
 
 nav a:hover {
-    color: #d8bd7a;
+    background: #7d1f2b;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 25px auto;
-    padding: 0 15px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-.box {
+.hero {
     background: white;
-    margin-bottom: 25px;
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 3px 12px rgba(0,0,0,.08);
-}
-
-.box h2 {
-    color: #172b4d;
-    border-bottom: 2px solid #b18a45;
-    padding-bottom: 8px;
-}
-
-.intro {
+    border-radius: 18px;
+    padding: 40px 25px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+    border-top: 5px solid #b18a45;
 }
 
-.intro h2 {
-    border: none;
-    font-size: 27px;
-}
-
-.georgian {
-    color: #7d1f2b;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-.info div {
-    background: #f8f3e9;
-    padding: 18px;
-    border-radius: 10px;
-}
-
-.info strong {
-    display: block;
+.hero h2 {
     color: #172b4d;
-    margin-bottom: 5px;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.georgian-name {
+    color: #7d1f2b;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 850px;
+    margin: auto;
+    color: #555;
+}
+
+.languages {
+    margin-top: 25px;
+}
+
+.lang-btn {
+    border: none;
+    background: #b18a45;
+    color: white;
+    padding: 7px 16px;
+    margin: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.lang-btn:hover {
+    background: #7d1f2b;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+}
+
+.info-card h3 {
+    color: #172b4d;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.section {
+    background: white;
+    margin-top: 25px;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.05);
+}
+
+.section h2 {
+    color: #172b4d;
+    border-bottom: 2px solid #d8bd7a;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #444;
+    font-size: 15px;
+    margin-bottom: 14px;
 }
 
 .timeline {
@@ -117,15 +170,81 @@ nav a:hover {
     padding-right: 20px;
 }
 
-.person {
-    background: #f8f3e9;
-    padding: 15px;
-    margin-bottom: 12px;
-    border-radius: 8px;
+.timeline-item {
+    margin-bottom: 25px;
 }
 
-.person strong {
+.timeline-item h3 {
+    color: #7d1f2b;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    font-size: 14px;
+}
+
+.people {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.person {
+    background: #f5f1e8;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.person h3 {
     color: #172b4d;
+    margin-bottom: 5px;
+}
+
+.person p {
+    font-size: 13px;
+}
+
+.genealogy-box {
+    background: #f8f3e9;
+    border: 1px solid #d8bd7a;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.generation {
+    margin: 12px 0;
+    font-weight: bold;
+    color: #172b4d;
+}
+
+.genealogy-note {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #777;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.location {
+    background: #f8f3e9;
+    border: 1px solid #d8bd7a;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+.sources {
+    padding-right: 25px;
+}
+
+.sources li {
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .archive {
@@ -133,18 +252,19 @@ nav a:hover {
     border: 1px solid #d8bd7a;
 }
 
-.back {
+.back-button {
     display: block;
+    max-width: 350px;
+    margin: 30px auto;
     text-align: center;
     background: #172b4d;
     color: white;
     text-decoration: none;
-    padding: 12px;
+    padding: 12px 20px;
     border-radius: 8px;
-    margin: 30px 0;
 }
 
-.back:hover {
+.back-button:hover {
     background: #7d1f2b;
 }
 
@@ -152,22 +272,36 @@ footer {
     background: #292522;
     color: #ccc;
     text-align: center;
-    padding: 25px;
+    padding: 30px 15px;
+    margin-top: 40px;
+    font-size: 13px;
 }
 
-@media(max-width:700px) {
+@media (max-width: 700px) {
 
     header h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
         font-size: 23px;
     }
 
-    .georgian {
-        font-size: 21px;
+    .georgian-name {
+        font-size: 22px;
     }
 
     nav a {
-        display: inline-block;
-        margin: 4px;
+        padding: 9px 11px;
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .section {
+        padding: 25px 18px;
     }
 
 }
@@ -176,37 +310,42 @@ footer {
 
 </head>
 
+
 <body>
 
 
 <header>
 
-<h1>خاندان گوگوشویلی</h1>
+<h1 id="pageTitle">
+خاندان گوگوشویلی
+</h1>
 
-<p>გოგოშვილი</p>
+<p id="pageSubtitle">
+გოგოშვილი
+</p>
 
 </header>
 
 
 <nav>
 
-<a href="../index.html">
+<a href="../index.html" id="navHome">
 صفحه اصلی
 </a>
 
-<a href="#history">
+<a href="#history" id="navHistory">
 تاریخ خاندان
 </a>
 
-<a href="#genealogy">
+<a href="#genealogy" id="navGenealogy">
 تبارشناسی
 </a>
 
-<a href="#people">
+<a href="#people" id="navPeople">
 شخصیت‌ها
 </a>
 
-<a href="#sources">
+<a href="#sources" id="navSources">
 منابع
 </a>
 
@@ -216,252 +355,351 @@ footer {
 <div class="container">
 
 
-<div class="box intro">
+<section class="hero">
 
-<h2>
+<h2 id="heroTitle">
 خاندان گوگوشویلی
 </h2>
 
-<div class="georgian">
+<div class="georgian-name">
 გოგოშვილი
 </div>
 
+<p id="heroText">
+
+این پرونده برای ثبت و بررسی
+تاریخ، تبارشناسی، پراکندگی جغرافیایی
+و اسناد مرتبط با خاندان گوگوشویلی
+ایجاد شده است.
+
+</p>
+
+
+<div class="languages">
+
+<button class="lang-btn"
+onclick="changeLanguage('fa')">
+فارسی
+</button>
+
+<button class="lang-btn"
+onclick="changeLanguage('ka')">
+ქართული
+</button>
+
+<button class="lang-btn"
+onclick="changeLanguage('en')">
+English
+</button>
+
+</div>
+
+</section>
+
+
+<div class="info-grid">
+
+
+<div class="info-card">
+
+<h3 id="info1Title">
+نام خاندان
+</h3>
+
 <p>
-این صفحه به ثبت، حفظ و بررسی
-تاریخ، تبارشناسی و میراث خانوادگی
-خاندان گوگوشویلی اختصاص دارد.
+گوگوشویلی
+<br>
+გოგოშვილი
 </p>
 
 </div>
 
 
-<div class="box">
+<div class="info-card">
 
-<h2>
-اطلاعات خاندان
-</h2>
+<h3 id="info2Title">
+منطقه ثبت‌شده
+</h3>
 
-<div class="info">
-
-<div>
-
-<strong>
-نام فارسی
-</strong>
-
-گوگوشویلی
+<p id="info2Text">
+کاختی و مناطق مرتبط
+</p>
 
 </div>
 
 
-<div>
+<div class="info-card">
 
-<strong>
-نام گرجی
-</strong>
+<h3 id="info3Title">
+وضعیت پژوهش
+</h3>
 
-გოგოშვილი
-
-</div>
-
-
-<div>
-
-<strong>
-حوزه پژوهش
-</strong>
-
-تاریخ و تبارشناسی خاندان
+<p id="info3Text">
+در حال بررسی و تکمیل
+</p>
 
 </div>
 
 
-<div>
+<div class="info-card">
 
-<strong>
-وضعیت پرونده
-</strong>
+<h3 id="info4Title">
+وضعیت شجره‌نامه
+</h3>
 
-در حال تکمیل
-
-</div>
-
-</div>
+<p id="info4Text">
+نیازمند اسناد نسل‌به‌نسل
+</p>
 
 </div>
 
 
-<div class="box" id="history">
+</div>
 
-<h2>
+
+<section class="section" id="history">
+
+<h2 id="historyTitle">
 تاریخ خاندان
 </h2>
 
-<p>
+<p id="historyText">
 
-خاندان گوگوشویلی
+نام خانوادگی گوگوشویلی
 (გოგოშვილი)
-از خاندان‌هایی است که نام آن در
-مناطق مختلف گرجستان دیده می‌شود.
-بررسی دقیق ریشه و شاخه‌های این خاندان
-نیازمند تطبیق منابع تاریخی، اسناد
-آرشیوی و شجره‌نامه‌های خانوادگی است.
+در منابع تبارشناسی گرجی ثبت شده است.
+منبع Georgian Genealogy این نام را
+در چندین محل در منطقه کاختی ثبت می‌کند.
 
 </p>
 
 <p>
 
-هدف این پرونده، گردآوری اطلاعات
-درباره پیشینه خاندان، محل‌های سکونت،
-شاخه‌های خانوادگی، مهاجرت‌ها و
-شخصیت‌های شناخته‌شده آن است.
+از جمله محل‌های ثبت‌شده برای
+این نام می‌توان به بُدبه،
+دِدُپلیس‌تسقارو، واردیسوبانی،
+تلاوی، کاردانَخی و سیغناخی اشاره کرد.
 
 </p>
 
 <p>
 
-روایت‌های خانوادگی و شفاهی نیز می‌توانند
-در این پژوهش مورد استفاده قرار گیرند،
-اما برای ثبت به عنوان اطلاعات تاریخی
-قطعی، باید با اسناد و منابع معتبر
-تطبیق داده شوند.
+این اطلاعات نشان می‌دهد که نام
+گوگوشویلی در منطقه کاختی سابقه
+و پراکندگی جغرافیایی داشته است؛
+اما از این اطلاعات به تنهایی نمی‌توان
+یک نیای مشترک یا یک شجره‌نامه واحد
+برای تمام شاخه‌های این نام خانوادگی
+اثبات کرد.
 
 </p>
+
+<p>
+
+بنابراین در این پایگاه، میان
+«پراکندگی نام خانوادگی» و
+«شجره‌نامه مستند یک شاخه خانوادگی»
+تفاوت گذاشته می‌شود.
+
+</p>
+
+</section>
+
+
+<section class="section">
+
+<h2 id="locationsTitle">
+مناطق ثبت‌شده
+</h2>
+
+<div class="locations">
+
+<div class="location">
+ბოდბე — بُدبه
+</div>
+
+<div class="location">
+დედოფლისწყარო — دِدُپلیس‌تسقارو
+</div>
+
+<div class="location">
+ვარდისუბანი — واردیسوبانی
+</div>
+
+<div class="location">
+თელავი — تلاوی
+</div>
+
+<div class="location">
+კარდანახი — کاردانَخی
+</div>
+
+<div class="location">
+სიღნაღი — سیغناخی
+</div>
 
 </div>
 
+</section>
 
-<div class="box">
 
-<h2>
+<section class="section">
+
+<h2 id="timelineTitle">
 خط زمانی پژوهش
 </h2>
 
 <div class="timeline">
 
-<p>
 
-<strong>
-مرحله نخست:
-</strong>
+<div class="timeline-item">
 
-گردآوری نام‌ها و روایت‌های خانوادگی.
-
-</p>
+<h3>
+مرحله نخست
+</h3>
 
 <p>
-
-<strong>
-مرحله دوم:
-</strong>
-
-شناسایی محل‌های تاریخی سکونت
-و شاخه‌های خاندان.
-
-</p>
-
-<p>
-
-<strong>
-مرحله سوم:
-</strong>
-
-بررسی اسناد آرشیوی و منابع تاریخی.
-
-</p>
-
-<p>
-
-<strong>
-مرحله چهارم:
-</strong>
-
-تنظیم شجره‌نامه مستند و
-نسل‌به‌نسل خاندان.
-
+شناسایی پراکندگی نام خانوادگی
+در منابع تبارشناسی گرجی.
 </p>
 
 </div>
 
+
+<div class="timeline-item">
+
+<h3>
+مرحله دوم
+</h3>
+
+<p>
+شناسایی افراد و اسناد مرتبط
+با نام گوگوشویلی در آرشیوهای گرجستان.
+</p>
+
 </div>
 
 
-<div class="box" id="genealogy">
+<div class="timeline-item">
 
-<h2>
+<h3>
+مرحله سوم
+</h3>
+
+<p>
+بررسی ارتباط احتمالی شاخه‌های مختلف
+با استفاده از اسناد خانوادگی و آرشیوی.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>
+مرحله چهارم
+</h3>
+
+<p>
+تدوین شجره‌نامه مستند و
+نسل‌به‌نسل هر شاخه خانوادگی.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="section" id="genealogy">
+
+<h2 id="genealogyTitle">
 تبارشناسی خاندان
 </h2>
 
-<p style="text-align:center;">
 
-ریشه و نیای خاندان
+<div class="genealogy-box">
 
-</p>
 
-<p style="text-align:center;font-size:25px;">
+<div class="generation">
+نیای خاندان
+</div>
 
+<div>
 ↓
+</div>
 
-</p>
-
-<p style="text-align:center;">
-
+<div class="generation">
 نسل‌های نخست
+</div>
 
-</p>
-
-<p style="text-align:center;font-size:25px;">
-
+<div>
 ↓
+</div>
 
-</p>
-
-<p style="text-align:center;">
-
+<div class="generation">
 شاخه‌های خانوادگی
+</div>
 
-</p>
-
-<p style="text-align:center;font-size:25px;">
-
+<div>
 ↓
+</div>
 
-</p>
-
-<p style="text-align:center;">
-
+<div class="generation">
 نسل‌های بعدی
+</div>
 
-</p>
 
-<p>
+<p class="genealogy-note">
 
-این بخش در آینده با استفاده از
-اسناد تاریخی، شجره‌نامه‌های خانوادگی
-و منابع معتبر تکمیل خواهد شد.
+این نمودار در حال حاضر صرفاً
+ساختار پژوهشی صفحه است.
+هیچ نام یا نسبت خانوادگی که
+هنوز با سند معتبر اثبات نشده باشد
+به عنوان واقعیت قطعی درج نشده است.
 
 </p>
 
 </div>
 
+</section>
 
-<div class="box" id="people">
 
-<h2>
-شخصیت‌های خاندان
+<section class="section" id="people">
+
+<h2 id="peopleTitle">
+شخصیت‌های ثبت‌شده
 </h2>
 
+
+<div class="people">
+
+
 <div class="person">
 
-<strong>
-شخصیت‌های تاریخی
-</strong>
+<h3>
+گُگیا گوگوشویلی
+</h3>
 
 <p>
 
-این قسمت برای معرفی شخصیت‌های
-تاریخی، سیاسی، نظامی، فرهنگی و
-اجتماعی خاندان گوگوشویلی اختصاص دارد.
+گُگیا گوگوشویلی
+(გოგია გოგოშვილი)،
+با نام کامل گئورگی زالیس پسر
+گوگوشویلی، متولد ۱۹۰۹ و
+درگذشته ۲۰۰۶ است.
+
+</p>
+
+<p>
+
+کتابخانه ملی گرجستان او را
+به عنوان مدرس امور نظامی
+در دبیرستان روستای بُدبه
+و شرکت‌کننده در جنگ جهانی دوم
+معرفی کرده است.
 
 </p>
 
@@ -470,87 +708,121 @@ footer {
 
 <div class="person">
 
-<strong>
-شخصیت‌های معاصر
-</strong>
+<h3>
+پِلاگیا گوگوشویلی
+</h3>
 
 <p>
 
-اطلاعات شخصیت‌های معاصر پس از
-بررسی و تأیید منابع معتبر در این
-قسمت ثبت خواهد شد.
+پلاگیا (پِلو) گوگوشویلی،
+دختر زال، متولد ۱۹۲۰ و
+درگذشته ۱۹۹۵ است.
+
+</p>
+
+<p>
+
+در آرشیو کتابخانه ملی گرجستان
+به عنوان مدرس شیمی و فیزیک
+در دبیرستان روستای بُدبه
+ثبت شده است.
 
 </p>
 
 </div>
 
+
+<div class="person">
+
+<h3>
+مَارگو گوگوشویلی
+</h3>
+
+<p>
+
+مارگو گوگوشویلی،
+دختر زال، متولد ۱۹۱۲ و
+درگذشته ۲۰۰۴ است.
+
+</p>
+
+<p>
+
+در یک سند تصویری کتابخانه ملی
+گرجستان به عنوان ماما معرفی شده است.
+
+</p>
+
 </div>
 
 
-<div class="box archive">
+</div>
 
-<h2>
+</section>
+
+
+<section class="section archive">
+
+<h2 id="archiveTitle">
 آرشیو و اسناد
 </h2>
 
-<p>
+<p id="archiveText">
 
-این بخش برای نگهداری تصاویر اسناد،
+این بخش برای افزودن تصاویر اسناد،
 شجره‌نامه‌های قدیمی، نامه‌ها،
-مهرها، تصاویر تاریخی، دست‌نوشته‌ها
-و دیگر مدارک مرتبط با خاندان
-گوگوشویلی طراحی شده است.
+مهرها، عکس‌های تاریخی و سایر
+مدارک مربوط به خاندان گوگوشویلی
+در نظر گرفته شده است.
 
 </p>
 
 <p>
 
-برای هر سند می‌توان تاریخ،
-محل نگهداری، صاحب سند و منبع
-آن را نیز ثبت کرد.
+هر سند در نسخه نهایی پایگاه می‌تواند
+با تاریخ، محل نگهداری، صاحب سند،
+شماره آرشیو و منبع ثبت شود.
 
 </p>
 
-</div>
+</section>
 
 
-<div class="box" id="sources">
+<section class="section" id="sources">
 
-<h2>
-منابع و مستندات
+<h2 id="sourcesTitle">
+منابع
 </h2>
 
-<ul>
+<ul class="sources">
 
 <li>
-آرشیوهای تاریخی گرجستان
+Georgian Genealogy — فهرست نام‌های خانوادگی
+در کاختی
 </li>
 
 <li>
-اسناد خانوادگی
+کتابخانه ملی گرجستان — پرونده گُگیا گوگوشویلی
 </li>
 
 <li>
-شجره‌نامه‌های قدیمی
+کتابخانه ملی گرجستان — پرونده پِلاگیا گوگوشویلی
 </li>
 
 <li>
-کتاب‌ها و پژوهش‌های تاریخی
-</li>
-
-<li>
-روایت‌های شفاهی خانواده‌ها،
-پس از بررسی و تطبیق با اسناد
+اسناد خانوادگی و آرشیوی که در مراحل بعدی
+به پرونده اضافه خواهند شد
 </li>
 
 </ul>
 
-</div>
+</section>
 
 
 <a
-class="back"
-href="../index.html">
+href="../index.html"
+class="back-button"
+id="backButton">
 
 ← بازگشت به صفحه اصلی
 
@@ -573,6 +845,355 @@ href="../index.html">
 Digital Archive of Georgian Families
 
 </footer>
+
+
+<script>
+
+
+var translations = {
+
+fa: {
+
+pageTitle:
+"خاندان گوگوشویلی",
+
+pageSubtitle:
+"გოგოშვილი",
+
+navHome:
+"صفحه اصلی",
+
+navHistory:
+"تاریخ خاندان",
+
+navGenealogy:
+"تبارشناسی",
+
+navPeople:
+"شخصیت‌ها",
+
+navSources:
+"منابع",
+
+heroTitle:
+"خاندان گوگوشویلی",
+
+heroText:
+"این پرونده برای ثبت و بررسی تاریخ، تبارشناسی، پراکندگی جغرافیایی و اسناد مرتبط با خاندان گوگوشویلی ایجاد شده است.",
+
+info1Title:
+"نام خاندان",
+
+info2Title:
+"منطقه ثبت‌شده",
+
+info2Text:
+"کاختی و مناطق مرتبط",
+
+info3Title:
+"وضعیت پژوهش",
+
+info3Text:
+"در حال بررسی و تکمیل",
+
+info4Title:
+"وضعیت شجره‌نامه",
+
+info4Text:
+"نیازمند اسناد نسل‌به‌نسل",
+
+historyTitle:
+"تاریخ خاندان",
+
+locationsTitle:
+"مناطق ثبت‌شده",
+
+timelineTitle:
+"خط زمانی پژوهش",
+
+genealogyTitle:
+"تبارشناسی خاندان",
+
+peopleTitle:
+"شخصیت‌های ثبت‌شده",
+
+archiveTitle:
+"آرشیو و اسناد",
+
+archiveText:
+"این بخش برای افزودن تصاویر اسناد، شجره‌نامه‌های قدیمی، نامه‌ها، مهرها، عکس‌های تاریخی و سایر مدارک مربوط به خاندان گوگوشویلی در نظر گرفته شده است.",
+
+sourcesTitle:
+"منابع",
+
+backButton:
+"← بازگشت به صفحه اصلی"
+
+},
+
+
+ka: {
+
+pageTitle:
+"გოგოშვილების საგვარეულო",
+
+pageSubtitle:
+"გოგოშვილი",
+
+navHome:
+"მთავარი",
+
+navHistory:
+"საგვარეულოს ისტორია",
+
+navGenealogy:
+"გენეალოგია",
+
+navPeople:
+"წარმომადგენლები",
+
+navSources:
+"წყაროები",
+
+heroTitle:
+"გოგოშვილების საგვარეულო",
+
+heroText:
+"ეს გვერდი შექმნილია გოგოშვილების გვარის ისტორიის, გენეალოგიის, გეოგრაფიული გავრცელებისა და დოკუმენტების შესასწავლად.",
+
+info1Title:
+"გვარის სახელწოდება",
+
+info2Title:
+"დადასტურებული რეგიონი",
+
+info2Text:
+"კახეთი და დაკავშირებული ადგილები",
+
+info3Title:
+"კვლევის სტატუსი",
+
+info3Text:
+"კვლევა მიმდინარეობს",
+
+info4Title:
+"გენეალოგიის სტატუსი",
+
+info4Text:
+"საჭიროებს თაობათა დამადასტურებელ დოკუმენტებს",
+
+historyTitle:
+"საგვარეულოს ისტორია",
+
+locationsTitle:
+"დადასტურებული ადგილები",
+
+timelineTitle:
+"კვლევის ქრონოლოგია",
+
+genealogyTitle:
+"საგვარეულოს გენეალოგია",
+
+peopleTitle:
+"დაფიქსირებული წარმომადგენლები",
+
+archiveTitle:
+"არქივი და დოკუმენტები",
+
+archiveText:
+"ეს განყოფილება განკუთვნილია გოგოშვილების გვართან დაკავშირებული დოკუმენტების, ძველი გენეალოგიების, წერილების, ბეჭდების და ისტორიული ფოტოების შესანახად.",
+
+sourcesTitle:
+"წყაროები",
+
+backButton:
+"← მთავარ გვერდზე დაბრუნება"
+
+},
+
+
+en: {
+
+pageTitle:
+"Gogoshvili Family",
+
+pageSubtitle:
+"გოგოშვილი",
+
+navHome:
+"Home",
+
+navHistory:
+"Family History",
+
+navGenealogy:
+"Genealogy",
+
+navPeople:
+"Recorded Members",
+
+navSources:
+"Sources",
+
+heroTitle:
+"The Gogoshvili Family",
+
+heroText:
+"This page is dedicated to documenting and researching the history, genealogy, geographical distribution and historical records of the Gogoshvili family.",
+
+info1Title:
+"Family Name",
+
+info2Title:
+"Recorded Region",
+
+info2Text:
+"Kakheti and related locations",
+
+info3Title:
+"Research Status",
+
+info3Text:
+"Research in progress",
+
+info4Title:
+"Genealogy Status",
+
+info4Text:
+"Requires generation-by-generation documentation",
+
+historyTitle:
+"Family History",
+
+locationsTitle:
+"Recorded Locations",
+
+timelineTitle:
+"Research Timeline",
+
+genealogyTitle:
+"Family Genealogy",
+
+peopleTitle:
+"Recorded Members",
+
+archiveTitle:
+"Archive and Documents",
+
+archiveText:
+"This section is intended for historical documents, old genealogies, letters, seals, photographs and other materials related to the Gogoshvili family.",
+
+sourcesTitle:
+"Sources",
+
+backButton:
+"← Back to Main Page"
+
+}
+
+};
+
+
+function changeLanguage(language) {
+
+var t = translations[language];
+
+if (!t) {
+return;
+}
+
+document.documentElement.lang = language;
+
+document.documentElement.dir =
+language === "fa" ? "rtl" : "ltr";
+
+
+document.getElementById("pageTitle").innerText =
+t.pageTitle;
+
+document.getElementById("pageSubtitle").innerText =
+t.pageSubtitle;
+
+document.getElementById("navHome").innerText =
+t.navHome;
+
+document.getElementById("navHistory").innerText =
+t.navHistory;
+
+document.getElementById("navGenealogy").innerText =
+t.navGenealogy;
+
+document.getElementById("navPeople").innerText =
+t.navPeople;
+
+document.getElementById("navSources").innerText =
+t.navSources;
+
+document.getElementById("heroTitle").innerText =
+t.heroTitle;
+
+document.getElementById("heroText").innerText =
+t.heroText;
+
+document.getElementById("info1Title").innerText =
+t.info1Title;
+
+document.getElementById("info2Title").innerText =
+t.info2Title;
+
+document.getElementById("info2Text").innerText =
+t.info2Text;
+
+document.getElementById("info3Title").innerText =
+t.info3Title;
+
+document.getElementById("info3Text").innerText =
+t.info3Text;
+
+document.getElementById("info4Title").innerText =
+t.info4Title;
+
+document.getElementById("info4Text").innerText =
+t.info4Text;
+
+document.getElementById("historyTitle").innerText =
+t.historyTitle;
+
+document.getElementById("locationsTitle").innerText =
+t.locationsTitle;
+
+document.getElementById("timelineTitle").innerText =
+t.timelineTitle;
+
+document.getElementById("genealogyTitle").innerText =
+t.genealogyTitle;
+
+document.getElementById("peopleTitle").innerText =
+t.peopleTitle;
+
+document.getElementById("archiveTitle").innerText =
+t.archiveTitle;
+
+document.getElementById("archiveText").innerText =
+t.archiveText;
+
+document.getElementById("sourcesTitle").innerText =
+t.sourcesTitle;
+
+document.getElementById("backButton").innerText =
+t.backButton;
+
+}
+
+
+document.addEventListener(
+"DOMContentLoaded",
+function() {
+changeLanguage("fa");
+}
+);
+
+</script>
 
 
 </body>
