@@ -13,7 +13,7 @@
 </title>
 
 <meta name="description"
-content="پرونده تاریخی و خانوادگی خاندان اوندیلادزه، الله‌وردی‌خان، امام‌قلی‌خان و تداوم خاندان در آخشیا">
+      content="پرونده تاریخی، خانوادگی و تبارشناسی خاندان اوندیلادزه و حضور آنان در آخشیا">
 
 <style>
 
@@ -27,16 +27,17 @@ content="پرونده تاریخی و خانوادگی خاندان اوندیل
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Tahoma, "Segoe UI", Arial, sans-serif;
     background: #f5f1e8;
     color: #2c2925;
     line-height: 1.9;
 }
+
+a {
+    text-decoration: none;
+}
+
 
 /* =========================
    HEADER
@@ -64,6 +65,7 @@ header p {
     font-size: 18px;
 }
 
+
 /* =========================
    NAVIGATION
 ========================= */
@@ -73,7 +75,6 @@ nav {
 
     display: flex;
     justify-content: center;
-    align-items: center;
 
     flex-wrap: wrap;
 
@@ -86,11 +87,9 @@ nav {
 nav a {
     color: white;
 
-    text-decoration: none;
+    padding: 12px 18px;
 
-    padding: 12px 16px;
-
-    font-size: 13px;
+    font-size: 14px;
 
     transition: .2s;
 }
@@ -99,12 +98,12 @@ nav a:hover {
     background: #7d1f2b;
 }
 
+
 /* =========================
-   MAIN CONTAINER
+   CONTAINER
 ========================= */
 
 .container {
-
     max-width: 1100px;
 
     margin: 30px auto;
@@ -112,74 +111,69 @@ nav a:hover {
     padding: 0 20px;
 }
 
+
 /* =========================
    HERO
 ========================= */
 
 .hero {
-
     background: white;
 
     border-radius: 18px;
 
-    padding: 42px 25px;
+    padding: 45px 25px;
 
     text-align: center;
 
     box-shadow:
         0 4px 15px rgba(0,0,0,.08);
 
-    border-top:
-        5px solid #b18a45;
+    border-top: 5px solid #b18a45;
 }
 
 .hero h2 {
-
     color: #172b4d;
 
     font-size: 30px;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-.georgian-name {
+.hero .georgian-name {
+    font-size: 26px;
 
     color: #7d1f2b;
 
-    font-size: 27px;
-
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .hero p {
-
     max-width: 850px;
 
     margin: auto;
 
     color: #555;
 
-    font-size: 15px;
+    font-size: 16px;
 }
+
 
 /* =========================
    LANGUAGE BUTTONS
 ========================= */
 
 .languages {
-
     margin-top: 25px;
 }
 
 .lang-btn {
-
     border: none;
 
     background: #b18a45;
 
     color: white;
 
-    padding: 7px 16px;
+    padding: 8px 17px;
 
     margin: 3px;
 
@@ -191,16 +185,15 @@ nav a:hover {
 }
 
 .lang-btn:hover {
-
     background: #7d1f2b;
 }
+
 
 /* =========================
    INFO GRID
 ========================= */
 
 .info-grid {
-
     display: grid;
 
     grid-template-columns:
@@ -215,7 +208,6 @@ nav a:hover {
 }
 
 .info-card {
-
     background: white;
 
     padding: 22px;
@@ -227,25 +219,23 @@ nav a:hover {
 }
 
 .info-card h3 {
-
     color: #172b4d;
 
     margin-bottom: 8px;
 }
 
 .info-card p {
+    font-size: 14px;
 
     color: #555;
-
-    font-size: 14px;
 }
+
 
 /* =========================
    SECTIONS
 ========================= */
 
 .section {
-
     background: white;
 
     margin-top: 25px;
@@ -259,7 +249,6 @@ nav a:hover {
 }
 
 .section h2 {
-
     color: #172b4d;
 
     border-bottom:
@@ -271,16 +260,16 @@ nav a:hover {
 }
 
 .section p {
-
     color: #444;
 
     font-size: 15px;
 
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 }
 
+
 /* =========================
-   SPECIAL AKHSIA SECTION
+   AKHSIA SPECIAL SECTION
 ========================= */
 
 .akhsia-section {
@@ -289,85 +278,69 @@ nav a:hover {
         linear-gradient(
             135deg,
             #fffdf8,
-            #eee4d3
+            #f1e6d3
         );
 
-    border:
-        2px solid #b18a45;
-
     border-top:
-        7px solid #7d1f2b;
+        6px solid #7d1f2b;
 }
 
-.akhsia-title {
-
-    text-align: center;
-
-    color: #7d1f2b !important;
-
-    font-size: 27px;
-
-    border-bottom:
-        none !important;
+.akhsia-section h2 {
+    color: #7d1f2b;
 }
 
-.akhsia-subtitle {
+.story-box {
+    max-width: 900px;
 
+    margin: auto;
+}
+
+.story-box h3 {
     text-align: center;
 
-    color: #8b6b35;
+    color: #172b4d;
 
-    font-size: 17px;
+    font-size: 22px;
 
     margin-bottom: 25px;
 }
 
-/* =========================
-   STORY
-========================= */
+.story-box p {
+    text-align: justify;
 
-.story-box {
+    font-size: 15px;
 
-    background: #f8f3e9;
+    line-height: 2.2;
+
+    margin-bottom: 18px;
+}
+
+.history-note {
+
+    background: #e9dfcf;
 
     border-right:
-        5px solid #b18a45;
+        4px solid #b18a45;
 
-    padding: 25px;
+    padding: 20px;
 
-    border-radius: 10px;
+    border-radius: 8px;
 
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
-.story-box p {
-
-    font-size: 16px;
-
-    line-height: 2.1;
+.history-note strong {
+    color: #172b4d;
 }
 
-/* =========================
-   WARNING / SOURCE NOTE
-========================= */
-
-.family-note {
-
-    background: #fff8e7;
-
-    border:
-        1px solid #d8bd7a;
-
-    padding: 18px;
-
-    border-radius: 10px;
-
-    margin-top: 20px;
-
-    color: #5b4a30;
-
+.history-note p {
     font-size: 13px;
+
+    color: #555;
+
+    margin-top: 8px;
 }
+
 
 /* =========================
    TIMELINE
@@ -378,27 +351,23 @@ nav a:hover {
     border-right:
         3px solid #b18a45;
 
-    padding-right: 22px;
+    padding-right: 20px;
 }
 
 .timeline-item {
-
     margin-bottom: 25px;
-
-    position: relative;
 }
 
 .timeline-item h3 {
-
     color: #7d1f2b;
 
     margin-bottom: 5px;
 }
 
 .timeline-item p {
-
     font-size: 14px;
 }
+
 
 /* =========================
    GENEALOGY
@@ -411,7 +380,7 @@ nav a:hover {
     border:
         1px solid #d8bd7a;
 
-    padding: 28px;
+    padding: 30px;
 
     border-radius: 12px;
 
@@ -420,7 +389,7 @@ nav a:hover {
 
 .generation {
 
-    margin: 12px 0;
+    margin: 14px 0;
 
     font-weight: bold;
 
@@ -429,20 +398,28 @@ nav a:hover {
     font-size: 17px;
 }
 
+.genealogy-arrow {
+
+    color: #7d1f2b;
+
+    font-size: 22px;
+}
+
 .genealogy-note {
 
     margin-top: 20px;
 
-    color: #777;
-
     font-size: 13px;
+
+    color: #777;
 }
 
+
 /* =========================
-   ARCHIVE CARDS
+   PEOPLE
 ========================= */
 
-.archive-grid {
+.people {
 
     display: grid;
 
@@ -452,74 +429,80 @@ nav a:hover {
             minmax(220px, 1fr)
         );
 
-    gap: 18px;
+    gap: 15px;
 }
 
-.archive-card {
+.person {
 
     background: #f5f1e8;
 
-    padding: 22px;
+    padding: 18px;
 
-    border-radius: 12px;
-
-    text-align: center;
-
-    border-top:
-        4px solid #b18a45;
+    border-radius: 10px;
 }
 
-.archive-card .icon {
+.person h3 {
+
+    color: #172b4d;
+
+    margin-bottom: 5px;
+}
+
+.person p {
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   ARCHIVE
+========================= */
+
+.archive-box {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px, 1fr)
+        );
+
+    gap: 15px;
+}
+
+.archive-item {
+
+    background: #f5f1e8;
+
+    border-radius: 10px;
+
+    padding: 22px;
+
+    text-align: center;
+}
+
+.archive-item .icon {
 
     font-size: 35px;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-.archive-card h3 {
+.archive-item h3 {
 
     color: #172b4d;
 
     margin-bottom: 8px;
 }
 
-.archive-card p {
+.archive-item p {
 
     font-size: 13px;
 
     color: #666;
 }
 
-/* =========================
-   GALLERY PLACEHOLDER
-========================= */
-
-.gallery-placeholder {
-
-    border:
-        2px dashed #b18a45;
-
-    padding: 35px 20px;
-
-    text-align: center;
-
-    border-radius: 12px;
-
-    background: #faf7f0;
-
-    color: #777;
-}
-
-.gallery-placeholder strong {
-
-    display: block;
-
-    color: #172b4d;
-
-    font-size: 18px;
-
-    margin-bottom: 8px;
-}
 
 /* =========================
    SOURCES
@@ -527,7 +510,7 @@ nav a:hover {
 
 .sources {
 
-    padding-right: 20px;
+    padding-right: 25px;
 }
 
 .sources li {
@@ -536,6 +519,7 @@ nav a:hover {
 
     font-size: 14px;
 }
+
 
 /* =========================
    BACK BUTTON
@@ -547,7 +531,7 @@ nav a:hover {
 
     max-width: 350px;
 
-    margin: 30px auto;
+    margin: 35px auto;
 
     text-align: center;
 
@@ -555,9 +539,7 @@ nav a:hover {
 
     color: white;
 
-    text-decoration: none;
-
-    padding: 12px 20px;
+    padding: 13px 20px;
 
     border-radius: 8px;
 }
@@ -566,6 +548,7 @@ nav a:hover {
 
     background: #7d1f2b;
 }
+
 
 /* =========================
    FOOTER
@@ -586,6 +569,7 @@ footer {
     font-size: 13px;
 }
 
+
 /* =========================
    MOBILE
 ========================= */
@@ -596,16 +580,21 @@ footer {
         font-size: 24px;
     }
 
-    .hero h2 {
-        font-size: 23px;
+    header p {
+        font-size: 15px;
     }
 
-    .georgian-name {
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero .georgian-name {
         font-size: 21px;
     }
 
     nav a {
-        padding: 9px 10px;
+        padding: 9px 11px;
+
         font-size: 12px;
     }
 
@@ -618,6 +607,8 @@ footer {
     }
 
     .story-box p {
+        text-align: right;
+
         font-size: 14px;
     }
 
@@ -663,15 +654,11 @@ footer {
     </a>
 
     <a href="#akhsia" id="navAkhsia">
-        آخشیا
+        حضور در آخشیا
     </a>
 
     <a href="#genealogy" id="navGenealogy">
         شجره‌نامه
-    </a>
-
-    <a href="#archive" id="navArchive">
-        آرشیو
     </a>
 
     <a href="#gallery" id="navGallery">
@@ -704,10 +691,12 @@ footer {
 
     <p id="heroText">
 
-        یکی از خاندان‌های گرجی
-        که در تاریخ ایران صفوی
-        به جایگاهی برجسته در عرصه
-        سیاسی، نظامی و اداری رسید.
+        یکی از خاندان‌های تاریخی گرجی که نام آن
+        با شخصیت‌هایی چون الله‌وردی‌خان و
+        امام‌قلی‌خان اوندیلادزه پیوند خورده است.
+        این صفحه به تاریخ خاندان، تداوم نسل،
+        حضور آنان در آخشیا و میراث خانوادگی
+        اختصاص دارد.
 
     </p>
 
@@ -751,9 +740,9 @@ footer {
         </h3>
 
         <p>
-            اوندیلادزه
-            <br>
-            უნდილაძე
+            اوندیلادزه<br>
+            უნდილაძე<br>
+            Undiladze
         </p>
 
     </div>
@@ -762,11 +751,12 @@ footer {
     <div class="info-card">
 
         <h3 id="info2Title">
-            خاستگاه
+            شخصیت‌های تاریخی
         </h3>
 
         <p id="info2Text">
-            گرجستان
+            الله‌وردی‌خان اوندیلادزه<br>
+            امام‌قلی‌خان اوندیلادزه
         </p>
 
     </div>
@@ -775,11 +765,11 @@ footer {
     <div class="info-card">
 
         <h3 id="info3Title">
-            دوره برجسته تاریخی
+            پیوند تاریخی
         </h3>
 
         <p id="info3Text">
-            سده شانزدهم و هفدهم میلادی
+            گرجستان، ایران و فریدن
         </p>
 
     </div>
@@ -788,11 +778,12 @@ footer {
     <div class="info-card">
 
         <h3 id="info4Title">
-            پیوند تاریخی
+            آخشیا
         </h3>
 
         <p id="info4Text">
-            گرجستان، ایران صفوی و آخشیا در فریدن
+            یکی از مهم‌ترین نقاط تداوم نسل خاندان
+            در روایت خانوادگی
         </p>
 
     </div>
@@ -802,7 +793,7 @@ footer {
 
 
 <!-- =========================
-     HISTORY
+     FAMILY HISTORY
 ========================= -->
 
 <section
@@ -813,39 +804,30 @@ footer {
         تاریخ خاندان اوندیلادزه
     </h2>
 
+    <p id="historyText">
 
-    <p id="historyText1">
-
-        خاندان اوندیلادزه
-        (უნდილაძე)
-        از خاندان‌های گرجی مرتبط با
-        دولت صفوی بود که اعضای آن
-        در سده‌های شانزدهم و هفدهم
-        میلادی به جایگاه‌های مهم
-        سیاسی، نظامی و اداری
-        در ایران دست یافتند.
+        خاندان اوندیلادزه از خاندان‌های تاریخی گرجی
+        است که نام آن در تاریخ ایران صفوی با
+        شخصیت‌های مهمی چون الله‌وردی‌خان و
+        امام‌قلی‌خان پیوند خورده است.
 
     </p>
 
+    <p>
 
-    <p id="historyText2">
-
-        الله‌وردی‌خان اوندیلادزه
-        از شناخته‌شده‌ترین اعضای این خاندان
-        بود و پس از او پسرش
-        امام‌قلی‌خان نیز به یکی از
-        قدرتمندترین فرماندهان و
-        حاکمان دوره صفوی تبدیل شد.
+        الله‌وردی‌خان اوندیلادزه از چهره‌های برجسته
+        نظامی و سیاسی دوره صفوی بود و پس از او
+        امام‌قلی‌خان نیز در ساختار سیاسی و نظامی
+        ایران صفوی جایگاه مهمی پیدا کرد.
 
     </p>
 
+    <p>
 
-    <p id="historyText3">
-
-        منابع پژوهشی، الله‌وردی‌خان و
-        امام‌قلی‌خان را از مهم‌ترین
-        نمایندگان خاندان اوندیلادزه
-        در ایران صفوی معرفی می‌کنند.
+        این صفحه تنها به شخصیت‌های مشهور تاریخی
+        خاندان محدود نیست، بلکه تلاش می‌کند مسیر
+        تداوم نسل و حافظه خانوادگی اوندیلادزه را
+        نیز ثبت کند.
 
     </p>
 
@@ -853,34 +835,133 @@ footer {
 
 
 <!-- =========================
-     ALLAHVERDI KHAN
+     AKHSIA SPECIAL HISTORY
 ========================= -->
 
-<section class="section">
+<section
+    class="section akhsia-section"
+    id="akhsia">
 
-    <h2 id="allahverdiTitle">
-        الله‌وردی‌خان اوندیلادزه
+    <h2 id="akhsiaTitle">
+        حضور خاندان اوندیلادزه در آخشیا
     </h2>
 
 
-    <p id="allahverdiText">
-
-        الله‌وردی‌خان از مهم‌ترین
-        رجال نظامی و سیاسی ایران
-        در دوره شاه عباس اول بود.
-        او در سال ۱۶۱۳ میلادی درگذشت
-        و پس از او پسرش امام‌قلی‌خان
-        جایگاه او را در فارس به ارث برد.
-
-    </p>
+    <div class="story-box">
 
 
-    <div class="family-note">
+        <h3>
+            روایتی از تداوم نسل اوندیلادزه در
+            روستای گرجی‌نشین آخشیا
+        </h3>
 
-        این بخش در آینده می‌تواند شامل
-        تصاویر، اسناد، کتیبه‌ها و
-        منابع اختصاصی مربوط به
-        الله‌وردی‌خان باشد.
+
+        <p>
+
+            بر اساس روایت خانوادگی و شفاهی خاندان
+            اوندیلادزه، حضور این خاندان در آخشیا
+            به رویدادهایی بازمی‌گردد که چهار ماه
+            پس از قتل خاندان اوندیلادزه رخ داده است.
+
+        </p>
+
+
+        <p>
+
+            در زمان محاصره عمارت امام‌قلی‌خان،
+            دو زن گرجی که دایه کودکان خاندان بودند،
+            به همراه کودکان در خارج از عمارت حضور
+            داشتند.
+
+        </p>
+
+
+        <p>
+
+            هنگامی که آنان برای بازگشت به عمارت
+            مراجعه کردند، با صحنه محاصره روبه‌رو
+            شدند. آنان بدون فوت وقت تصمیم گرفتند
+            از شهر خارج شوند و کودکان را نیز همراه
+            خود ببرند.
+
+        </p>
+
+
+        <p>
+
+            روایت خانوادگی می‌گوید که این دو زن،
+            همراه کودکان، سفر طولانی خود را به سوی
+            فریدن آغاز کردند. آنان شب‌ها حرکت
+            می‌کردند و روزها برای در امان ماندن
+            مخفی می‌شدند.
+
+        </p>
+
+
+        <p>
+
+            پس از حدود چهار ماه پیاده‌روی،
+            سرانجام به منطقه فریدن رسیدند.
+            از آنجا که در آخشیا خویشاوند داشتند،
+            مسیر خود را به سوی این روستای
+            گرجی‌نشین ادامه دادند.
+
+        </p>
+
+
+        <p>
+
+            پس از رسیدن به آخشیا، ابتدا به خانه
+            خویشان خود رفتند. سپس موضوع را به
+            صورت محرمانه با خان آخشیا،
+            بهرام‌خان، در میان گذاشتند.
+
+        </p>
+
+
+        <p>
+
+            بر اساس روایت خانوادگی، بهرام‌خان برای
+            حفظ جان این زنان و کودکان، آنان را
+            به عنوان زنان و کودکان خود معرفی کرد.
+            بدین ترتیب هویت واقعی آنان پنهان ماند
+            و امکان ادامه زندگی آنان در آخشیا
+            فراهم شد.
+
+        </p>
+
+
+        <p>
+
+            این روایت، آغاز یکی از مهم‌ترین فصل‌های
+            تاریخ خانوادگی اوندیلادزه در آخشیا
+            به شمار می‌رود؛ زیرا بر اساس همین روایت،
+            نسل اوندیلادزه در این روستای گرجی‌نشین
+            ادامه یافت.
+
+        </p>
+
+
+        <div class="history-note">
+
+            <strong>
+                یادداشت تاریخی و خانوادگی
+            </strong>
+
+            <p>
+
+                این روایت در این مرحله به عنوان
+                روایت خانوادگی و شفاهی خاندان
+                ثبت شده است. اسناد، شجره‌نامه‌ها،
+                تصاویر، کتاب‌ها و دیگر مدارکی که
+                در آینده در اختیار این آرشیو قرار
+                می‌گیرند، برای بررسی و مستندسازی
+                بیشتر این روایت به کار خواهند رفت.
+
+            </p>
+
+        </div>
+
 
     </div>
 
@@ -888,51 +969,13 @@ footer {
 
 
 <!-- =========================
-     IMAM QOLI KHAN
+     TIMELINE
 ========================= -->
 
 <section class="section">
 
-    <h2 id="imamTitle">
-        امام‌قلی‌خان اوندیلادزه
-    </h2>
-
-
-    <p id="imamText">
-
-        امام‌قلی‌خان، پسر الله‌وردی‌خان،
-        از فرماندهان و حاکمان مهم
-        دوره شاه عباس اول بود.
-        او سال‌ها حکومت فارس را
-        بر عهده داشت و در رویدادهای
-        مهم نظامی، از جمله فتح هرمز
-        در سال ۱۶۲۲ میلادی، نقش داشت.
-
-    </p>
-
-
-    <p>
-
-        منابع تاریخی و پژوهشی همچنین
-        از فعالیت‌های عمرانی و
-        نقش او در ساخت راه‌ها،
-        پل‌ها، آبراه‌ها و دیگر
-        بناها و تأسیسات یاد کرده‌اند.
-
-    </p>
-
-
-</section>
-
-
-<!-- =========================
-     HISTORICAL TURNING POINT
-========================= -->
-
-<section class="section">
-
-    <h2 id="turningTitle">
-        نقطه عطف در تاریخ خاندان
+    <h2 id="timelineTitle">
+        خط زمانی خاندان
     </h2>
 
 
@@ -942,13 +985,12 @@ footer {
         <div class="timeline-item">
 
             <h3>
-                دوره شاه عباس اول
+                دوره صفوی
             </h3>
 
             <p>
-                خاندان اوندیلادزه به یکی از
-                خاندان‌های مهم گرجی در ساختار
-                سیاسی و نظامی ایران صفوی تبدیل شد.
+                حضور شخصیت‌های برجسته خاندان
+                اوندیلادزه در تاریخ ایران صفوی.
             </p>
 
         </div>
@@ -957,13 +999,13 @@ footer {
         <div class="timeline-item">
 
             <h3>
-                ۱۶۱۳ میلادی
+                دوره امام‌قلی‌خان
             </h3>
 
             <p>
-                درگذشت الله‌وردی‌خان و
-                انتقال جایگاه او به
-                امام‌قلی‌خان.
+                امام‌قلی‌خان اوندیلادزه به عنوان
+                یکی از شخصیت‌های مهم خاندان در
+                تاریخ این دوره شناخته می‌شود.
             </p>
 
         </div>
@@ -972,13 +1014,13 @@ footer {
         <div class="timeline-item">
 
             <h3>
-                ۱۶۳۲ میلادی
+                چهار ماه پس از رویداد قتل خاندان
             </h3>
 
             <p>
-                امام‌قلی‌خان در جریان
-                سرکوب خاندان اوندیلادزه
-                به دستور شاه صفی کشته شد.
+                بر اساس روایت خانوادگی، دو دایه
+                به همراه کودکان پس از سفری طولانی
+                به فریدن و سپس آخشیا رسیدند.
             </p>
 
         </div>
@@ -987,189 +1029,35 @@ footer {
         <div class="timeline-item">
 
             <h3>
-                پس از فاجعه خاندان
+                استقرار در آخشیا
             </h3>
 
             <p>
-                بر اساس روایت خانوادگی ثبت‌شده
-                در این آرشیو، داستان نجات کودکان
-                و ادامه نسل خاندان در آخشیا
-                وارد مرحله‌ای تازه می‌شود.
+                بر اساس روایت خانوادگی، با حمایت
+                بهرام‌خان، امکان ادامه زندگی و
+                تداوم نسل اوندیلادزه در آخشیا
+                فراهم شد.
+            </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <h3>
+                نسل‌های بعدی
+            </h3>
+
+            <p>
+                نسل‌های بعدی خاندان در آخشیا
+                ادامه یافتند و حافظه خانوادگی
+                این رویداد به نسل‌های بعد منتقل شد.
             </p>
 
         </div>
 
 
     </div>
-
-</section>
-
-
-<!-- ==================================================
-     SPECIAL AKHSIA SECTION
-================================================== -->
-
-<section
-    class="section akhsia-section"
-    id="akhsia">
-
-
-    <h2
-        class="akhsia-title"
-        id="akhsiaTitle">
-
-        اوندیلادزه‌ها در آخشیا
-
-    </h2>
-
-
-    <div
-        class="akhsia-subtitle"
-        id="akhsiaSubtitle">
-
-        روایتی از نجات کودکان و تداوم نسل خاندان
-
-    </div>
-
-
-    <p id="akhsiaIntro">
-
-        آخشیا در این پروژه تنها یک نام جغرافیایی
-        نیست؛ بلکه بخشی از حافظه تاریخی و
-        خانوادگی گرجیان فریدن است.
-
-        در این بخش، روایت خانوادگی مربوط به
-        چگونگی رسیدن بازماندگان خاندان
-        اوندیلادزه به آخشیا ثبت می‌شود.
-
-    </p>
-
-
-    <!-- =========================
-         FAMILY STORY
-    ========================= -->
-
-    <div class="story-box">
-
-
-        <h3
-            id="storyTitle"
-            style="
-                color:#7d1f2b;
-                margin-bottom:15px;
-            ">
-
-            روایت دو دایه و کودکان خاندان
-
-        </h3>
-
-
-        <p id="storyText1">
-
-            بر اساس روایت خانوادگی،
-            هنگامی که عمارت امام‌قلی‌خان
-            در محاصره قرار گرفت،
-            دو زن گرجی که دایه کودکان
-            خاندان بودند، در آن هنگام
-            همراه کودکان در خارج از
-            عمارت حضور داشتند.
-
-        </p>
-
-
-        <p id="storyText2">
-
-            هنگامی که آنان برای بازگشت
-            به عمارت آمدند و محاصره را
-            مشاهده کردند، دریافتند که
-            بازگشت به داخل عمارت ممکن نیست.
-            بنابراین بدون فوت وقت همراه
-            کودکان از محل دور شدند تا
-            جان آنان را نجات دهند.
-
-        </p>
-
-
-        <p id="storyText3">
-
-            آنان شب‌ها حرکت می‌کردند
-            و روزها در مکان‌های امن
-            پنهان می‌شدند تا از خطر
-            شناسایی و دستگیری در امان بمانند.
-
-        </p>
-
-
-        <p id="storyText4">
-
-            مسیر آنان سرانجام به فریدن رسید.
-            از آنجا که در آخچه خویشاوند داشتند،
-            به سوی این منطقه حرکت کردند.
-
-        </p>
-
-
-        <p id="storyText5">
-
-            بر اساس روایت خانوادگی،
-            این سفر حدود چهار ماه به طول انجامید
-            و آنان پس از چهار ماه پیاده‌روی
-            و پنهان‌شدن در مسیر، سرانجام
-            به روستا رسیدند.
-
-        </p>
-
-
-        <p id="storyText6">
-
-            آنان ابتدا به خانه خویشاوندان خود
-            رفتند و پس از آن نزد
-            <strong>بهرام‌خان، خان آخچه</strong>
-            رفتند و ماجرا را به‌صورت محرمانه
-            برای او بازگو کردند.
-
-        </p>
-
-
-        <p id="storyText7">
-
-            بر اساس این روایت،
-            بهرام‌خان برای حفظ جان زنان
-            و کودکان، آنان را به عنوان
-            زنان و فرزندان خود معرفی کرد
-            و بدین ترتیب هویت واقعی آنان
-            از خطر محفوظ ماند.
-
-        </p>
-
-
-        <p id="storyText8">
-
-            بر پایه همین روایت خانوادگی،
-            این اقدام سبب شد کودکان از خطر
-            در امان بمانند و نسل خاندان
-            اوندیلادزه در آخشیا ادامه پیدا کند.
-
-        </p>
-
-
-    </div>
-
-
-    <div class="family-note">
-
-        <strong>
-            یادداشت آرشیوی:
-        </strong>
-
-        این بخش، روایت خانوادگی است
-        و برای حفظ امانت تاریخی،
-        در سایت از روایت خانوادگی
-        و منابع تاریخی مکتوب به‌صورت
-        جداگانه یاد خواهد شد.
-
-    </div>
-
 
 </section>
 
@@ -1183,7 +1071,7 @@ footer {
     id="genealogy">
 
     <h2 id="genealogyTitle">
-        شجره‌نامه اوندیلادزه‌های آخشیا
+        شجره‌نامه خاندان اوندیلادزه
     </h2>
 
 
@@ -1194,46 +1082,38 @@ footer {
             خاندان اوندیلادزه
         </div>
 
-
-        <div>
+        <div class="genealogy-arrow">
             ↓
         </div>
 
 
         <div class="generation">
-            نسل بازماندگان
+            الله‌وردی‌خان اوندیلادزه
         </div>
 
-
-        <div>
+        <div class="genealogy-arrow">
             ↓
         </div>
 
 
         <div class="generation">
-            نسل‌های اوندیلادزه در آخشیا
+            امام‌قلی‌خان اوندیلادزه
         </div>
 
-
-        <div>
+        <div class="genealogy-arrow">
             ↓
         </div>
 
 
         <div class="generation">
-            نسل‌های بعدی خاندان
+            نسل‌ها و شاخه‌های خانوادگی
         </div>
 
 
         <p class="genealogy-note">
 
-            شجره‌نامه کامل و نسل‌به‌نسل
-            در این بخش قرار خواهد گرفت.
-
-            نام‌ها، نسبت‌های خانوادگی
-            و شاخه‌های شجره‌نامه فقط
-            پس از بررسی و تأیید اطلاعات
-            خانوادگی ثبت خواهند شد.
+            این بخش در مراحل بعد با شجره‌نامه مستند
+            و اطلاعات نسل‌به‌نسل خاندان تکمیل خواهد شد.
 
         </p>
 
@@ -1244,43 +1124,48 @@ footer {
 
 
 <!-- =========================
-     ARCHIVE
+     FAMILY GATHERING
 ========================= -->
 
-<section
-    class="section"
-    id="archive">
+<section class="section">
 
-    <h2 id="archiveTitle">
-        آرشیو تاریخی و خانوادگی
+    <h2 id="gatheringTitle">
+        گردهمایی خاندان اوندیلادزه
     </h2>
 
 
-    <div class="archive-grid">
+    <p id="gatheringText">
+
+        این بخش برای ثبت گردهمایی‌های خاندان
+        اوندیلادزه در آخشیا و دیگر نقاط،
+        معرفی نسل‌های امروز خاندان و ثبت
+        خاطرات و تصاویر این گردهمایی‌ها
+        در نظر گرفته شده است.
+
+    </p>
 
 
-        <div class="archive-card">
+    <div class="archive-box">
+
+
+        <div class="archive-item">
 
             <div class="icon">
-                📜
+                👨‍👩‍👧‍👦
             </div>
 
             <h3>
-                چونی چونه بوری
+                خانواده‌ها
             </h3>
 
             <p>
-
-                تصاویر و صفحات نسخه موجود
-                از کتاب «چونی چونه بوری»
-                در این بخش قرار خواهد گرفت.
-
+                معرفی شاخه‌های مختلف خاندان.
             </p>
 
         </div>
 
 
-        <div class="archive-card">
+        <div class="archive-item">
 
             <div class="icon">
                 🌳
@@ -1291,50 +1176,25 @@ footer {
             </h3>
 
             <p>
-
-                شجره‌نامه نسل‌به‌نسل
-                خاندان اوندیلادزه در آخشیا.
-
+                ثبت نسل‌ها و ارتباط خانوادگی.
             </p>
 
         </div>
 
 
-        <div class="archive-card">
-
-            <div class="icon">
-                📜
-            </div>
-
-            <h3>
-                اسناد خانوادگی
-            </h3>
-
-            <p>
-
-                تصاویر اسناد، دست‌نوشته‌ها
-                و مدارک تاریخی خاندان.
-
-            </p>
-
-        </div>
-
-
-        <div class="archive-card">
+        <div class="archive-item">
 
             <div class="icon">
                 📷
             </div>
 
             <h3>
-                تصاویر خاندان
+                تصاویر گردهمایی
             </h3>
 
             <p>
-
-                تصاویر قدیمی و تصاویر
-                نسل‌های مختلف خاندان.
-
+                تصاویر گردهمایی‌ها در این بخش
+                اضافه خواهند شد.
             </p>
 
         </div>
@@ -1354,59 +1214,66 @@ footer {
     id="gallery">
 
     <h2 id="galleryTitle">
-        گالری خاندان اوندیلادزه
+        گالری تصاویر و اسناد
     </h2>
 
 
-    <div class="gallery-placeholder">
+    <div class="archive-box">
 
 
-        <strong>
-            📷 گالری در حال تکمیل است
-        </strong>
+        <div class="archive-item">
+
+            <div class="icon">
+                📖
+            </div>
+
+            <h3>
+                کتاب «چونی چونه بوری»
+            </h3>
+
+            <p>
+                تصاویر و مطالب مرتبط با کتاب
+                در آینده در این بخش قرار خواهند گرفت.
+            </p>
+
+        </div>
 
 
-        تصاویر کتاب «چونی چونه بوری»،
-        تصاویر قدیمی خاندان،
-        تصاویر آخشیا و تصاویر
-        گردهمایی‌های خاندان در این بخش
-        قرار خواهند گرفت.
+        <div class="archive-item">
+
+            <div class="icon">
+                📜
+            </div>
+
+            <h3>
+                اسناد تاریخی
+            </h3>
+
+            <p>
+                تصاویر اسناد و مدارک خانوادگی
+                پس از بررسی در آرشیو قرار می‌گیرند.
+            </p>
+
+        </div>
 
 
-    </div>
+        <div class="archive-item">
 
-</section>
+            <div class="icon">
+                📷
+            </div>
 
+            <h3>
+                تصاویر خاندان
+            </h3>
 
-<!-- =========================
-     GATHERINGS
-========================= -->
+            <p>
+                تصاویر قدیمی و جدید خاندان
+                در این بخش جمع‌آوری خواهد شد.
+            </p>
 
-<section class="section">
+        </div>
 
-    <h2 id="gatheringTitle">
-        گردهمایی خاندان
-    </h2>
-
-
-    <p>
-
-        این بخش برای ثبت تاریخ،
-        تصاویر و خاطرات گردهمایی‌های
-        خاندان اوندیلادزه در نظر گرفته شده است.
-
-    </p>
-
-
-    <div class="gallery-placeholder">
-
-        <strong>
-            🤝 آرشیو گردهمایی‌ها
-        </strong>
-
-        تصاویر و اطلاعات گردهمایی‌ها
-        پس از آماده‌سازی در این قسمت
-        قرار خواهد گرفت.
 
     </div>
 
@@ -1422,70 +1289,45 @@ footer {
     id="sources">
 
     <h2 id="sourcesTitle">
-        منابع و یادداشت‌های پژوهشی
+        منابع و مستندات
     </h2>
 
 
     <ul class="sources">
 
-
         <li>
-
-            پژوهش‌های دانشگاهی درباره خاندان
-            اوندیلادزه و حضور گرجیان در
-            ایران صفوی.
-
+            اسناد تاریخی مرتبط با خاندان اوندیلادزه
         </li>
 
-
         <li>
-
-            منابع مربوط به الله‌وردی‌خان
-            اوندیلادزه و امام‌قلی‌خان.
-
+            منابع تاریخی دوره صفوی
         </li>
 
-
         <li>
-
-            اسناد، کتیبه‌ها و منابع فارسی،
-            گرجی و عربی مرتبط با خاندان.
-
+            شجره‌نامه‌ها و اسناد خانوادگی
         </li>
 
-
         <li>
-
-            روایت‌های خانوادگی،
-            اسناد خصوصی و کتاب
-            «چونی چونه بوری».
-
+            روایت‌های شفاهی نسل‌های خاندان
         </li>
 
+        <li>
+            کتاب «چونی چونه بوری» و مطالب مرتبط
+            با تاریخ گرجیان فریدن
+        </li>
+
+        <li>
+            تصاویر و مدارکی که توسط خانواده‌ها
+            و پژوهشگران در اختیار آرشیو قرار می‌گیرد
+        </li>
 
     </ul>
-
-
-    <div class="family-note">
-
-        <strong>
-            تفکیک منابع:
-        </strong>
-
-        اطلاعات تاریخیِ دارای منبع
-        از روایت‌ها و اسناد خانوادگی
-        جدا نگهداری می‌شوند تا در
-        آینده امکان بررسی و مقایسه
-        هر دو دسته وجود داشته باشد.
-
-    </div>
-
 
 </section>
 
 
 <!-- =========================
-     BACK TO INDEX
+     BACK TO MAIN PAGE
 ========================= -->
 
 <a
@@ -1513,4 +1355,418 @@ footer {
 
     مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی
 
-    <
+    <br>
+
+    Digital Archive of Georgian Families
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+var translations = {
+
+
+    fa: {
+
+        pageTitle:
+            "خاندان اوندیلادزه",
+
+        pageSubtitle:
+            "უნდილაძე",
+
+        navHome:
+            "صفحه اصلی",
+
+        navHistory:
+            "تاریخ خاندان",
+
+        navAkhsia:
+            "حضور در آخشیا",
+
+        navGenealogy:
+            "شجره‌نامه",
+
+        navGallery:
+            "گالری",
+
+        navSources:
+            "منابع",
+
+        heroTitle:
+            "خاندان اوندیلادزه",
+
+        heroText:
+            "یکی از خاندان‌های تاریخی گرجی که نام آن با شخصیت‌هایی چون الله‌وردی‌خان و امام‌قلی‌خان اوندیلادزه پیوند خورده است. این صفحه به تاریخ خاندان، تداوم نسل، حضور آنان در آخشیا و میراث خانوادگی اختصاص دارد.",
+
+        info1Title:
+            "نام خاندان",
+
+        info2Title:
+            "شخصیت‌های تاریخی",
+
+        info2Text:
+            "الله‌وردی‌خان اوندیلادزه و امام‌قلی‌خان اوندیلادزه",
+
+        info3Title:
+            "پیوند تاریخی",
+
+        info3Text:
+            "گرجستان، ایران و فریدن",
+
+        info4Title:
+            "آخشیا",
+
+        info4Text:
+            "یکی از نقاط مهم تداوم نسل خاندان در روایت خانوادگی",
+
+        historyTitle:
+            "تاریخ خاندان اوندیلادزه",
+
+        akhsiaTitle:
+            "حضور خاندان اوندیلادزه در آخشیا",
+
+        timelineTitle:
+            "خط زمانی خاندان",
+
+        genealogyTitle:
+            "شجره‌نامه خاندان اوندیلادزه",
+
+        gatheringTitle:
+            "گردهمایی خاندان اوندیلادزه",
+
+        gatheringText:
+            "این بخش برای ثبت گردهمایی‌های خاندان اوندیلادزه در آخشیا و دیگر نقاط، معرفی نسل‌های امروز خاندان و ثبت خاطرات و تصاویر این گردهمایی‌ها در نظر گرفته شده است.",
+
+        galleryTitle:
+            "گالری تصاویر و اسناد",
+
+        sourcesTitle:
+            "منابع و مستندات",
+
+        backButton:
+            "← بازگشت به صفحه اصلی"
+
+    },
+
+
+    ka: {
+
+        pageTitle:
+            "უნდილაძეების საგვარეულო",
+
+        pageSubtitle:
+            "უნდილაძე",
+
+        navHome:
+            "მთავარი",
+
+        navHistory:
+            "საგვარეულოს ისტორია",
+
+        navAkhsia:
+            "ახსიაში ყოფნის ისტორია",
+
+        navGenealogy:
+            "გენეალოგია",
+
+        navGallery:
+            "გალერეა",
+
+        navSources:
+            "წყაროები",
+
+        heroTitle:
+            "უნდილაძეების საგვარეულო",
+
+        heroText:
+            "ქართული ისტორიული საგვარეულო, რომლის სახელიც დაკავშირებულია ალავერდი-ხან უნდილაძესა და იმამ-ყული-ხან უნდილაძესთან.",
+
+        info1Title:
+            "საგვარეულოს სახელი",
+
+        info2Title:
+            "ისტორიული პირები",
+
+        info2Text:
+            "ალავერდი-ხან უნდილაძე და იმამ-ყული-ხან უნდილაძე",
+
+        info3Title:
+            "ისტორიული კავშირი",
+
+        info3Text:
+            "საქართველო, ირანი და ფერეიდანი",
+
+        info4Title:
+            "ახსია",
+
+        info4Text:
+            "საგვარეულოს თაობების გაგრძელების მნიშვნელოვანი ადგილი ოჯახური გადმოცემის მიხედვით",
+
+        historyTitle:
+            "უნდილაძეების საგვარეულოს ისტორია",
+
+        akhsiaTitle:
+            "უნდილაძეების ყოფნა ახსიაში",
+
+        timelineTitle:
+            "საგვარეულოს ქრონოლოგია",
+
+        genealogyTitle:
+            "უნდილაძეების გენეალოგია",
+
+        gatheringTitle:
+            "უნდილაძეების შეკრებები",
+
+        gatheringText:
+            "ეს ნაწილი განკუთვნილია ახსიაში და სხვა ადგილებში უნდილაძეების საგვარეულო შეკრებების, ოჯახების, მოგონებებისა და ფოტოების დასაფიქსირებლად.",
+
+        galleryTitle:
+            "ფოტოებისა და დოკუმენტების გალერეა",
+
+        sourcesTitle:
+            "წყაროები და დოკუმენტები",
+
+        backButton:
+            "← მთავარ გვერდზე დაბრუნება"
+
+    },
+
+
+    en: {
+
+        pageTitle:
+            "Undiladze Family",
+
+        pageSubtitle:
+            "უნდილაძე",
+
+        navHome:
+            "Home",
+
+        navHistory:
+            "Family History",
+
+        navAkhsia:
+            "Presence in Akhsia",
+
+        navGenealogy:
+            "Genealogy",
+
+        navGallery:
+            "Gallery",
+
+        navSources:
+            "Sources",
+
+        heroTitle:
+            "The Undiladze Family",
+
+        heroText:
+            "A historic Georgian family associated with important figures such as Allahverdi Khan Undiladze and Imam Qoli Khan Undiladze.",
+
+        info1Title:
+            "Family Name",
+
+        info2Title:
+            "Historical Figures",
+
+        info2Text:
+            "Allahverdi Khan Undiladze and Imam Qoli Khan Undiladze",
+
+        info3Title:
+            "Historical Connection",
+
+        info3Text:
+            "Georgia, Iran and Fereydan",
+
+        info4Title:
+            "Akhsia",
+
+        info4Text:
+            "An important place in the continuation of the family according to family tradition",
+
+        historyTitle:
+            "History of the Undiladze Family",
+
+        akhsiaTitle:
+            "The Undiladze Family in Akhsia",
+
+        timelineTitle:
+            "Family Timeline",
+
+        genealogyTitle:
+            "Undiladze Family Genealogy",
+
+        gatheringTitle:
+            "Undiladze Family Gatherings",
+
+        gatheringText:
+            "This section is reserved for documenting Undiladze family gatherings, present-day family branches, memories and photographs.",
+
+        galleryTitle:
+            "Gallery of Images and Documents",
+
+        sourcesTitle:
+            "Sources and Documentation",
+
+        backButton:
+            "← Back to Main Page"
+
+    }
+
+};
+
+
+/* =========================
+   CHANGE LANGUAGE
+========================= */
+
+function changeLanguage(language) {
+
+    var t = translations[language];
+
+    if (!t) {
+        return;
+    }
+
+
+    document.documentElement.lang =
+        language;
+
+
+    document.documentElement.dir =
+        language === "fa"
+        ? "rtl"
+        : "ltr";
+
+
+    document.getElementById("pageTitle").innerText =
+        t.pageTitle;
+
+
+    document.getElementById("pageSubtitle").innerText =
+        t.pageSubtitle;
+
+
+    document.getElementById("navHome").innerText =
+        t.navHome;
+
+
+    document.getElementById("navHistory").innerText =
+        t.navHistory;
+
+
+    document.getElementById("navAkhsia").innerText =
+        t.navAkhsia;
+
+
+    document.getElementById("navGenealogy").innerText =
+        t.navGenealogy;
+
+
+    document.getElementById("navGallery").innerText =
+        t.navGallery;
+
+
+    document.getElementById("navSources").innerText =
+        t.navSources;
+
+
+    document.getElementById("heroTitle").innerText =
+        t.heroTitle;
+
+
+    document.getElementById("heroText").innerText =
+        t.heroText;
+
+
+    document.getElementById("info1Title").innerText =
+        t.info1Title;
+
+
+    document.getElementById("info2Title").innerText =
+        t.info2Title;
+
+
+    document.getElementById("info2Text").innerText =
+        t.info2Text;
+
+
+    document.getElementById("info3Title").innerText =
+        t.info3Title;
+
+
+    document.getElementById("info3Text").innerText =
+        t.info3Text;
+
+
+    document.getElementById("info4Title").innerText =
+        t.info4Title;
+
+
+    document.getElementById("info4Text").innerText =
+        t.info4Text;
+
+
+    document.getElementById("historyTitle").innerText =
+        t.historyTitle;
+
+
+    document.getElementById("akhsiaTitle").innerText =
+        t.akhsiaTitle;
+
+
+    document.getElementById("timelineTitle").innerText =
+        t.timelineTitle;
+
+
+    document.getElementById("genealogyTitle").innerText =
+        t.genealogyTitle;
+
+
+    document.getElementById("gatheringTitle").innerText =
+        t.gatheringTitle;
+
+
+    document.getElementById("gatheringText").innerText =
+        t.gatheringText;
+
+
+    document.getElementById("galleryTitle").innerText =
+        t.galleryTitle;
+
+
+    document.getElementById("sourcesTitle").innerText =
+        t.sourcesTitle;
+
+
+    document.getElementById("backButton").innerText =
+        t.backButton;
+
+}
+
+
+/* =========================
+   DEFAULT LANGUAGE
+========================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+        changeLanguage("fa");
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
