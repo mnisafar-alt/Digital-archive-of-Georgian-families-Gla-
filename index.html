@@ -1,507 +1,1106 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<meta charset="UTF-8">
 
-        body {
-            font-family: Tahoma, 'Segoe UI', Arial, sans-serif;
-            background-color: #f5f1e8;
-            color: #2c2925;
-            line-height: 1.8;
-        }
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-        header {
-            background: linear-gradient(135deg, #7d1f2b, #3f1820);
-            color: #ffffff;
-            padding: 35px 20px;
-            text-align: center;
-        }
+<title>
+مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی
+</title>
 
-        header h1 {
-            font-size: 26px;
-            margin-bottom: 8px;
-        }
+<meta name="description"
+content="مرجع دیجیتال تاریخ، هویت، تبارشناسی و اسناد خاندان‌های گرجی">
 
-        header p {
-            font-size: 15px;
-            opacity: 0.9;
-        }
+<style>
 
-        nav {
-            background-color: #292522;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 14px 18px;
-            font-size: 14px;
-            transition: background-color 0.2s;
-        }
+body {
+    font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+    background-color: #f5f1e8;
+    color: #2c2925;
+    line-height: 1.8;
+}
 
-        nav a:hover {
-            background-color: #7d1f2b;
-        }
 
-        .hero {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 40px 20px;
-            text-align: center;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-        }
+/* =========================
+   HEADER
+========================= */
 
-        .hero h2 {
-            color: #7d1f2b;
-            font-size: 24px;
-            margin-bottom: 12px;
-        }
+header {
+    background: linear-gradient(
+        135deg,
+        #172b4d,
+        #263f60
+    );
 
-        .hero p {
-            max-width: 750px;
-            margin: 0 auto;
-            color: #555555;
-            font-size: 15px;
-        }
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
 
-        .lang-switch {
-            margin-top: 20px;
-        }
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
 
-        .lang-btn {
-            background-color: #7d1f2b;
-            color: #ffffff;
-            border: none;
-            padding: 6px 16px;
-            margin: 0 4px;
-            border-radius: 20px;
-            font-size: 13px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
+header p {
+    font-size: 15px;
+    opacity: .9;
+}
 
-        .lang-btn:hover {
-            background-color: #292522;
-        }
 
-        .search-container {
-            margin-top: 25px;
-            display: flex;
-            justify-content: center;
-        }
+/* =========================
+   NAVIGATION
+========================= */
 
-        .search-container input {
-            width: 100%;
-            max-width: 450px;
-            padding: 10px 18px;
-            border: 2px solid #dddddd;
-            border-radius: 25px;
-            font-size: 14px;
-            font-family: inherit;
-            outline: none;
-        }
+nav {
+    background-color: #292522;
 
-        .search-container input:focus {
-            border-color: #7d1f2b;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        .section {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+    flex-wrap: wrap;
 
-        .section h2 {
-            text-align: center;
-            color: #7d1f2b;
-            margin-bottom: 25px;
-            font-size: 22px;
-        }
+    position: sticky;
+    top: 0;
 
-        .grid-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-        }
+    z-index: 1000;
+}
 
-        .card {
-            background-color: #ffffff;
-            padding: 22px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            text-align: center;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
 
-        .card .icon {
-            font-size: 32px;
-            margin-bottom: 8px;
-        }
+    padding: 13px 18px;
 
-        .card h3 {
-            color: #7d1f2b;
-            margin-bottom: 8px;
-            font-size: 18px;
-        }
+    font-size: 14px;
 
-        .card p {
-            color: #666666;
-            font-size: 13px;
-        }
+    transition: .2s;
+}
 
-        /* کارت‌های فهرست خاندان‌ها */
-        .family-card {
-            text-align: right;
-            border-top: 4px solid #7d1f2b;
-        }
+nav a:hover {
+    background-color: #7d1f2b;
+}
 
-        .family-card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
 
-        .badge {
-            font-size: 11px;
-            padding: 3px 8px;
-            border-radius: 10px;
-        }
+/* =========================
+   HERO
+========================= */
 
-        .badge-free {
-            background-color: #e8f5e9;
-            color: #2e7d32;
-        }
+.hero {
 
-        .badge-pro {
-            background-color: #fbe9e7;
-            color: #c62828;
-        }
+    max-width: 1100px;
 
-        .action-btn {
-            display: block;
-            width: 100%;
-            background-color: #7d1f2b;
-            color: #ffffff;
-            border: none;
-            padding: 10px 0;
-            border-radius: 6px;
-            margin-top: 15px;
-            cursor: pointer;
-            font-family: inherit;
-            font-size: 13px;
-        }
+    margin: 30px auto;
 
-        .action-btn:hover {
-            background-color: #5a141d;
-        }
+    padding: 55px 20px;
 
-        .action-btn-pro {
-            background-color: #424242;
-        }
+    text-align: center;
 
-        .action-btn-pro:hover {
-            background-color: #212121;
-        }
+    background:
+        linear-gradient(
+            135deg,
+            #172b4d,
+            #263f60
+        );
 
-        .about-box {
-            background-color: #e9dfcf;
-            padding: 45px 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
+    color: white;
 
-        .about-box h2 {
-            color: #7d1f2b;
-            margin-bottom: 12px;
-        }
+    border-radius: 18px;
 
-        .about-box p {
-            max-width: 800px;
-            margin: 0 auto;
-            color: #444444;
-            font-size: 14px;
-        }
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.08);
+}
 
-        footer {
-            background-color: #292522;
-            color: #cccccc;
-            text-align: center;
-            padding: 25px 15px;
-            font-size: 13px;
-        }
+.hero h2 {
 
-        /* پنجره پاپ‌آپ (Modal) */
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            z-index: 200;
-            justify-content: center;
-            align-items: center;
-        }
+    color: #d8bd7a;
 
-        .modal-window {
-            background-color: #ffffff;
-            padding: 25px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 480px;
-            max-height: 90vh;
-            overflow-y: auto;
-            text-align: right;
-        }
+    font-size: 30px;
 
-        .modal-window h3 {
-            color: #7d1f2b;
-            margin-bottom: 15px;
-        }
+    margin-bottom: 15px;
+}
 
-        .modal-window label {
-            display: block;
-            font-size: 13px;
-            margin-top: 10px;
-            font-weight: bold;
-        }
+.hero p {
 
-        .modal-window input, .modal-window textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 4px;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-            font-family: inherit;
-            font-size: 13px;
-        }
+    max-width: 800px;
 
-        .modal-btn-group {
-            margin-top: 15px;
-            display: flex;
-            gap: 10px;
-        }
-    </style>
+    margin: auto;
+
+    font-size: 16px;
+
+    color: #f4f4f4;
+}
+
+
+/* =========================
+   LANGUAGE
+========================= */
+
+.lang-switch {
+
+    margin-top: 25px;
+}
+
+.lang-btn {
+
+    background-color: #b18a45;
+
+    color: white;
+
+    border: none;
+
+    padding: 7px 17px;
+
+    margin: 3px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.lang-btn:hover {
+
+    background-color: #7d1f2b;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-container {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.search-container input {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 12px 18px;
+
+    border:
+        2px solid #ddd;
+
+    border-radius: 25px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.search-container input:focus {
+
+    border-color: #b18a45;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    padding: 0 20px;
+}
+
+.section > h2 {
+
+    text-align: center;
+
+    color: #172b4d;
+
+    margin-bottom: 25px;
+
+    font-size: 24px;
+}
+
+
+/* =========================
+   FEATURE CARDS
+========================= */
+
+.grid-cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(240px, 1fr)
+        );
+
+    gap: 20px;
+}
+
+.card {
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 12px rgba(0,0,0,.06);
+
+    text-align: center;
+}
+
+.card .icon {
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+.card h3 {
+
+    color: #172b4d;
+
+    margin-bottom: 8px;
+
+    font-size: 18px;
+}
+
+.card p {
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FAMILY CARDS
+========================= */
+
+.family-card {
+
+    text-align: right;
+
+    border-top:
+        4px solid #b18a45;
+}
+
+.family-card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+}
+
+.family-card-header h3 {
+
+    color: #172b4d;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   BADGES
+========================= */
+
+.badge {
+
+    font-size: 11px;
+
+    padding: 3px 8px;
+border-radius: 10px;
+
+    white-space: nowrap;
+}
+
+.badge-free {
+
+    background-color: #e8f5e9;
+
+    color: #2e7d32;
+}
+
+.badge-pro {
+
+    background-color: #fbe9e7;
+
+    color: #c62828;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.action-btn {
+
+    display: block;
+
+    width: 100%;
+
+    background-color: #172b4d;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 0;
+
+    border-radius: 7px;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    transition: .2s;
+}
+
+.action-btn:hover {
+
+    background-color: #7d1f2b;
+}
+
+.action-btn-pro {
+
+    background-color: #5b4632;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-box {
+
+    background-color: #e9dfcf;
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+.about-box h2 {
+
+    color: #172b4d;
+
+    margin-bottom: 12px;
+}
+
+.about-box p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #444;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background-color: #292522;
+
+    color: #ccc;
+
+    text-align: center;
+
+    padding: 30px 15px;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .hero {
+        margin: 20px 10px;
+        padding: 40px 18px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .section {
+        padding: 0 12px;
+    }
+
+    .grid-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
 </head>
+
+
 <body>
 
-    <!-- بخش بالایی (Header) -->
-    <header>
-        <h1 id="txt-header-title">مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی</h1>
-        <p id="txt-header-sub">ثبت، حفظ و بازخوانی میراث تاریخی و خانوادگی گرجیان</p>
-    </header>
 
-    <!-- منوی ناوبری -->
-    <nav>
-        <a href="#hero">خانه</a>
-        <a href="#features">بخش‌های پایگاه</a>
-        <a href="#families">بانک خاندان‌ها</a>
-        <a href="#about">درباره ما</a>
-        <a href="javascript:void(0)" onclick="toggleModal(true)" style="background-color: #7d1f2b;">+ ثبت خاندان شما</a>
-    </nav>
+<!-- =========================
+     HEADER
+========================= -->
 
-    <!-- بخش معرفی و جستجو -->
-    <div class="hero" id="hero">
-        <h2 id="txt-hero-title">میراثی که از گذشته به آینده می‌رسد</h2>
-        <p id="txt-hero-desc">
-            این پایگاه با هدف گردآوری، تدوین و نگهداری اطلاعات تاریخی، تبارشناسی و فرهنگی خاندان‌های گرجی طراحی شده است تا به عنوان یک مرجع معتبر برای نسل‌های حاضر و آینده باقی بماند.
-        </p>
+<header>
 
-        <!-- گزینه‌های زبان -->
-        <div class="lang-switch">
-            <button class="lang-btn" onclick="applyLanguage('fa')">فارسی</button>
-            <button class="lang-btn" onclick="applyLanguage('ka')">ქართული</button>
-            <button class="lang-btn" onclick="applyLanguage('en')">English</button>
-        </div>
+    <h1 id="headerTitle">
+        مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی
+    </h1>
 
-        <!-- باکس جستجوی زنده -->
-        <div class="search-container">
-            <input type="text" id="filterInput" placeholder="جستجو بر اساس نام خاندان، منطقه یا نام گرجی..." onkeyup="executeSearch()">
-        </div>
+    <p id="headerSub">
+        ثبت، حفظ و بازخوانی میراث تاریخی و خانوادگی گرجیان
+    </p>
+
+</header>
+
+
+<!-- =========================
+     MAIN NAVIGATION
+========================= -->
+
+<nav>
+
+    <a href="#home">
+        خانه
+    </a>
+
+    <a href="#features">
+        بخش‌های پایگاه
+    </a>
+
+    <a href="#families">
+        بانک خاندان‌ها
+    </a>
+
+    <a href="#about">
+        درباره ما
+    </a>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section
+    class="hero"
+    id="home">
+
+    <h2 id="heroTitle">
+        میراثی که از گذشته به آینده می‌رسد
+    </h2>
+
+    <p id="heroText">
+
+        این پایگاه با هدف گردآوری،
+        تدوین و نگهداری اطلاعات تاریخی،
+        تبارشناسی و فرهنگی خاندان‌های گرجی
+        ایجاد شده است تا حافظه تاریخی،
+        نام خاندان‌ها، شجره‌نامه‌ها و اسناد
+        برای نسل‌های آینده حفظ شود.
+
+    </p>
+
+
+    <!-- LANGUAGE -->
+
+    <div class="lang-switch">
+
+        <button
+            class="lang-btn"
+            onclick="changeLanguage('fa')">
+
+            فارسی
+
+        </button>
+
+        <button
+            class="lang-btn"
+            onclick="changeLanguage('ka')">
+
+            ქართული
+
+        </button>
+
+        <button
+            class="lang-btn"
+            onclick="changeLanguage('en')">
+
+            English
+
+        </button>
+
     </div>
 
-    <!-- ویژگی‌ها و امکانات سایت -->
-    <div class="section" id="features">
-        <h2>بخش‌های اصلی پایگاه</h2>
-        <div class="grid-cards">
-            <div class="card">
-                <div class="icon">📜</div>
-                <h3>تاریخ و روایت‌ها</h3>
-                <p>پژوهش‌ها، مقالات و اسناد مستند درباره تاریخ حضور و نقش‌آفرینی گرجیان.</p>
-            </div>
-            <div class="card">
-                <div class="icon">👨‍👩‍👧‍👦</div>
-                <h3>بانک اطلاعات خاندان‌ها</h3>
-                <p>معرفی شاخه‌های تبارشناسی، نام‌های کهن و مناطق استقرار خانواده‌ها.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🌳</div>
-                <h3>شجره‌نامه‌ها</h3>
-                <p>ساختار ثبت سلسله‌انساب و پیوند نسل‌ها بر پایه اسناد معتبر تاریخی.</p>
-            </div>
-            <div class="card">
-                <div class="icon">📚</div>
-                <h3>اسناد و آرشیو</h3>
-                <p>گردآوری تصاویر کهن، وقف‌نامه‌ها، احکام تاریخی و دست‌نوشته‌ها.</p>
-            </div>
-        </div>
+
+    <!-- SEARCH -->
+
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="filterInput"
+            placeholder="جستجو در نام خاندان‌ها..."
+            onkeyup="executeSearch()">
+
     </div>
 
-    <!-- بانک اطلاعات خاندان‌ها -->
-    <div class="section" id="families">
-        <h2>فهرست خاندان‌های ثبت‌شده</h2>
-        <div class="grid-cards" id="cardsWrapper">
+</section>
 
-            <!-- نمونه ۱: عمومی -->
-            <div class="card family-card" data-keywords="باراتاشویلی baratashvili فریدونشهر اصفهان گرجستان کارتلی">
-                <div class="family-card-header">
-                    <h3>باراتاشویلی (ბარათაშვილი)</h3>
-                    <span class="badge badge-free">عمومی</span>
-                </div>
-                <p><strong>خاستگاه:</strong> کارتلی سفلی (گرجستان)</p>
-                <p><strong>حوزه‌های سکونت:</strong> فریدون‌شهر، اصفهان، تفلیس</p>
-                <p style="margin-top: 6px;">شاخه‌های مهاجر دوره صفوی دارای شجره‌نامه مدون محلی.</p>
-                <button class="action-btn" onclick="alert('شجره‌نامه باز شد.')">مشاهده شجره‌نامه</button>
+
+<!-- =========================
+     FEATURES
+========================= -->
+
+<section
+    class="section"
+    id="features">
+
+    <h2>
+        بخش‌های اصلی پایگاه
+    </h2>
+
+
+    <div class="grid-cards">
+
+
+        <div class="card">
+
+            <div class="icon">
+                📜
             </div>
 
-            <!-- نمونه ۲: ویژه (پولی/اشتراکی) -->
-            <div class="card family-card" data-keywords="اونیکاشویلی unikashvili بهشهر مازندران شیراز کاختی">
-                <div class="family-card-header">
-                    <h3>اونیکاشویلی (უნიკაშვილი)</h3>
-                    <span class="badge badge-pro">🔒 اشتراک ویژه</span>
-                </div>
-                <p><strong>خاستگاه:</strong> استان کاختی</p>
-                <p><strong>حوزه‌های سکونت:</strong> بهشهر (مازندران)، گیلان، شیراز</p>
-                <p style="margin-top: 6px;">شامل ۷ نسل مستند و تصاویر اسناد تاریخی و وقفیات کهن.</p>
-                <button class="action-btn action-btn-pro" onclick="alert('برای دسترسی به اسناد ویژه، تهیه اشتراک مرجع الزامی است.')">مشاهده اسناد ویژه</button>
-            </div>
+            <h3>
+                تاریخ و روایت‌ها
+            </h3>
 
-            <!-- نمونه ۳: عمومی -->
-            <div class="card family-card" data-keywords="گوگوشویلی تاروردیان gogoshvili اصفهان فریدن">
-                <div class="family-card-header">
-                    <h3>گوگوشویلی (გოგოშვილი)</h3>
-                    <span class="badge badge-free">عمومی</span>
-                </div>
-                <p><strong>خاستگاه:</strong> شرق گرجستان</p>
-                <p><strong>حوزه‌های سکونت:</strong> فریدن، نجف‌آباد، تهران</p>
-                <p style="margin-top: 6px;">مستند بر پایه اسناد مالیاتی و کتیبه‌های تاریخی دوره قاجار.</p>
-                <button class="action-btn" onclick="alert('شجره‌نامه باز شد.')">مشاهده شجره‌نامه</button>
-            </div>
+            <p>
+                پژوهش‌ها، مقالات و روایت‌های
+                تاریخی درباره گرجیان.
+            </p>
 
         </div>
-    </div>
 
-    <!-- درباره ما -->
-    <div class="about-box" id="about">
-        <h2>درباره این پروژه</h2>
-        <p>
-            هدف این پروژه ایجاد یک مرجع دیجیتال برای ثبت و نگهداری حافظه تاریخی خاندان‌های گرجی و ممانعت از فراموشی نام‌ها، اسناد و ارتباطات خانوادگی است. این پایگاه با مشارکت پژوهشگران و خانواده‌ها تکمیل و به‌روزرسانی می‌شود.
-        </p>
-    </div>
 
-    <!-- پاورقی -->
-    <footer>
-        © 2026 مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی | تمامی حقوق محفوظ است.
-    </footer>
+        <div class="card">
+<div class="icon">
+                👨‍👩‍👧‍👦
+            </div>
 
-    <!-- پنجره پاپ‌آپ فرم ارسال اطلاعات -->
-    <div class="modal-overlay" id="entryModal">
-        <div class="modal-window">
-            <h3>فرم ثبت مشخصات خاندان</h3>
-            <form onsubmit="handleForm(event)">
-                <label for="fName">نام خاندان (فارسی / გურჯული):</label>
-                <input type="text" id="fName" required placeholder="مثال: باراتاشویلی">
+            <h3>
+                بانک اطلاعات خاندان‌ها
+            </h3>
 
-                <label for="fLocation">مناطق سکونت (تاریخی و فعلی):</label>
-                <input type="text" id="fLocation" required placeholder="مثال: اصفهان، فریدون‌شهر، تهران...">
+            <p>
+                معرفی خاندان‌ها،
+                شاخه‌های تبارشناسی و
+                مناطق استقرار.
+            </p>
 
-                <label for="fContact">نام رابط و مشخصات تماس:</label>
-                <input type="text" id="fContact" required placeholder="شماره تماس یا ایمیل">
-
-                <label for="fDetails">خلاصه تبارنامه یا توضیحات تاریخی:</label>
-                <textarea id="fDetails" rows="4" placeholder="نام اجداد، روایات کهن، اسناد موجود..."></textarea>
-
-                <div class="modal-btn-group">
-                    <button type="submit" class="action-btn">ارسال اطلاعات</button>
-                    <button type="button" class="action-btn" style="background-color: #888888;" onclick="toggleModal(false)">انصراف</button>
-                </div>
-            </form>
         </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                🌳
+            </div>
+
+            <h3>
+                شجره‌نامه‌ها
+            </h3>
+
+            <p>
+                ثبت سلسله‌انساب و
+                ارتباط نسل‌ها بر اساس
+                اسناد و منابع.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                📚
+            </div>
+
+            <h3>
+                اسناد و آرشیو
+            </h3>
+
+            <p>
+                نگهداری تصاویر اسناد،
+                دست‌نوشته‌ها و مدارک تاریخی.
+            </p>
+
+        </div>
+
+
     </div>
 
-    <!-- کدهای جاوااسکریپت -->
-    <script>
-        // فیلتر زنده جستجو
-        function executeSearch() {
-            var query = document.getElementById('filterInput').value.toLowerCase().trim();
-            var cards = document.querySelectorAll('#cardsWrapper .family-card');
+</section>
 
-            cards.forEach(function(card) {
-                var keywords = card.getAttribute('data-keywords').toLowerCase();
-                if (keywords.indexOf(query) !== -1) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
+
+<!-- =========================
+     FAMILIES
+========================= -->
+
+<section
+    class="section"
+    id="families">
+
+    <h2>
+        فهرست خاندان‌های ثبت‌شده
+    </h2>
+
+
+    <div
+        class="grid-cards"
+        id="cardsWrapper">
+
+
+        <!-- =====================
+             BARATASHVILI
+        ====================== -->
+
+        <div
+            class="card family-card"
+            data-keywords="
+                باراتاشویلی
+                baratashvili
+                ბარათაშვილი
+                گرجستان
+            ">
+
+            <div class="family-card-header">
+
+                <h3>
+                    باراتاشویلی
+                    (ბარათაშვილი)
+                </h3>
+
+                <span class="badge badge-free">
+                    عمومی
+                </span>
+
+            </div>
+
+            <p>
+                پرونده تاریخی و تبارشناسی
+                خاندان باراتاشویلی.
+            </p>
+
+            <a
+                href="Families/baratashvili.html"
+                class="action-btn">
+
+                ورود به پرونده خاندان
+
+            </a>
+
+        </div>
+
+
+        <!-- =====================
+             UNIKASHVILI
+        ====================== -->
+
+        <div
+            class="card family-card"
+            data-keywords="
+                اونیکاشویلی
+                unikashvili
+                უნიკაშვილი
+                گرجستان
+            ">
+
+            <div class="family-card-header">
+
+                <h3>
+                    اونیکاشویلی
+                    (უნიკაშვილი)
+                </h3>
+
+                <span class="badge badge-pro">
+                    ویژه
+                </span>
+
+            </div>
+
+            <p>
+                پرونده تاریخی و تبارشناسی
+                خاندان اونیکاشویلی.
+            </p>
+
+            <a
+                href="Families/unikashvili.html"
+                class="action-btn action-btn-pro">
+
+                ورود به پرونده خاندان
+
+            </a>
+
+        </div>
+
+
+        <!-- =====================
+             GOGONASHVILI
+        ====================== -->
+
+        <div
+            class="card family-card"
+            data-keywords="
+                گوگوشویلی
+                gogonashvili
+                გოგოშვილი
+                گرجستان
+            ">
+
+            <div class="family-card-header">
+
+                <h3>
+                    گوگوشویلی
+                    (გოგოშვილი)
+                </h3>
+
+                <span class="badge badge-free">
+                    عمومی
+                </span>
+
+            </div>
+
+            <p>
+                پرونده تاریخی و تبارشناسی
+                خاندان گوگوشویلی.
+            </p>
+
+            <a
+                href="Families/gogonashvili.html"
+                class="action-btn">
+
+                ورود به پرونده خاندان
+
+            </a>
+
+        </div>
+
+
+        <!-- =====================
+             UNDILADZE
+        ====================== -->
+<div
+            class="card family-card"
+            data-keywords="
+                اوندیلادزه
+                Undiladze
+                უნდილაძე
+                الله‌وردی‌خان
+                امام‌قلی‌خان
+                گرجستان
+            ">
+
+            <div class="family-card-header">
+
+                <h3>
+                    اوندیلادزه
+                    (უნდილაძე)
+                </h3>
+
+                <span class="badge badge-free">
+                    عمومی
+                </span>
+
+            </div>
+
+            <p>
+                پرونده خاندان اوندیلادزه،
+                الله‌وردی‌خان،
+                امام‌قلی‌خان و نسل‌های بعدی.
+            </p>
+
+            <a
+                href="Families/Undiladze.html"
+                class="action-btn">
+
+                ورود به پرونده خاندان
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section
+    class="about-box"
+    id="about">
+
+    <h2>
+        درباره این پروژه
+    </h2>
+
+    <p>
+
+        هدف این پروژه ایجاد یک مرجع دیجیتال
+        برای ثبت و نگهداری حافظه تاریخی
+        خاندان‌های گرجی است.
+
+        این پایگاه به مرور زمان با همکاری
+        خانواده‌ها، پژوهشگران و صاحبان اسناد
+        توسعه خواهد یافت.
+
+    </p>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2026
+
+    مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی
+
+    <br>
+
+    Digital Archive of Georgian Families
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+/* =========================
+   SEARCH
+========================= */
+
+function executeSearch() {
+
+    var query =
+        document
+        .getElementById("filterInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+
+    var cards =
+        document.querySelectorAll(
+            "#cardsWrapper .family-card"
+        );
+
+
+    cards.forEach(function(card) {
+
+        var keywords =
+            card
+            .getAttribute("data-keywords")
+            .toLowerCase();
+
+
+        if (
+            query === "" ||
+            keywords.indexOf(query) !== -1
+        ) {
+
+            card.style.display = "block";
+
         }
 
-        // باز و بسته کردن پنجره فرم
-        function toggleModal(show) {
-            var modal = document.getElementById('entryModal');
-            modal.style.display = show ? 'flex' : 'none';
+        else {
+
+            card.style.display = "none";
+
         }
 
-        // مدیریت ارسال فرم
-        function handleForm(e) {
-            e.preventDefault();
-            alert('اطلاعات با موفقیت ثبت شد و پس از اعتبارسنجی اسناد، به بانک اضافه خواهد شد.');
-            toggleModal(false);
-            e.target.reset();
-        }
+    });
 
-        // تغییر زبان
-        function applyLanguage(lang) {
-            var headerTitle = document.getElementById('txt-header-title');
-            var headerSub = document.getElementById('txt-header-sub');
-            var heroTitle = document.getElementById('txt-hero-title');
-            var heroDesc = document.getElementById('txt-hero-desc');
+}
 
-            if (lang === 'ka') {
-                headerTitle.innerText = 'ქართული საგვარეულოების ციფრული არქივი';
-                headerSub.innerText = 'ქართული ისტორიული და საგვარეულო მემკვიდრეობის შენარჩუნება';
-                heroTitle.innerText = 'მემკვიდრეობა, რომელიც წარსულიდან მომავალში გადადის';
-                heroDesc.innerText = 'ეს პლატფორმა შექმნილია ქართული გვარების ისტორიული და გენეალოგიური მონაცემების შესანარჩუნებლად.';
-            } else if (lang === 'en') {
-                headerTitle.innerText = 'Digital Archive of Georgian Families';
-                headerSub.innerText = 'Preserving the Historical and Genealogical Heritage';
-                heroTitle.innerText = 'Heritage Passed from the Past to the Future';
-                heroDesc.innerText = 'A digital repository dedicated to preserving the genealogical records and history of Georgian families.';
-            } else {
-                headerTitle.innerText = 'مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی';
-                headerSub.innerText = 'ثبت، حفظ و بازخوانی میراث تاریخی و خانوادگی گرجیان';
-                heroTitle.innerText = 'میراثی که از گذشته به آینده می‌رسد';
-                heroDesc.innerText = 'این پایگاه با هدف گردآوری، تدوین و نگهداری اطلاعات تاریخی، تبارشناسی و فرهنگی خاندان‌های گرجی طراحی شده است تا به عنوان یک مرجع معتبر برای نسل‌های حاضر و آینده باقی بماند.';
-            }
-        }
-   <script src="js/app.js"></script>
+
+/* =========================
+   LANGUAGE
+========================= */
+
+function changeLanguage(language) {
+
+
+    var headerTitle =
+        document.getElementById(
+            "headerTitle"
+        );
+
+    var headerSub =
+        document.getElementById(
+            "headerSub"
+        );
+
+    var heroTitle =
+        document.getElementById(
+            "heroTitle"
+        );
+
+    var heroText =
+        document.getElementById(
+            "heroText"
+        );
+
+
+    if (language === "ka") {
+
+
+        headerTitle.innerText =
+            "ქართული საგვარეულოების ციფრული არქივი";
+
+
+        headerSub.innerText =
+            "ქართული ისტორიული და საგვარეულო მემკვიდრეობის შენარჩუნება";
+
+
+        heroTitle.innerText =
+            "მემკვიდრეობა, რომელიც წარსულიდან მომავალში გადადის";
+
+
+        heroText.innerText =
+            "ეს ციფრული არქივი შექმნილია ქართული საგვარეულოების ისტორიის, გენეალოგიისა და ისტორიული მემკვიდრეობის შესანარჩუნებლად.";
+
+        document.documentElement.lang = "ka";
+
+        document.documentElement.dir = "ltr";
+
+
+    }
+
+    else if (language === "en") {
+
+
+        headerTitle.innerText =
+            "Digital Archive of Georgian Families";
+
+
+        headerSub.innerText =
+            "Preserving Georgian Historical and Genealogical Heritage";
+
+
+        heroTitle.innerText =
+            "Heritage Passed from the Past to the Future";
+
+
+        heroText.innerText =
+            "This digital archive is dedicated to preserving the history, genealogy and cultural heritage of Georgian families.";
+
+        document.documentElement.lang = "en";
+
+        document.documentElement.dir = "ltr";
+
+
+    }
+
+    else {
+
+
+        headerTitle.innerText =
+            "مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی";
+headerSub.innerText =
+            "ثبت، حفظ و بازخوانی میراث تاریخی و خانوادگی گرجیان";
+
+
+        heroTitle.innerText =
+            "میراثی که از گذشته به آینده می‌رسد";
+
+
+        heroText.innerText =
+            "این پایگاه با هدف گردآوری، تدوین و نگهداری اطلاعات تاریخی، تبارشناسی و فرهنگی خاندان‌های گرجی ایجاد شده است تا حافظه تاریخی برای نسل‌های آینده حفظ شود.";
+
+        document.documentElement.lang = "fa";
+
+        document.documentElement.dir = "rtl";
+
+    }
+
+}
+
+
+</script>
+
+
 </body>
+
 </html>
