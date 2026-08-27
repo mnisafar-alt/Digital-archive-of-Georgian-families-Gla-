@@ -1,281 +1,1244 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="pageTitle">شناسنامه خاندان اوندیلادزه (Undiladze)</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <style>
-        :root {
-            --primary-color: #1e3a8a;
-            --secondary-color: #d97706;
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --text-main: #1f2937;
-            --text-muted: #4b5563;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: 'Tahoma', 'Vazirmatn', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
-            line-height: 1.8;
-            transition: all 0.3s ease;
-        }
+<title>خاندان اوندیلادزه | مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی</title>
 
-        header {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            padding: 20px 0;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
+<meta name="description"
+content="پرونده تاریخی و تبارشناسی خاندان اوندیلادزه، روایت سارا و نینا، نجات میرزاقلی و حسینقلی و ادامه نسل در آخشیا و فریدن">
 
-        .header-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
+<style>
 
-        .lang-switch button {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: #ffffff;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            padding: 6px 14px;
-            margin: 0 3px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: bold;
-            transition: all 0.2s ease;
-        }
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
 
-        .lang-switch button:hover, .lang-switch button.active {
-            background-color: var(--secondary-color);
-            border-color: var(--secondary-color);
-        }
+body{
+    font-family:Tahoma,"Segoe UI",Arial,sans-serif;
+    background:#f5f1e8;
+    color:#2c2925;
+    line-height:1.95;
+}
 
-        .back-link {
-            display: inline-block;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: bold;
-            margin-bottom: 20px;
-            background: #e2e8f0;
-            padding: 8px 16px;
-            border-radius: 6px;
-            transition: background 0.2s;
-        }
+header{
+    background:linear-gradient(135deg,#172b4d,#263f60);
+    color:white;
+    text-align:center;
+    padding:45px 20px;
+}
 
-        .back-link:hover {
-            background: #cbd5e1;
-        }
+header h1{
+    font-size:32px;
+    margin-bottom:8px;
+}
 
-        .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
+header p{
+    color:#d8bd7a;
+    font-size:18px;
+}
 
-        .card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-        }
+nav{
+    background:#292522;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
 
-        .card h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 10px;
-            margin-top: 0;
-            font-size: 1.4rem;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:12px 17px;
+    font-size:14px;
+}
 
-        .highlight-box {
-            background-color: #fffbeb;
-            border-right: 4px solid var(--secondary-color);
-            padding: 15px 20px;
-            border-radius: 6px;
-            margin: 20px 0;
-            font-style: italic;
-        }
+nav a:hover{
+    background:#7d1f2b;
+}
 
-        [dir="ltr"] .highlight-box {
-            border-right: none;
-            border-left: 4px solid var(--secondary-color);
-        }
+.container{
+    max-width:1100px;
+    margin:30px auto;
+    padding:0 20px;
+}
 
-        .genealogy-wrapper {
-            text-align: center;
-            margin-top: 20px;
-        }
+.hero{
+    background:white;
+    border-radius:18px;
+    padding:42px 25px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    border-top:5px solid #b18a45;
+}
 
-        .genealogy-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            border: 1px solid #cbd5e1;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
+.hero h2{
+    color:#172b4d;
+    font-size:29px;
+    margin-bottom:8px;
+}
 
-        .genealogy-image:hover {
-            transform: scale(1.01);
-        }
+.georgian-name{
+    color:#7d1f2b;
+    font-size:25px;
+    margin-bottom:18px;
+}
 
-        .image-hint {
-            font-size: 13px;
-            color: var(--text-muted);
-            margin-top: 10px;
-        }
+.hero p{
+    max-width:900px;
+    margin:auto;
+    color:#555;
+}
 
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #0f172a;
-            color: #94a3b8;
-            font-size: 14px;
-            margin-top: 50px;
-        }
-    </style>
+.languages{
+    margin-top:25px;
+}
+
+.lang-btn{
+    border:none;
+    background:#b18a45;
+    color:white;
+    padding:8px 17px;
+    margin:3px;
+    border-radius:20px;
+    cursor:pointer;
+    font-family:inherit;
+}
+
+.lang-btn:hover{
+    background:#7d1f2b;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+    margin-top:30px;
+}
+
+.info-card{
+    background:white;
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,.06);
+}
+
+.info-card h3{
+    color:#172b4d;
+    margin-bottom:8px;
+}
+
+.section{
+    background:white;
+    margin-top:25px;
+    padding:32px 25px;
+    border-radius:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+}
+
+.section h2{
+    color:#172b4d;
+    border-bottom:2px solid #d8bd7a;
+    padding-bottom:8px;
+    margin-bottom:20px;
+}
+
+.section p{
+    color:#444;
+    font-size:15px;
+    margin-bottom:14px;
+}
+
+.story{
+    background:#faf5e9;
+    border-right:5px solid #b18a45;
+    padding:25px;
+    border-radius:10px;
+}
+
+.story strong{
+    color:#7d1f2b;
+}
+
+.people{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:18px;
+}
+
+.person{
+    background:#f5f1e8;
+    padding:20px;
+    border-radius:10px;
+}
+
+.person h3{
+    color:#172b4d;
+    margin-bottom:7px;
+}
+
+.timeline{
+    border-right:3px solid #b18a45;
+    padding-right:22px;
+}
+
+.timeline-item{
+    margin-bottom:25px;
+}
+
+.timeline-item h3{
+    color:#7d1f2b;
+    margin-bottom:5px;
+}
+
+.genealogy-box{
+    background:#f8f3e9;
+    border:1px solid #d8bd7a;
+    padding:28px;
+    border-radius:12px;
+}
+
+.generation{
+    margin:12px 0;
+    font-weight:bold;
+    color:#172b4d;
+    text-align:center;
+}
+
+.arrow{
+    text-align:center;
+    color:#7d1f2b;
+    font-size:22px;
+}
+
+/* شجره نامه تصویری */
+
+.genealogy-image-box{
+    text-align:center;
+    margin-top:25px;
+    padding:10px;
+}
+
+.genealogy-image-box a{
+    display:inline-block;
+    text-decoration:none;
+}
+
+.genealogy-image{
+    display:block;
+    width:100%;
+    max-width:1100px;
+    height:auto;
+    margin:auto;
+    border-radius:10px;
+    cursor:zoom-in;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.genealogy-image:hover{
+    opacity:.95;
+}
+
+.archive-box{
+    background:#172b4d;
+    color:white;
+    padding:30px;
+    border-radius:14px;
+    text-align:center;
+}
+
+.archive-box h2{
+    color:#d8bd7a;
+    border:none;
+}
+
+.back-button{
+    display:block;
+    max-width:350px;
+    margin:30px auto;
+    text-align:center;
+    background:#172b4d;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+}
+
+.back-button:hover{
+    background:#7d1f2b;
+}
+
+footer{
+    background:#292522;
+    color:#ccc;
+    text-align:center;
+    padding:30px 15px;
+    margin-top:40px;
+    font-size:13px;
+}
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:24px;
+    }
+
+    .hero h2{
+        font-size:23px;
+    }
+
+    nav a{
+        padding:9px 11px;
+        font-size:12px;
+    }
+
+    .container{
+        padding:0 12px;
+    }
+
+    .section{
+        padding:25px 18px;
+    }
+
+    .genealogy-image{
+        max-width:100%;
+    }
+
+}
+
+</style>
 </head>
+
 <body>
 
-    <header>
-        <div class="header-container">
-            <h1 id="headerTitle" style="margin:0; font-size: 1.6rem;">مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی</h1>
-            <div class="lang-switch">
-                <button onclick="setLanguage('fa')" id="btn-fa" class="active">فارسی</button>
-                <button onclick="setLanguage('ka')" id="btn-ka">ქართული</button>
-                <button onclick="setLanguage('en')" id="btn-en">English</button>
-            </div>
-        </div>
-    </header>
+<header>
 
-    <div class="container">
-        <a href="../index.html" class="back-link" id="backLink">← بازگشت به صفحه اصلی</a>
+<h1 id="pageTitle">
+خاندان اوندیلادزه
+</h1>
 
-        <!-- بخش معرفی کلی -->
-        <div class="card">
-            <h2 id="titleOverview">شناسنامه و تاریخچه خاندان اوندیلادزه</h2>
-            <p id="textOverview">
-                خاندان <strong>اوندیلادزه (Undiladze)</strong> یکی از برجسته‌ترین و تأثیرگذارترین خاندان‌های اشرافی گرجی‌تبار در دوران صفویه بودند. اعضای این خاندان نقش کلیدی در امور کشوری، لشکری و توسعه معماری و فرهنگ ایران ایفا نمودند.
-            </p>
-        </div>
+<p id="pageSubtitle">
+უნდილაძე
+</p>
 
-        <!-- بخش تاریخچه و چهره‌های شاخص -->
-        <div class="card">
-            <h2 id="titleHistory">نقش تاریخی و مفاخر خاندان</h2>
-            <p id="textHistory">
-                برجسته‌ترین چهره‌های این خاندان عبارتند از <strong>الله‌وردی خان اوندیلادزه</strong> (فرمانده کل ارتش شاه عباس و بانی پل الله‌وردی‌خان/سی‌وسه‌پل) و فرزندش <strong>امام‌قلی خان اوندیلادزه</strong> (حاکم قدرتمند فارس که پرتغالی‌ها را از خلیج فارس و جزیره هرمز اخراج کرد). خدمات عمرانی، نظامی و دیپلماتیک این خاندان در تاریخ ایران و گرجستان کم‌نظیر است.
-            </p>
-            <div class="highlight-box" id="textRescueStory">
-                <strong>روایت نجات نسل:</strong> در روایات تاریخی آمده است که پس از مغضوب شدن خاندان، تداوم نسل این خاندان به واسطه شجاعت و فداکاری دو زن فداکار، <strong>سارا و نینا</strong>، از مهلکه نجات یافت و پیوند تاریخی خاندان حفظ گردید.
-            </div>
-        </div>
+</header>
 
-        <!-- بخش شجره‌نامه تصویری -->
-        <div class="card">
-            <h2 id="titleGenealogy">شجره‌نامه تاریخی خاندان اوندیلادزه</h2>
-            <p id="textGenealogyIntro">برای مشاهده و بررسی دقیق شاخه‌ها و سلسله انساب، می‌توانید روی تصویر کلیک کنید تا در اندازه اصلی باز شود:</p>
-            
-            <div class="genealogy-wrapper">
-                <a href="../images/undiladzegnealogyjpg.jpg" target="_blank" title="مشاهده تصویر با کیفیت کامل">
-                    <img src="../images/undiladzegnealogyjpg.jpg" 
-                         id="genealogyImg" 
-                         alt="شجره نامه خاندان اوندیلادزه" 
-                         class="genealogy-image">
-                </a>
-                <div class="image-hint" id="textImageHint">جهت بزرگ‌نمایی روی تصویر کلیک نمایید.</div>
-            </div>
-        </div>
-    </div>
+<nav>
 
-    <footer>
-        <span id="footerText">مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی © ۲۰۲۶ - تمامی حقوق محفوظ است.</span>
-    </footer>
+<a href="../index.html" id="navHome">صفحه اصلی</a>
 
-    <!-- منطق جاوااسکریپت برای چندزبانه بودن کامل -->
-    <script>
-        const translations = {
-            fa: {
-                pageTitle: "شناسنامه خاندان اوندیلادزه (Undiladze)",
-                headerTitle: "مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی",
-                backLink: "← بازگشت به صفحه اصلی",
-                titleOverview: "شناسنامه و تاریخچه خاندان اوندیلادزه",
-                textOverview: "خاندان <strong>اوندیلادزه (Undiladze)</strong> یکی از برجسته‌ترین و تأثیرگذارترین خاندان‌های اشرافی گرجی‌تبار در دوران صفویه بودند. اعضای این خاندان نقش کلیدی در امور کشوری، لشکری و توسعه معماری و فرهنگ ایران ایفا نمودند.",
-                titleHistory: "نقش تاریخی و مفاخر خاندان",
-                textHistory: "برجسته‌ترین چهره‌های این خاندان عبارتند از <strong>الله‌وردی خان اوندیلادزه</strong> (فرمانده کل ارتش شاه عباس و بانی پل الله‌وردی‌خان/سی‌وسه‌پل) و فرزندش <strong>امام‌قلی خان اوندیلادزه</strong> (حاکم قدرتمند فارس که پرتغالی‌ها را از خلیج فارس و جزیره هرمز اخراج کرد). خدمات عمرانی، نظامی و دیپلماتیک این خاندان در تاریخ ایران و گرجستان کم‌نظیر است.",
-                textRescueStory: "<strong>روایت نجات نسل:</strong> در روایات تاریخی آمده است که پس of مغضوب شدن خاندان، تداوم نسل این خاندان به واسطه شجاعت و فداکاری دو زن فداکار، <strong>سارا و نینا</strong>، از مهلکه نجات یافت و پیوند تاریخی خاندان حفظ گردید.",
-                titleGenealogy: "شجره‌نامه تاریخی خاندان اوندیلادزه",
-                textGenealogyIntro: "برای مشاهده و بررسی دقیق شاخه‌ها و سلسله انساب، می‌توانید روی تصویر کلیک کنید تا در اندازه اصلی باز شود:",
-                textImageHint: "جهت بزرگ‌نمایی روی تصویر کلیک نمایید.",
-                footerText: "مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی © ۲۰۲۶ - تمامی حقوق محفوظ است."
-            },
-            ka: {
-                pageTitle: "უნდილაძეთა საგვარეულოს ციფრული პასპორტი",
-                headerTitle: "ქართული საგვარეულოების ისტორიისა და იდენტობის ციფრული არქივი",
-                backLink: "მთავარ გვერდზე დაბრუნება →",
-                titleOverview: "უნდილაძეთა საგვარეულოს ისტორია და წარმომავლობა",
-                textOverview: "<strong>უნდილაძეები</strong> წარმოადგენდნენ სეფიანთა ირანში ერთ-ერთ ყველაზე გავლენიან და გამორჩეულ ქართულ წარჩინებულ საგვარეულოს. მათ უდიდესი წვლილი შეიტანეს სახელმწიფოს მართვაში, სამხედრო საქმესა და კულტურულ-არქიტექტურულ განვითარებაში.",
-                titleHistory: "ისტორიული როლი და ცნობილი მოღვაწეები",
-                textHistory: "საგვარეულოს გამორჩეული წარმომადგენლები არიან <strong>ალაჰვერდი-ხან უნდილაძე</strong> (შაჰ-აბასის ჯარების მთავარსარდალი და ცნობილი ხიდის „სი-ო-სე პოლის“ ამგები) და მისი ძე <strong>იმამყული-ხან უნდილაძე</strong> (ფარსის მმართველი, რომელმაც განდევნა პორტუგალიელები ჰორმუზის სრუტიდან).",
-                textRescueStory: "<strong>გადარჩენის ისტორია:</strong> ისტორიული გადმოცემით, ოჯახის ტრაგიკული რისხვის შემდეგ, გვარის შთამომავლობა გადაარჩინა ორი თავდადებული ქალბატონის — <strong>სარასა და ნინას</strong> თავგანწირვამ.",
-                titleGenealogy: "უნდილაძეთა საგვარეულო გენეალოგიური ხე",
-                textGenealogyIntro: "დეტალური გენეალოგიისა და შტოების სანახავად დააწკაპუნეთ სურათზე სრული ზომით გასახსნელად:",
-                textImageHint: "გადიდებისთვის დააწკაპუნეთ სურათზე.",
-                footerText: "ქართული საგვარეულოების ციფრული არქივი © 2026 - ყველა უფლება დაცულია."
-            },
-            en: {
-                pageTitle: "Undiladze Family Archive & Genealogy",
-                headerTitle: "Digital Archive of Georgian Families",
-                backLink: "Back to Home →",
-                titleOverview: "History and Identity of Undiladze Family",
-                textOverview: "The <strong>Undiladze</strong> family was one of the most prominent and influential Georgian noble dynasties in Safavid Iran, holding supreme military, administrative, and cultural positions.",
-                titleHistory: "Historical Significance and Key Figures",
-                textHistory: "Key historical figures include <strong>Allahverdi Khan Undiladze</strong> (Commander-in-Chief of Shah Abbas's armies and builder of the Si-o-se-pol Bridge) and his son <strong>Imam-Quli Khan Undiladze</strong> (Governor of Fars who expelled Portuguese forces from the Strait of Hormuz).",
-                textRescueStory: "<strong>Rescue Narrative:</strong> Historical accounts state that following political tribulations, the lineage was safeguarded through the courage of two dedicated women, <strong>Sara and Nina</strong>.",
-                titleGenealogy: "Undiladze Family Tree & Genealogy",
-                textGenealogyIntro: "Click on the image to view the high-resolution genealogical chart:",
-                textImageHint: "Click on image to view full size.",
-                footerText: "Digital Archive of Georgian Families © 2026 - All Rights Reserved."
-            }
-        };
+<a href="#history" id="navHistory">تاریخ خاندان</a>
 
-        function setLanguage(lang) {
-            const data = translations[lang];
-            if (!data) return;
+<a href="#rescue" id="navRescue">روایت نجات</a>
 
-            // تنظیم جهت و زبان صفحه
-            document.documentElement.lang = lang;
-            document.documentElement.dir = (lang === "fa") ? "rtl" : "ltr";
+<a href="#akhche" id="navAkhche">آخشیا و فریدن</a>
 
-            // بروزرسانی تمام متن‌ها
-            document.getElementById("pageTitle").innerText = data.pageTitle;
-            document.getElementById("headerTitle").innerText = data.headerTitle;
-            document.getElementById("backLink").innerText = data.backLink;
-            document.getElementById("titleOverview").innerText = data.titleOverview;
-            document.getElementById("textOverview").innerHTML = data.textOverview;
-            document.getElementById("titleHistory").innerText = data.titleHistory;
-            document.getElementById("textHistory").innerHTML = data.textHistory;
-            document.getElementById("textRescueStory").innerHTML = data.textRescueStory;
-            document.getElementById("titleGenealogy").innerText = data.titleGenealogy;
-            document.getElementById("textGenealogyIntro").innerText = data.textGenealogyIntro;
-            document.getElementById("textImageHint").innerText = data.textImageHint;
-            document.getElementById("footerText").innerText = data.footerText;
+<a href="#genealogy" id="navGenealogy">تبارشناسی</a>
 
-            // تغییر دکمه فعال
-            document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
-            document.getElementById('btn-' + lang).classList.add('active');
-        }
-    </script>
+<a href="#gathering" id="navGathering">گردهمایی</a>
+
+<a href="#archive" id="navArchive">آرشیو</a>
+
+</nav>
+
+<div class="container">
+
+<section class="hero">
+
+<h2 id="heroTitle">
+خاندان اوندیلادزه
+</h2>
+
+<div class="georgian-name">
+უნდილაძე
+</div>
+
+<p id="heroText">
+
+پرونده تاریخی و تبارشناسی خاندان اوندیلادزه و روایت
+ادامه نسل بازماندگان این خاندان در آخشیا و فریدن.
+
+</p>
+
+<div class="languages">
+
+<button class="lang-btn" onclick="changeLanguage('fa')">
+فارسی
+</button>
+
+<button class="lang-btn" onclick="changeLanguage('ka')">
+ქართული
+</button>
+
+<button class="lang-btn" onclick="changeLanguage('en')">
+English
+</button>
+
+</div>
+
+</section>
+
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3 id="familyNameTitle">
+نام خاندان
+</h3>
+
+<p>
+اوندیلادزه<br>
+უნდილაძე<br>
+Undiladze
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3 id="historicalFiguresTitle">
+چهره‌های تاریخی
+</h3>
+
+<p>
+الله‌وردی‌خان<br>
+امام‌قلی‌خان
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3 id="locationTitle">
+محل ادامه نسل
+</h3>
+
+<p>
+آخشیا / آخچه<br>
+فریدن، ایران
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3 id="specialStoryTitle">
+روایت ویژه
+</h3>
+
+<p>
+نجات دو کودک توسط سارا و نینا
+</p>
+
+</div>
+
+</div>
+
+
+<section class="section" id="history">
+
+<h2 id="historyTitle">
+تاریخ خاندان اوندیلادزه
+</h2>
+
+<p>
+
+خاندان اوندیلادزه از خاندان‌های تاریخی گرجی است که
+در تاریخ گرجستان و ایران صفوی جایگاه مهمی داشته است.
+
+</p>
+
+<p>
+
+الله‌وردی‌خان اوندیلادزه از چهره‌های برجسته نظامی و سیاسی
+دوره صفوی بود و پس از او امام‌قلی‌خان نیز به یکی از
+قدرتمندترین فرماندهان و حکمرانان دوره صفوی تبدیل شد.
+
+</p>
+
+<p>
+
+سرنوشت خاندان اوندیلادزه تنها به شخصیت‌های بزرگ تاریخی
+آن محدود نمی‌شود. سرگذشت فرزندان و نوادگان و نحوه ادامه
+نسل آنان در میان گرجیان ایران نیز بخش مهمی از حافظه تاریخی
+این خاندان است.
+
+</p>
+
+</section>
+
+
+<section class="section">
+
+<h2 id="hiddenLifeTitle">
+قتل خاندان و آغاز دوران پنهان‌زیستی
+</h2>
+
+<div class="story">
+
+<p>
+
+پس از قتل امام‌قلی‌خان و اعضای خاندان او، سرنوشت
+بازماندگان خاندان اوندیلادزه وارد مرحله‌ای بسیار حساس شد.
+
+</p>
+
+<p>
+
+بر اساس اسناد کتاب چونی چونه بوری نوشته نظرعلی خان آخچه و روایت خانوادگی ثبت‌شده در این پایگاه،
+حضور بازماندگان اوندیلادزه در آخشیا حدود
+<strong>چهار ماه پس از قتل خاندان اوندیلادزه</strong>
+اتفاق افتاد.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section" id="rescue">
+
+<h2 id="rescueTitle">
+روایت سارا و نینا؛ دو دایه گرجی
+</h2>
+
+<div class="story">
+
+<p>
+
+<strong>سارا و نینا</strong>، دو زن گرجی با
+<strong>اصالت آخچه‌ای</strong> بودند که دایه کودکان بودند.
+
+</p>
+
+<p>
+
+در زمانی که عمارت امام‌قلی‌خان در محاصره قرار گرفت،
+سارا و نینا به همراه کودکان در بیرون از عمارت بودند.
+
+</p>
+
+<p>
+
+هنگامی که برای بازگشت آمدند و محاصره عمارت را مشاهده کردند،
+دریافتند که بازگشت امکان‌پذیر نیست و جان کودکان در خطر است.
+
+</p>
+
+<p>
+
+آنان بدون فوت وقت کودکان را همراه خود برداشته و از شهر
+فرار کردند.
+
+</p>
+
+<p>
+
+حرکت آنان بسیار دشوار بود. شب‌ها راه می‌رفتند و روزها
+برای آنکه گرفتار نشوند، خود و کودکان را مخفی می‌کردند.
+
+</p>
+
+<p>
+
+این سفر به صورت پیاده ادامه پیدا کرد و پس از حدود
+<strong>چهار ماه پیاده‌روی</strong>، آنان به فریدن رسیدند.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 id="childrenTitle">
+دو کودک؛ میرزاقلی و حسینقلی
+</h2>
+
+<div class="people">
+
+<div class="person">
+
+<h3>
+میرزاقلی «دداس بیجی»
+</h3>
+
+<p>
+
+میرزاقلی، مشهور به
+<strong>«دداس بیجی»</strong>،
+از نوادگان امام‌قلی‌خان بود.
+
+</p>
+
+<p>
+
+پدر او
+<strong>علیقلی‌بیک</strong>،
+فرزند امام‌قلی‌خان بود.
+
+</p>
+
+<p>
+
+میرزاقلی بعدها در روایت تبارشناختی خاندان،
+به عنوان نیای خاندان <strong>مردانی</strong>
+شناخته می‌شود.
+
+</p>
+
+</div>
+
+
+<div class="person">
+
+<h3>
+حسینقلی
+</h3>
+
+<p>
+
+حسینقلی نیز از نوادگان امام‌قلی‌خان بود.
+
+</p>
+
+<p>
+
+پدر او
+<strong>فتحعلی‌بیک</strong>
+بود.
+
+</p>
+
+<p>
+
+بنابراین میرزاقلی و حسینقلی
+هر دو نوه امام‌قلی‌خان بودند،
+اما پدران آنان یکی نبودند.
+
+</p>
+
+<p>
+
+در ادامه این شاخه، تنها دختر حسینقلی
+با <strong>نظرعلی کشیش</strong> ازدواج کرد
+و این شاخه به خاندان <strong>کریمی</strong>
+پیوند یافت.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="akhche">
+
+<h2 id="akhcheTitle">
+رسیدن به فریدن و آخشیا
+</h2>
+
+<div class="story">
+
+<p>
+
+پس از حدود چهار ماه حرکت پیاده، سارا و نینا همراه کودکان
+به فریدن رسیدند.
+
+</p>
+
+<p>
+
+چون سارا و نینا در <strong>آخچه</strong> خویشاوند داشتند،
+به طرف این روستا حرکت کردند.
+
+</p>
+
+<p>
+
+آنان ابتدا به خانه خویشان خود رفتند و پس از رسیدن به محل
+امن، موضوع را با آنان در میان گذاشتند.
+
+</p>
+
+<p>
+
+پس از آن نزد
+<strong>بهرام‌خان، خان آخچه</strong>
+رفتند و جریان را به صورت محرمانه برای او بیان کردند.
+
+</p>
+
+<p>
+
+بهرام‌خان برای حفاظت از این زنان و کودکان و جلوگیری از
+افشای هویت واقعی آنان، سارا و نینا و کودکان را
+<strong>به عنوان زنان و فرزندان خود</strong> معرفی کرد.
+
+</p>
+
+<p>
+
+این اقدام سبب شد کودکان بتوانند در امنیت زندگی کنند و
+نسل بازماندگان خاندان اوندیلادزه در منطقه ادامه پیدا کند.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 id="akhcheHistoryTitle">
+آخشیا؛ محل ادامه نسل اوندیلادزه
+</h2>
+
+<p>
+
+بر اساس اسناد باقی مانده از کتاب چونی چونه بوری و روایت خانوادگی،
+حضور بازماندگان خاندان اوندیلادزه در آخشیا یکی از مهم‌ترین
+فصل‌های تاریخ این خاندان در فریدن است.
+
+</p>
+
+<p>
+
+این رویداد نشان می‌دهد که پس از حوادث خونین مربوط به
+خاندان اوندیلادزه، بخشی از نسل آنان توانست خود را به
+یک جامعه گرجی در فریدن برساند و در آنجا به زندگی ادامه دهد.
+
+</p>
+
+<p>
+
+از این رو آخشیا در حافظه این خاندان تنها یک محل سکونت
+نیست؛ بلکه محل حفظ و استمرار بخشی از میراث اوندیلادزه
+در ایران است.
+
+</p>
+
+</section>
+
+
+<section class="section">
+
+<h2 id="timelineTitle">
+خط زمانی روایت
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>۱ ـ دوران امام‌قلی‌خان</h3>
+<p>
+امام‌قلی‌خان یکی از برجسته‌ترین شخصیت‌های خاندان اوندیلادزه
+در دوره صفوی بود.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>۲ ـ محاصره عمارت</h3>
+<p>
+سارا و نینا، دو دایه گرجی، همراه کودکان خارج از عمارت بودند.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>۳ ـ فرار از شهر</h3>
+<p>
+با مشاهده محاصره، سارا و نینا کودکان را برداشته و از شهر خارج شدند.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>۴ ـ سفر چهارماهه</h3>
+<p>
+شب‌ها حرکت می‌کردند و روزها خود و کودکان را مخفی می‌کردند.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>۵ ـ رسیدن به فریدن</h3>
+<p>
+پس از حدود چهار ماه پیاده‌روی به فریدن رسیدند.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>۶ ـ ورود به آخچه</h3>
+<p>
+به دلیل داشتن خویشاوندان گرجی در آخچه، به این روستا رفتند.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>۷ ـ دیدار با بهرام‌خان</h3>
+<p>
+ماجرا را محرمانه برای بهرام‌خان، خان آخچه، بازگو کردند.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>۸ ـ ادامه نسل</h3>
+<p>
+بهرام‌خان آنان را زنان و فرزندان خود معرفی کرد و زمینه
+ادامه نسل در آخشیا فراهم شد.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- شجره نامه تصویری سه زبانه -->
+
+<section class="section" id="genealogy">
+
+<h2 id="genealogyTitle">
+شجره و پیوند خانوادگی خاندان اوندیلادزه
+</h2>
+
+<p id="genealogyText">
+
+این بخش، شجره‌نامه تصویری خاندان اوندیلادزه و شاخه‌های
+شناخته‌شده نسل بازماندگان را ارائه می‌کند.
+
+</p>
+
+<div class="genealogy-image-box">
+
+<a href="undiladzegnealogyjpg.jpg" target="_blank">
+
+<img
+src="undiladzegnealogyjpg.jpg"
+alt="شجره‌نامه خاندان اوندیلادزه | უნდილაძე | Undiladze"
+class="genealogy-image">
+
+</a>
+
+</div>
+
+<p id="genealogySource">
+
+نام‌ها و پیوندهای خانوادگی این شجره‌نامه بر اساس اطلاعات
+خانوادگی، روایت‌های تاریخی و اسناد موجود در پرونده خاندان ثبت شده‌اند.
+
+</p>
+
+</section>
+
+
+<section class="section" id="gathering">
+
+<h2 id="gatheringTitle">
+گردهمایی خاندان اوندیلادزه
+</h2>
+
+<p>
+
+یکی از اهداف این پایگاه ثبت و حفظ گردهمایی نسل‌های
+بازمانده خاندان اوندیلادزه در فریدن و آخشیا است.
+
+</p>
+
+<p>
+
+تصاویر گردهمایی، افراد حاضر، خاطرات خانوادگی و توضیحات
+تاریخی مربوط به هر تصویر در این بخش قرار خواهد گرفت.
+
+</p>
+
+<p>
+
+این بخش در آینده به گالری تصویری کامل خاندان متصل خواهد شد.
+
+</p>
+
+</section>
+
+
+<section class="section">
+
+<h2 id="bookTitle">
+کتاب «چونی چونه بوری»
+</h2>
+
+<div class="story">
+
+<p>
+
+کتاب <strong>«چونی چونه بوری»</strong> از منابع مهم
+حافظه تاریخی و فرهنگی گرجیان منطقه است.
+
+</p>
+
+<p>
+
+تصاویر جلد، صفحات کتاب و مطالب مرتبط با آن در آینده
+در گالری سایت قرار خواهند گرفت.
+
+</p>
+
+<p>
+
+قرار دادن تصاویر کتاب در کنار شجره‌نامه و عکس‌های
+گردهمایی، به مخاطب امکان می‌دهد ارتباط میان روایت
+تاریخی، اسناد و نسل‌های امروز را بهتر مشاهده کند.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section" id="archive">
+
+<div class="archive-box">
+
+<h2 id="archiveTitle">
+آرشیو خاندان اوندیلادزه
+</h2>
+
+<p>
+
+این بخش برای ثبت عکس‌های قدیمی، تصاویر شجره‌نامه،
+اسناد خانوادگی، تصاویر گردهمایی، عکس‌های کتاب
+«چونی چونه بوری» و تصاویر شخصیت‌های خاندان آماده شده است.
+
+</p>
+
+<p>
+
+هر تصویر در آینده می‌تواند همراه با نام افراد،
+تاریخ، محل و توضیحات تاریخی ثبت شود.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 id="methodTitle">
+روش ثبت روایت
+</h2>
+
+<p>
+
+روایت سارا و نینا، نجات میرزاقلی و حسینقلی،
+سفر چهارماهه، ورود به آخچه، دیدار با بهرام‌خان
+و ادامه نسل در آخشیا، در این پایگاه به عنوان
+<strong>روایت خانوادگی و تاریخ شفاهی</strong>
+ثبت می‌شود.
+
+</p>
+
+<p>
+
+با اضافه شدن اسناد، شجره‌نامه‌های قدیمی، عکس‌ها،
+کتاب‌ها و سایر مدارک، این پرونده می‌تواند در آینده
+با مستندات بیشتری تکمیل شود.
+
+</p>
+
+</section>
+
+
+<a href="../index.html"
+class="back-button"
+id="backButton">
+
+← بازگشت به صفحه اصلی
+
+</a>
+
+</div>
+
+
+<footer>
+
+© 2026
+
+<br>
+
+مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی
+
+<br>
+
+Digital Archive of Georgian Families
+
+<br>
+
+უნდილაძე
+
+</footer>
+
+
+<script>
+
+var translations = {
+
+fa:{
+
+pageTitle:"خاندان اوندیلادزه",
+
+navHome:"صفحه اصلی",
+navHistory:"تاریخ خاندان",
+navRescue:"روایت نجات",
+navAkhche:"آخشیا و فریدن",
+navGenealogy:"تبارشناسی",
+navGathering:"گردهمایی",
+navArchive:"آرشیو",
+
+heroTitle:"خاندان اوندیلادزه",
+
+heroText:"پرونده تاریخی و تبارشناسی خاندان اوندیلادزه و روایت ادامه نسل بازماندگان این خاندان در آخشیا و فریدن.",
+
+familyNameTitle:"نام خاندان",
+historicalFiguresTitle:"چهره‌های تاریخی",
+locationTitle:"محل ادامه نسل",
+specialStoryTitle:"روایت ویژه",
+
+historyTitle:"تاریخ خاندان اوندیلادزه",
+hiddenLifeTitle:"قتل خاندان و آغاز دوران پنهان‌زیستی",
+
+rescueTitle:"روایت سارا و نینا؛ دو دایه گرجی",
+
+childrenTitle:"دو کودک؛ میرزاقلی و حسینقلی",
+
+akhcheTitle:"رسیدن به فریدن و آخشیا",
+
+akhcheHistoryTitle:"آخشیا؛ محل ادامه نسل اوندیلادزه",
+
+timelineTitle:"خط زمانی روایت",
+
+genealogyTitle:"شجره و پیوند خانوادگی خاندان اوندیلادزه",
+
+genealogyText:"این بخش، شجره‌نامه تصویری خاندان اوندیلادزه و شاخه‌های شناخته‌شده نسل بازماندگان را ارائه می‌کند.",
+
+genealogySource:"نام‌ها و پیوندهای خانوادگی این شجره‌نامه بر اساس اطلاعات خانوادگی، روایت‌های تاریخی و اسناد موجود در پرونده خاندان ثبت شده‌اند.",
+
+gatheringTitle:"گردهمایی خاندان اوندیلادزه",
+
+bookTitle:"کتاب «چونی چونه بوری»",
+
+archiveTitle:"آرشیو خاندان اوندیلادزه",
+
+methodTitle:"روش ثبت روایت",
+
+backButton:"← بازگشت به صفحه اصلی"
+
+},
+
+ka:{
+
+pageTitle:"უნდილაძეების საგვარეულო",
+
+navHome:"მთავარი",
+navHistory:"საგვარეულოს ისტორია",
+navRescue:"გადარჩენის ისტორია",
+navAkhche:"ახჩე და ფერეიდანი",
+navGenealogy:"გენეალოგია",
+navGathering:"შეკრება",
+navArchive:"არქივი",
+
+heroTitle:"უნდილაძეების საგვარეულო",
+
+heroText:"უნდილაძეების საგვარეულოს ისტორიული და გენეალოგიური ჩანაწერი და მათი შთამომავლების ისტორია ახჩესა და ფერეიდანში.",
+
+familyNameTitle:"საგვარეულოს სახელი",
+historicalFiguresTitle:"ისტორიული პირები",
+locationTitle:"შთამომავლობის ადგილი",
+specialStoryTitle:"განსაკუთრებული ისტორია",
+
+historyTitle:"უნდილაძეების საგვარეულოს ისტორია",
+
+hiddenLifeTitle:"ოჯახის ტრაგედია და ფარული ცხოვრების დასაწყისი",
+
+rescueTitle:"სარასა და ნინას ისტორია — ორი ქართველი ძიძა",
+
+childrenTitle:"ორი ბავშვი — მირზაყული და ჰოსეინყული",
+
+akhcheTitle:"ფერეიდანსა და ახჩეში ჩასვლა",
+
+akhcheHistoryTitle:"ახშია — უნდილაძეების შთამომავლობის გაგრძელების ადგილი",
+
+timelineTitle:"ისტორიის ქრონოლოგია",
+
+genealogyTitle:"უნდილაძეების საგვარეულო ხე და ოჯახური კავშირები",
+
+genealogyText:"ამ ნაწილში წარმოდგენილია უნდილაძეების საგვარეულო ხე და ცნობილი შთამომავლობის შტოები.",
+
+genealogySource:"საგვარეულო კავშირები დაფუძნებულია ოჯახურ ინფორმაციაზე, ისტორიულ ზეპირ გადმოცემებსა და არსებულ დოკუმენტებზე.",
+
+gatheringTitle:"უნდილაძეების საგვარეულო შეკრება",
+
+bookTitle:"წიგნი „ჩუნი ჩუნე ბორი“",
+
+archiveTitle:"უნდილაძეების არქივი",
+
+methodTitle:"ისტორიული გადმოცემების რეგისტრაცია",
+
+backButton:"← მთავარ გვერდზე დაბრუნება"
+
+},
+
+en:{
+
+pageTitle:"The Undiladze Family",
+
+navHome:"Home",
+navHistory:"Family History",
+navRescue:"The Rescue Story",
+navAkhche:"Akhche and Fereydan",
+navGenealogy:"Genealogy",
+navGathering:"Family Gathering",
+navArchive:"Archive",
+
+heroTitle:"The Undiladze Family",
+
+heroText:"Historical and genealogical record of the Undiladze family and the story of its descendants in Akhche and Fereydan.",
+
+familyNameTitle:"Family Name",
+historicalFiguresTitle:"Historical Figures",
+locationTitle:"Place of Descendants",
+specialStoryTitle:"Special Story",
+
+historyTitle:"History of the Undiladze Family",
+
+hiddenLifeTitle:"The Family Tragedy and the Beginning of Hidden Life",
+
+rescueTitle:"The Story of Sara and Nina — Two Georgian Nurses",
+
+childrenTitle:"Two Children — Mirza Qoli and Hossein Qoli",
+
+akhcheTitle:"Arrival in Fereydan and Akhche",
+
+akhcheHistoryTitle:"Akhsia — The Continuation of the Undiladze Lineage",
+
+timelineTitle:"Historical Timeline",
+
+genealogyTitle:"Undiladze Family Genealogy and Family Connections",
+
+genealogyText:"This section presents the visual genealogy of the Undiladze family and the known branches of its descendants.",
+
+genealogySource:"The family names and relationships presented here are based on family information, historical oral traditions and available documents.",
+
+gatheringTitle:"Undiladze Family Gathering",
+
+bookTitle:"The Book “Chuni Chune Bori”",
+
+archiveTitle:"Undiladze Family Archive",
+
+methodTitle:"Recording Historical Narratives",
+
+backButton:"← Back to Home"
+
+}
+
+};
+
+
+function changeLanguage(language){
+
+var t=translations[language];
+
+if(!t){
+return;
+}
+
+document.documentElement.lang=language;
+
+document.documentElement.dir=
+language==="fa" ? "rtl" : "ltr";
+
+document.getElementById("pageTitle").innerText=t.pageTitle;
+
+document.getElementById("navHome").innerText=t.navHome;
+
+document.getElementById("navHistory").innerText=t.navHistory;
+
+document.getElementById("navRescue").innerText=t.navRescue;
+
+document.getElementById("navAkhche").innerText=t.navAkhche;
+
+document.getElementById("navGenealogy").innerText=t.navGenealogy;
+
+document.getElementById("navGathering").innerText=t.navGathering;
+
+document.getElementById("navArchive").innerText=t.navArchive;
+
+document.getElementById("heroTitle").innerText=t.heroTitle;
+
+document.getElementById("heroText").innerText=t.heroText;
+
+document.getElementById("familyNameTitle").innerText=t.familyNameTitle;
+
+document.getElementById("historicalFiguresTitle").innerText=t.historicalFiguresTitle;
+
+document.getElementById("locationTitle").innerText=t.locationTitle;
+
+document.getElementById("specialStoryTitle").innerText=t.specialStoryTitle;
+
+document.getElementById("historyTitle").innerText=t.historyTitle;
+
+document.getElementById("hiddenLifeTitle").innerText=t.hiddenLifeTitle;
+
+document.getElementById("rescueTitle").innerText=t.rescueTitle;
+
+document.getElementById("childrenTitle").innerText=t.childrenTitle;
+
+document.getElementById("akhcheTitle").innerText=t.akhcheTitle;
+
+document.getElementById("akhcheHistoryTitle").innerText=t.akhcheHistoryTitle;
+
+document.getElementById("timelineTitle").innerText=t.timelineTitle;
+
+document.getElementById("genealogyTitle").innerText=t.genealogyTitle;
+
+document.getElementById("genealogyText").innerText=t.genealogyText;
+
+document.getElementById("genealogySource").innerText=t.genealogySource;
+
+document.getElementById("gatheringTitle").innerText=t.gatheringTitle;
+
+document.getElementById("bookTitle").innerText=t.bookTitle;
+
+document.getElementById("archiveTitle").innerText=t.archiveTitle;
+
+document.getElementById("methodTitle").innerText=t.methodTitle;
+
+document.getElementById("backButton").innerText=t.backButton;
+
+}
+
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+changeLanguage("fa");
+}
+);
+
+</script>
+
 </body>
 </html>
