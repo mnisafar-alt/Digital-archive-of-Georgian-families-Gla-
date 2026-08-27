@@ -197,24 +197,52 @@ nav a:hover{
     margin-bottom:5px;
 }
 
-/* شجره‌نامه تصویری */
-
-.genealogy-image-box{
+.genealogy-box{
     background:#f8f3e9;
     border:1px solid #d8bd7a;
-    padding:20px;
+    padding:28px;
     border-radius:12px;
+}
+
+.generation{
+    margin:12px 0;
+    font-weight:bold;
+    color:#172b4d;
     text-align:center;
-    overflow:hidden;
+}
+
+.arrow{
+    text-align:center;
+    color:#7d1f2b;
+    font-size:22px;
+}
+
+/* شجره نامه تصویری */
+
+.genealogy-image-box{
+    text-align:center;
+    margin-top:25px;
+    padding:10px;
+}
+
+.genealogy-image-box a{
+    display:inline-block;
+    text-decoration:none;
 }
 
 .genealogy-image{
     display:block;
     width:100%;
-    max-width:1000px;
+    max-width:1100px;
     height:auto;
-    margin:0 auto;
-    border-radius:8px;
+    margin:auto;
+    border-radius:10px;
+    cursor:zoom-in;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.genealogy-image:hover{
+    opacity:.95;
 }
 
 .archive-box{
@@ -278,8 +306,8 @@ footer{
         padding:25px 18px;
     }
 
-    .genealogy-image-box{
-        padding:10px;
+    .genealogy-image{
+        max-width:100%;
     }
 
 }
@@ -334,8 +362,7 @@ footer{
 <p id="heroText">
 
 پرونده تاریخی و تبارشناسی خاندان اوندیلادزه و روایت
-ادامه نسل بازماندگان این خاندان از کتاب «چونی چونه بوری»
-در آخشیا و فریدن.
+ادامه نسل بازماندگان این خاندان در آخشیا و فریدن.
 
 </p>
 
@@ -362,7 +389,9 @@ English
 
 <div class="info-card">
 
-<h3>نام خاندان</h3>
+<h3 id="familyNameTitle">
+نام خاندان
+</h3>
 
 <p>
 اوندیلادزه<br>
@@ -374,7 +403,9 @@ Undiladze
 
 <div class="info-card">
 
-<h3>چهره‌های تاریخی</h3>
+<h3 id="historicalFiguresTitle">
+چهره‌های تاریخی
+</h3>
 
 <p>
 الله‌وردی‌خان<br>
@@ -385,7 +416,9 @@ Undiladze
 
 <div class="info-card">
 
-<h3>محل ادامه نسل</h3>
+<h3 id="locationTitle">
+محل ادامه نسل
+</h3>
 
 <p>
 آخشیا / آخچه<br>
@@ -396,7 +429,9 @@ Undiladze
 
 <div class="info-card">
 
-<h3>روایت ویژه</h3>
+<h3 id="specialStoryTitle">
+روایت ویژه
+</h3>
 
 <p>
 نجات دو کودک توسط سارا و نینا
@@ -442,7 +477,7 @@ Undiladze
 
 <section class="section">
 
-<h2>
+<h2 id="hiddenLifeTitle">
 قتل خاندان و آغاز دوران پنهان‌زیستی
 </h2>
 
@@ -457,8 +492,7 @@ Undiladze
 
 <p>
 
-بر اساس اسناد کتاب «چونی چونه بوری» نوشته نظرعلی خان آخچه
-و روایت خانوادگی ثبت‌شده در این پایگاه،
+بر اساس اسناد کتاب چونی چونه بوری نوشته نظرعلی خان آخچه و روایت خانوادگی ثبت‌شده در این پایگاه،
 حضور بازماندگان اوندیلادزه در آخشیا حدود
 <strong>چهار ماه پس از قتل خاندان اوندیلادزه</strong>
 اتفاق افتاد.
@@ -527,7 +561,7 @@ Undiladze
 
 <section class="section">
 
-<h2>
+<h2 id="childrenTitle">
 دو کودک؛ میرزاقلی و حسینقلی
 </h2>
 
@@ -612,7 +646,7 @@ Undiladze
 
 <section class="section" id="akhche">
 
-<h2>
+<h2 id="akhcheTitle">
 رسیدن به فریدن و آخشیا
 </h2>
 
@@ -669,15 +703,15 @@ Undiladze
 
 <section class="section">
 
-<h2>
+<h2 id="akhcheHistoryTitle">
 آخشیا؛ محل ادامه نسل اوندیلادزه
 </h2>
 
 <p>
 
-بر اساس اسناد باقی‌مانده از کتاب «چونی چونه بوری» و روایت خانوادگی،
-حضور بازماندگان خاندان اوندیلادزه در آخشیا یکی از مهم‌ترین فصل‌های
-تاریخ این خاندان در فریدن است.
+بر اساس اسناد باقی مانده از کتاب چونی چونه بوری و روایت خانوادگی،
+حضور بازماندگان خاندان اوندیلادزه در آخشیا یکی از مهم‌ترین
+فصل‌های تاریخ این خاندان در فریدن است.
 
 </p>
 
@@ -702,7 +736,7 @@ Undiladze
 
 <section class="section">
 
-<h2>
+<h2 id="timelineTitle">
 خط زمانی روایت
 </h2>
 
@@ -771,73 +805,38 @@ Undiladze
 </section>
 
 
-<!-- شجره‌نامه تصویری -->
+<!-- شجره نامه تصویری سه زبانه -->
 
 <section class="section" id="genealogy">
 
-<h2>
+<h2 id="genealogyTitle">
 شجره و پیوند خانوادگی خاندان اوندیلادزه
 </h2>
 
+<p id="genealogyText">
+
+این بخش، شجره‌نامه تصویری خاندان اوندیلادزه و شاخه‌های
+شناخته‌شده نسل بازماندگان را ارائه می‌کند.
+
+</p>
+
 <div class="genealogy-image-box">
 
-<a href="undiladzegnealogyjpg.jpg
-" target="_blank">
+<a href="undiladzegnealogyjpg.jpg" target="_blank">
 
 <img
 src="undiladzegnealogyjpg.jpg"
-alt="شجره‌نامه خاندان اوندیلادزه"
+alt="شجره‌نامه خاندان اوندیلادزه | უნდილაძე | Undiladze"
 class="genealogy-image">
 
 </a>
 
 </div>
 
-</section>
+<p id="genealogySource">
 
-
-<section class="section">
-
-<h2>
-ادامه نسل میرزاقلی
-</h2>
-
-<p>
-
-میرزاقلی «دداس بیجی» در روایت تبارشناختی خاندان،
-نیای خاندان مردانی معرفی می‌شود.
-
-</p>
-
-<p>
-
-این شاخه در ادامه با ثبت شجره‌نامه‌های خانوادگی،
-نام نسل‌های بعدی و اسناد موجود تکمیل خواهد شد.
-
-</p>
-
-</section>
-
-
-<section class="section">
-
-<h2>
-ادامه نسل حسینقلی
-</h2>
-
-<p>
-
-حسینقلی نیز یکی از شاخه‌های مهم ادامه نسل
-بازماندگان امام‌قلی‌خان است.
-
-</p>
-
-<p>
-
-تنها فرزند دختر حسینقلی با
-<strong>نظرعلی کشیش</strong>
-ازدواج کرد و این شاخه در ادامه به
-خاندان <strong>کریمی</strong> پیوند یافت.
+نام‌ها و پیوندهای خانوادگی این شجره‌نامه بر اساس اطلاعات
+خانوادگی، روایت‌های تاریخی و اسناد موجود در پرونده خاندان ثبت شده‌اند.
 
 </p>
 
@@ -846,7 +845,7 @@ class="genealogy-image">
 
 <section class="section" id="gathering">
 
-<h2>
+<h2 id="gatheringTitle">
 گردهمایی خاندان اوندیلادزه
 </h2>
 
@@ -875,7 +874,7 @@ class="genealogy-image">
 
 <section class="section">
 
-<h2>
+<h2 id="bookTitle">
 کتاب «چونی چونه بوری»
 </h2>
 
@@ -912,7 +911,7 @@ class="genealogy-image">
 
 <div class="archive-box">
 
-<h2>
+<h2 id="archiveTitle">
 آرشیو خاندان اوندیلادزه
 </h2>
 
@@ -938,7 +937,7 @@ class="genealogy-image">
 
 <section class="section">
 
-<h2>
+<h2 id="methodTitle">
 روش ثبت روایت
 </h2>
 
@@ -964,7 +963,8 @@ class="genealogy-image">
 
 
 <a href="../index.html"
-class="back-button">
+class="back-button"
+id="backButton">
 
 ← بازگشت به صفحه اصلی
 
@@ -997,7 +997,9 @@ Digital Archive of Georgian Families
 var translations = {
 
 fa:{
+
 pageTitle:"خاندان اوندیلادزه",
+
 navHome:"صفحه اصلی",
 navHistory:"تاریخ خاندان",
 navRescue:"روایت نجات",
@@ -1005,13 +1007,51 @@ navAkhche:"آخشیا و فریدن",
 navGenealogy:"تبارشناسی",
 navGathering:"گردهمایی",
 navArchive:"آرشیو",
+
 heroTitle:"خاندان اوندیلادزه",
+
 heroText:"پرونده تاریخی و تبارشناسی خاندان اوندیلادزه و روایت ادامه نسل بازماندگان این خاندان در آخشیا و فریدن.",
-rescueTitle:"روایت سارا و نینا؛ دو دایه گرجی"
+
+familyNameTitle:"نام خاندان",
+historicalFiguresTitle:"چهره‌های تاریخی",
+locationTitle:"محل ادامه نسل",
+specialStoryTitle:"روایت ویژه",
+
+historyTitle:"تاریخ خاندان اوندیلادزه",
+hiddenLifeTitle:"قتل خاندان و آغاز دوران پنهان‌زیستی",
+
+rescueTitle:"روایت سارا و نینا؛ دو دایه گرجی",
+
+childrenTitle:"دو کودک؛ میرزاقلی و حسینقلی",
+
+akhcheTitle:"رسیدن به فریدن و آخشیا",
+
+akhcheHistoryTitle:"آخشیا؛ محل ادامه نسل اوندیلادزه",
+
+timelineTitle:"خط زمانی روایت",
+
+genealogyTitle:"شجره و پیوند خانوادگی خاندان اوندیلادزه",
+
+genealogyText:"این بخش، شجره‌نامه تصویری خاندان اوندیلادزه و شاخه‌های شناخته‌شده نسل بازماندگان را ارائه می‌کند.",
+
+genealogySource:"نام‌ها و پیوندهای خانوادگی این شجره‌نامه بر اساس اطلاعات خانوادگی، روایت‌های تاریخی و اسناد موجود در پرونده خاندان ثبت شده‌اند.",
+
+gatheringTitle:"گردهمایی خاندان اوندیلادزه",
+
+bookTitle:"کتاب «چونی چونه بوری»",
+
+archiveTitle:"آرشیو خاندان اوندیلادزه",
+
+methodTitle:"روش ثبت روایت",
+
+backButton:"← بازگشت به صفحه اصلی"
+
 },
 
 ka:{
+
 pageTitle:"უნდილაძეების საგვარეულო",
+
 navHome:"მთავარი",
 navHistory:"საგვარეულოს ისტორია",
 navRescue:"გადარჩენის ისტორია",
@@ -1019,13 +1059,52 @@ navAkhche:"ახჩე და ფერეიდანი",
 navGenealogy:"გენეალოგია",
 navGathering:"შეკრება",
 navArchive:"არქივი",
+
 heroTitle:"უნდილაძეების საგვარეულო",
-heroText:"უნდილაძეების საგვარეულოს ისტორიული და გენეალოგიური ჩანაწერი და ფერეიდანში, ახჩეში მათი შთამომავლების ისტორია.",
-rescueTitle:"სარასა და ნინას — ორი ქართველი ძიძის ისტორია"
+
+heroText:"უნდილაძეების საგვარეულოს ისტორიული და გენეალოგიური ჩანაწერი და მათი შთამომავლების ისტორია ახჩესა და ფერეიდანში.",
+
+familyNameTitle:"საგვარეულოს სახელი",
+historicalFiguresTitle:"ისტორიული პირები",
+locationTitle:"შთამომავლობის ადგილი",
+specialStoryTitle:"განსაკუთრებული ისტორია",
+
+historyTitle:"უნდილაძეების საგვარეულოს ისტორია",
+
+hiddenLifeTitle:"ოჯახის ტრაგედია და ფარული ცხოვრების დასაწყისი",
+
+rescueTitle:"სარასა და ნინას ისტორია — ორი ქართველი ძიძა",
+
+childrenTitle:"ორი ბავშვი — მირზაყული და ჰოსეინყული",
+
+akhcheTitle:"ფერეიდანსა და ახჩეში ჩასვლა",
+
+akhcheHistoryTitle:"ახშია — უნდილაძეების შთამომავლობის გაგრძელების ადგილი",
+
+timelineTitle:"ისტორიის ქრონოლოგია",
+
+genealogyTitle:"უნდილაძეების საგვარეულო ხე და ოჯახური კავშირები",
+
+genealogyText:"ამ ნაწილში წარმოდგენილია უნდილაძეების საგვარეულო ხე და ცნობილი შთამომავლობის შტოები.",
+
+genealogySource:"საგვარეულო კავშირები დაფუძნებულია ოჯახურ ინფორმაციაზე, ისტორიულ ზეპირ გადმოცემებსა და არსებულ დოკუმენტებზე.",
+
+gatheringTitle:"უნდილაძეების საგვარეულო შეკრება",
+
+bookTitle:"წიგნი „ჩუნი ჩუნე ბორი“",
+
+archiveTitle:"უნდილაძეების არქივი",
+
+methodTitle:"ისტორიული გადმოცემების რეგისტრაცია",
+
+backButton:"← მთავარ გვერდზე დაბრუნება"
+
 },
 
 en:{
+
 pageTitle:"The Undiladze Family",
+
 navHome:"Home",
 navHistory:"Family History",
 navRescue:"The Rescue Story",
@@ -1033,12 +1112,50 @@ navAkhche:"Akhche and Fereydan",
 navGenealogy:"Genealogy",
 navGathering:"Family Gathering",
 navArchive:"Archive",
+
 heroTitle:"The Undiladze Family",
+
 heroText:"Historical and genealogical record of the Undiladze family and the story of its descendants in Akhche and Fereydan.",
-rescueTitle:"The Story of Sara and Nina — Two Georgian Nurses"
+
+familyNameTitle:"Family Name",
+historicalFiguresTitle:"Historical Figures",
+locationTitle:"Place of Descendants",
+specialStoryTitle:"Special Story",
+
+historyTitle:"History of the Undiladze Family",
+
+hiddenLifeTitle:"The Family Tragedy and the Beginning of Hidden Life",
+
+rescueTitle:"The Story of Sara and Nina — Two Georgian Nurses",
+
+childrenTitle:"Two Children — Mirza Qoli and Hossein Qoli",
+
+akhcheTitle:"Arrival in Fereydan and Akhche",
+
+akhcheHistoryTitle:"Akhsia — The Continuation of the Undiladze Lineage",
+
+timelineTitle:"Historical Timeline",
+
+genealogyTitle:"Undiladze Family Genealogy and Family Connections",
+
+genealogyText:"This section presents the visual genealogy of the Undiladze family and the known branches of its descendants.",
+
+genealogySource:"The family names and relationships presented here are based on family information, historical oral traditions and available documents.",
+
+gatheringTitle:"Undiladze Family Gathering",
+
+bookTitle:"The Book “Chuni Chune Bori”",
+
+archiveTitle:"Undiladze Family Archive",
+
+methodTitle:"Recording Historical Narratives",
+
+backButton:"← Back to Home"
+
 }
 
 };
+
 
 function changeLanguage(language){
 
@@ -1054,18 +1171,65 @@ document.documentElement.dir=
 language==="fa" ? "rtl" : "ltr";
 
 document.getElementById("pageTitle").innerText=t.pageTitle;
+
 document.getElementById("navHome").innerText=t.navHome;
+
 document.getElementById("navHistory").innerText=t.navHistory;
+
 document.getElementById("navRescue").innerText=t.navRescue;
+
 document.getElementById("navAkhche").innerText=t.navAkhche;
+
 document.getElementById("navGenealogy").innerText=t.navGenealogy;
+
 document.getElementById("navGathering").innerText=t.navGathering;
+
 document.getElementById("navArchive").innerText=t.navArchive;
+
 document.getElementById("heroTitle").innerText=t.heroTitle;
+
 document.getElementById("heroText").innerText=t.heroText;
+
+document.getElementById("familyNameTitle").innerText=t.familyNameTitle;
+
+document.getElementById("historicalFiguresTitle").innerText=t.historicalFiguresTitle;
+
+document.getElementById("locationTitle").innerText=t.locationTitle;
+
+document.getElementById("specialStoryTitle").innerText=t.specialStoryTitle;
+
+document.getElementById("historyTitle").innerText=t.historyTitle;
+
+document.getElementById("hiddenLifeTitle").innerText=t.hiddenLifeTitle;
+
 document.getElementById("rescueTitle").innerText=t.rescueTitle;
 
+document.getElementById("childrenTitle").innerText=t.childrenTitle;
+
+document.getElementById("akhcheTitle").innerText=t.akhcheTitle;
+
+document.getElementById("akhcheHistoryTitle").innerText=t.akhcheHistoryTitle;
+
+document.getElementById("timelineTitle").innerText=t.timelineTitle;
+
+document.getElementById("genealogyTitle").innerText=t.genealogyTitle;
+
+document.getElementById("genealogyText").innerText=t.genealogyText;
+
+document.getElementById("genealogySource").innerText=t.genealogySource;
+
+document.getElementById("gatheringTitle").innerText=t.gatheringTitle;
+
+document.getElementById("bookTitle").innerText=t.bookTitle;
+
+document.getElementById("archiveTitle").innerText=t.archiveTitle;
+
+document.getElementById("methodTitle").innerText=t.methodTitle;
+
+document.getElementById("backButton").innerText=t.backButton;
+
 }
+
 
 document.addEventListener(
 "DOMContentLoaded",
