@@ -5,163 +5,282 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>خاندان باراتاشویلی</title>
+<title>خاندان باراتاشویلی | مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی</title>
+
+<meta name="description"
+content="پرونده تاریخی و تبارشناسی خاندان بزرگ باراتاشویلی، ریشه‌های تاریخی در گرجستان، حضور در ایران و فریدن و پیوندهای تباری">
 
 <style>
 
-* {
-    box-sizing: border-box;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-body {
-    margin: 0;
-    font-family: Tahoma, Arial, sans-serif;
-    background: #f5f1e8;
-    color: #292522;
-    line-height: 2;
+body{
+    font-family:Tahoma,"Segoe UI",Arial,sans-serif;
+    background:#f5f1e8;
+    color:#2c2925;
+    line-height:1.95;
 }
 
-header {
-    background: linear-gradient(135deg, #172b4d, #263f60);
-    color: white;
-    text-align: center;
-    padding: 45px 20px;
+header{
+    background:linear-gradient(135deg,#172b4d,#263f60);
+    color:white;
+    text-align:center;
+    padding:45px 20px;
 }
 
-header h1 {
-    margin: 0 0 10px;
-    font-size: 30px;
+header h1{
+    font-size:32px;
+    margin-bottom:8px;
 }
 
-header p {
-    margin: 0;
-    color: #d8bd7a;
-    font-size: 20px;
+header p{
+    color:#d8bd7a;
+    font-size:18px;
 }
 
-nav {
-    background: #292522;
-    text-align: center;
-    padding: 10px;
+nav{
+    background:#292522;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:12px 17px;
+    font-size:14px;
 }
 
-nav a:hover {
-    color: #d8bd7a;
+nav a:hover{
+    background:#7d1f2b;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 25px auto;
-    padding: 0 15px;
+.container{
+    max-width:1100px;
+    margin:30px auto;
+    padding:0 20px;
 }
 
-.box {
-    background: white;
-    margin-bottom: 25px;
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+.hero{
+    background:white;
+    border-radius:18px;
+    padding:42px 25px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    border-top:5px solid #b18a45;
 }
 
-.box h2 {
-    color: #172b4d;
-    border-bottom: 2px solid #b18a45;
-    padding-bottom: 8px;
+.hero h2{
+    color:#172b4d;
+    font-size:29px;
+    margin-bottom:8px;
 }
 
-.intro {
-    text-align: center;
+.georgian-name{
+    color:#7d1f2b;
+    font-size:25px;
+    margin-bottom:18px;
 }
 
-.intro h2 {
-    border: none;
-    font-size: 27px;
+.hero p{
+    max-width:900px;
+    margin:auto;
+    color:#555;
 }
 
-.georgian {
-    color: #7d1f2b;
-    font-size: 25px;
-    font-weight: bold;
+.languages{
+    margin-top:25px;
 }
 
-.info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+.lang-btn{
+    border:none;
+    background:#b18a45;
+    color:white;
+    padding:8px 17px;
+    margin:3px;
+    border-radius:20px;
+    cursor:pointer;
+    font-family:inherit;
 }
 
-.info div {
-    background: #f8f3e9;
-    padding: 18px;
-    border-radius: 10px;
+.lang-btn:hover{
+    background:#7d1f2b;
 }
 
-.info strong {
-    display: block;
-    color: #172b4d;
-    margin-bottom: 5px;
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+    margin-top:30px;
 }
 
-.timeline {
-    border-right: 3px solid #b18a45;
-    padding-right: 20px;
+.info-card{
+    background:white;
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,.06);
 }
 
-.person {
-    background: #f8f3e9;
-    padding: 15px;
-    margin-bottom: 12px;
-    border-radius: 8px;
+.info-card h3{
+    color:#172b4d;
+    margin-bottom:8px;
 }
 
-.person strong {
-    color: #172b4d;
+.section{
+    background:white;
+    margin-top:25px;
+    padding:32px 25px;
+    border-radius:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
 }
 
-.back {
-    display: block;
-    text-align: center;
-    background: #172b4d;
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border-radius: 8px;
-    margin: 30px 0;
+.section h2{
+    color:#172b4d;
+    border-bottom:2px solid #d8bd7a;
+    padding-bottom:8px;
+    margin-bottom:20px;
 }
 
-.back:hover {
-    background: #7d1f2b;
+.section p{
+    color:#444;
+    font-size:15px;
+    margin-bottom:14px;
 }
 
-footer {
-    background: #292522;
-    color: #ccc;
-    text-align: center;
-    padding: 25px;
+.story{
+    background:#faf5e9;
+    border-right:5px solid #b18a45;
+    padding:25px;
+    border-radius:10px;
 }
 
-@media(max-width:700px) {
+.story strong{
+    color:#7d1f2b;
+}
 
-    header h1 {
-        font-size: 23px;
+.people{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:18px;
+}
+
+.person{
+    background:#f5f1e8;
+    padding:20px;
+    border-radius:10px;
+}
+
+.person h3{
+    color:#172b4d;
+    margin-bottom:7px;
+}
+
+.timeline{
+    border-right:3px solid #b18a45;
+    padding-right:22px;
+}
+
+.timeline-item{
+    margin-bottom:25px;
+}
+
+.timeline-item h3{
+    color:#7d1f2b;
+    margin-bottom:5px;
+}
+
+.genealogy-image-box{
+    text-align:center;
+    margin-top:25px;
+    padding:10px;
+}
+
+.genealogy-image-box a{
+    display:inline-block;
+    text-decoration:none;
+}
+
+.genealogy-image{
+    display:block;
+    width:100%;
+    max-width:1100px;
+    height:auto;
+    margin:auto;
+    border-radius:10px;
+    cursor:zoom-in;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.genealogy-image:hover{
+    opacity:.95;
+}
+
+.archive-box{
+    background:#172b4d;
+    color:white;
+    padding:30px;
+    border-radius:14px;
+    text-align:center;
+}
+
+.archive-box h2{
+    color:#d8bd7a;
+    border:none;
+}
+
+.back-button{
+    display:block;
+    max-width:350px;
+    margin:30px auto;
+    text-align:center;
+    background:#172b4d;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+}
+
+.back-button:hover{
+    background:#7d1f2b;
+}
+
+footer{
+    background:#292522;
+    color:#ccc;
+    text-align:center;
+    padding:30px 15px;
+    margin-top:40px;
+    font-size:13px;
+}
+
+@media(max-width:700px){
+    header h1{
+        font-size:24px;
     }
-
-    .georgian {
-        font-size: 21px;
+    .hero h2{
+        font-size:23px;
     }
-
-    nav a {
-        display: inline-block;
-        margin: 4px;
+    nav a{
+        padding:9px 11px;
+        font-size:12px;
     }
-
+    .container{
+        padding:0 12px;
+    }
+    .section{
+        padding:25px 18px;
+    }
+    .genealogy-image{
+        max-width:100%;
+    }
 }
 
 </style>
@@ -170,297 +289,281 @@ footer {
 <body>
 
 <header>
-
-<h1>خاندان باراتاشویلی</h1>
-
-<p>ბარათაშვილი</p>
-
+<h1 id="pageTitle">خاندان باراتاشویلی</h1>
+<p id="pageSubtitle">ბარათაშვილი</p>
 </header>
 
-
 <nav>
-
-<a href="../index.html">صفحه اصلی</a>
-
-<a href="#history">تاریخ خاندان</a>
-
-<a href="#genealogy">تبارشناسی</a>
-
-<a href="#people">شخصیت‌ها</a>
-
-<a href="#sources">منابع</a>
-
+<a href="../index.html" id="navHome">صفحه اصلی</a>
+<a href="#history" id="navHistory">تاریخ خاندان</a>
+<a href="#branches" id="navBranches">شاخه‌های تباری</a>
+<a href="#fereydan" id="navFereydan">گرجیان فریدن</a>
+<a href="#genealogy" id="navGenealogy">تبارشناسی</a>
+<a href="#gathering" id="navGathering">گردهمایی</a>
+<a href="#archive" id="navArchive">آرشیو</a>
 </nav>
-
 
 <div class="container">
 
-
-<div class="box intro">
-
-<h2>خاندان باراتاشویلی</h2>
-
-<div class="georgian">
-ბარათაშვილი
-</div>
-
-<p>
-یکی از خاندان‌های تاریخی و نجیب گرجستان
-که در تاریخ پادشاهی کارتلی نقش مهمی
-در عرصه سیاسی و نظامی داشته است.
+<section class="hero">
+<h2 id="heroTitle">خاندان باراتاشویلی</h2>
+<div class="georgian-name">ბარათაშვილი</div>
+<p id="heroText">
+پرونده تاریخی، تبارشناسی و اسناد کهن خاندان نامدار باراتاشویلی و تداوم نسل آنان در تاریخ گرجستان و فریدن.
 </p>
+<div class="languages">
+<button class="lang-btn" onclick="changeLanguage('fa')">فارسی</button>
+<button class="lang-btn" onclick="changeLanguage('ka')">ქართული</button>
+<button class="lang-btn" onclick="changeLanguage('en')">English</button>
+</div>
+</section>
 
+<div class="info-grid">
+<div class="info-card">
+<h3 id="familyNameTitle">نام خاندان</h3>
+<p>باراتاشویلی<br>ბარათაშვილი<br>Baratashvili</p>
 </div>
 
-
-<div class="box">
-
-<h2>اطلاعات خاندان</h2>
-
-<div class="info">
-
-<div>
-<strong>نام فارسی</strong>
-باراتاشویلی
+<div class="info-card">
+<h3 id="historicalFiguresTitle">چهره‌های تاریخی</h3>
+<p>نیکولوز باراتاشویلی<br>امرای کارتلی و گرجستان</p>
 </div>
 
-<div>
-<strong>نام گرجی</strong>
-ბარათაშვილი
+<div class="info-card">
+<h3 id="locationTitle">محل زیست و اسکان</h3>
+<p>کارتلی / ساباراتیانو<br>فریدن، ایران</p>
 </div>
 
-<div>
-<strong>منطقه تاریخی</strong>
-کارتلی و قلمرو تاریخی ساباراتیانو
+<div class="info-card">
+<h3 id="specialStoryTitle">ویژگی برجسته</h3>
+<p>از کهن‌ترین دودمان‌های اشرافی گرجستان</p>
+</div>
 </div>
 
-<div>
-<strong>دوره تاریخی</strong>
-از اواخر سده پانزدهم میلادی
-</div>
-
-</div>
-
-</div>
-
-
-<div class="box" id="history">
-
-<h2>تاریخ خاندان</h2>
-
+<section class="section" id="history">
+<h2 id="historyTitle">تاریخ خاندان باراتاشویلی</h2>
 <p>
-
-خاندان باراتاشویلی یکی از خاندان‌های
-نجیب و تاریخی گرجستان است که از اواخر
-سده پانزدهم میلادی با این نام در منابع
-تاریخی شناخته می‌شود.
-
+خاندان باراتاشویلی (Baratashvili) یکی از برجسته‌ترین و کهن‌ترین دودمان‌های اشرافی و تاریخی در تاریخ گرجستان به شمار می‌رود که قلمرو نفوذ آن‌ها با نام «ساباراتیانو» شناخته می‌شد.
 </p>
-
 <p>
-
-نیای خاندان در منابع تاریخی
-«باراتا کاچیبادزه» معرفی شده است.
-نسل‌های بعدی او با نام باراتاشویلی
-شناخته شدند.
-
+اعضای این خاندان در سده‌های مختلف نه تنها در صحنه سیاست و فرماندهی نظامی قفقاز و کارتلی نقش بنیادین داشتند، بلکه در عصر صفوی و رویدادهای تاریخی انتقال گرجیان، نام آن‌ها در زمره بزرگان به ثبت رسیده است.
 </p>
-
 <p>
-
-قلمرو تاریخی مرتبط با این خاندان
-«ساباراتیانو» نام داشت و خاندان
-در بخش‌هایی از کارتلی دارای املاک
-و استحکامات بود.
-
+پیوند تبارشناختی این خاندان بزرگ با دیگر خاندان‌های گرجی مقیم فریدن و حفظ حافظه تباری از مهم‌ترین ارکان هویت آنان در تاریخ شفاهی و اسناد است.
 </p>
+</section>
 
+<section class="section" id="branches">
+<h2 id="branchesTitle">شاخه‌ها و پیوندهای اشرافی</h2>
+<div class="story">
 <p>
-
-باراتاشویلی‌ها در سده‌های شانزدهم
-و هفدهم میلادی از خاندان‌های بزرگ
-پادشاهی کارتلی به شمار می‌رفتند.
-
+دودمان باراتاشویلی در طول تاریخ خود شاخه‌های مهمی نظیر اوربلیانی، گوستاشابیشویلی و سولخان-صبا را پدید آورد که هر یک میراث فرهنگی و سیاسی گسترده‌ای در تاریخ قفقاز به جای گذاشتند.
 </p>
-
+<p>
+نسخه‌های خطی و تاریخ‌نگاری‌های معتبر از جمله اسناد ثبت‌شده، حضور نوادگان این خاندان در ایران و استقرار آنان در سرزمین فریدن را به عنوان فصلی پراهمیت از تداوم تبار باراتاشویلی معرفی می‌کنند.
+</p>
 </div>
+</section>
 
+<section class="section" id="fereydan">
+<h2 id="fereydanTitle">حضور در فریدن و تداوم نسل</h2>
+<div class="people">
+<div class="person">
+<h3>تداوم هویت و فرهنگ</h3>
+<p>
+خاندان‌های منشعب از باراتاشویلی در فریدن توانستند با حفظ زبان مادری، اصالت تاریخی و سنن کهن، حلقه پیوند میان قفقاز و ایران را زنده نگه دارند.
+</p>
+</div>
+<div class="person">
+<h3>اسناد و تاریخ شفاهی</h3>
+<p>
+روایات خانوادگی و اسناد تبارشناسی نشانگر پایداری، شجاعت و جایگاه اجتماعی ممتاز این خاندان در مناسبات فریدن در طول سده‌های اخیر است.
+</p>
+</div>
+</div>
+</section>
 
-<div class="box">
-
-<h2>خط زمانی تاریخی</h2>
-
+<section class="section">
+<h2 id="timelineTitle">خط زمانی و فرازهای مهم تاریخی</h2>
 <div class="timeline">
-
-<p>
-<strong>اواخر سده پانزدهم:</strong>
-ظهور نام باراتاشویلی در منابع تاریخی.
-</p>
-
-<p>
-<strong>سده شانزدهم:</strong>
-گسترش نفوذ خاندان در قلمرو کارتلی.
-</p>
-
-<p>
-<strong>سده هفدهم:</strong>
-حضور خاندان در ساختار سیاسی و نظامی
-پادشاهی کارتلی.
-</p>
-
-<p>
-<strong>دوره‌های بعدی:</strong>
-ادامه حضور شاخه‌های مختلف خاندان
-در تاریخ اجتماعی و فرهنگی گرجستان.
-</p>
-
+<div class="timeline-item">
+<h3>۱ ـ شکل‌گیری دودمان ساباراتیانو</h3>
+<p>حاکمیت در منطقه کارتلی پایین و تثبیت اقتدار اشرافی در گرجستان.</p>
 </div>
-
+<div class="timeline-item">
+<h3>۲ ـ انشعاب شاخه‌های برجسته</h3>
+<p>پیدایش شاخه‌های مشهوری چون اوربلیانی و چهره‌های برجسته علمی و فرهنگی.</p>
 </div>
-
-
-<div class="box" id="genealogy">
-
-<h2>تبارشناسی خاندان</h2>
-
-<p>
-باراتا کاچیبادزه
-</p>
-
-<p style="text-align:center;font-size:25px;">
-↓
-</p>
-
-<p>
-نسل‌های خاندان باراتاشویلی
-</p>
-
-<p style="text-align:center;font-size:25px;">
-↓
-</p>
-
-<p>
-شاخه‌های مختلف خاندان
-</p>
-
-<p>
-
-این بخش در آینده می‌تواند با شجره‌نامه‌های
-مستند، نام نسل‌ها، شاخه‌های خانوادگی و
-اسناد تاریخی تکمیل شود.
-
-</p>
-
+<div class="timeline-item">
+<h3>۳ ـ عصر صفوی و مهاجرت‌ها</h3>
+<p>حضور در رویدادهای نظامی-سیاسی مشترک ایران و گرجستان و ورود به منطقه فریدن.</p>
 </div>
+<div class="timeline-item">
+<h3>۴ ـ استمرار نسل در فریدن</h3>
+<p>شکل‌گیری شاخه‌های خانوادگی معاصر و حفظ میراث هویتی تا به امروز.</p>
+</div>
+</div>
+</section>
 
-
-<div class="box" id="people">
-
-<h2>شخصیت‌های شناخته‌شده</h2>
-
-<div class="person">
-
-<strong>نیکولوز باراتاشویلی</strong>
-
-<p>
-شاعر برجسته گرجی، متولد 1817
-و درگذشته 1845.
+<section class="section" id="genealogy">
+<h2 id="genealogyTitle">شجره و پیوند خانوادگی باراتاشویلی</h2>
+<p id="genealogyText">
+این بخش به نمودار تبارشناسی و شجره‌نامه تصویری خاندان باراتاشویلی و شاخه‌های ثبت‌شده در گرجستان و ایران اختصاص دارد.
 </p>
-
-</div>
-
-<div class="person">
-
-<strong>سولخان باراتاشویلی</strong>
-
-<p>
-مورخ گرجی، متولد 1821
-و درگذشته 1866.
-</p>
-
-</div>
-
-<div class="person">
-
-<strong>میشائیل باراتاشویلی / باراتایف</strong>
-
-<p>
-از چهره‌های مرتبط با تاریخ
-و پژوهش‌های گرجستان در سده نوزدهم.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="box">
-
-<h2>آرشیو و اسناد</h2>
-
-<p>
-
-این بخش برای ثبت تصاویر اسناد،
-شجره‌نامه‌های قدیمی، نامه‌ها،
-مهرها، دست‌نوشته‌ها، تصاویر تاریخی
-و سایر مدارک خاندان باراتاشویلی
-در نظر گرفته شده است.
-
-</p>
-
-</div>
-
-
-<div class="box" id="sources">
-
-<h2>منابع</h2>
-
-<ul>
-
-<li>
-دانشنامه گرجستان
-</li>
-
-<li>
-منابع تاریخی مربوط به خاندان‌های
-نجیب گرجستان
-</li>
-
-<li>
-پژوهش‌های تاریخی درباره پادشاهی کارتلی
-</li>
-
-<li>
-اسناد و آرشیوهای تاریخی گرجستان
-</li>
-
-</ul>
-
-</div>
-
-
-<a class="back" href="../index.html">
-← بازگشت به صفحه اصلی
+<div class="genealogy-image-box">
+<a href="baratashvilignealogy.jpg" target="_blank">
+<img src="baratashvilignealogy.jpg" alt="شجره‌نامه خاندان باراتاشویلی | ბარათაშვილი | Baratashvili" class="genealogy-image">
 </a>
+</div>
+<p id="genealogySource">
+این داده‌های تبارشناسی بر مبنای اسناد رسمی، تبارنامه‌های تاریخی گرجی و روایات مستند تدوین گردیده است.
+</p>
+</section>
 
+<section class="section" id="gathering">
+<h2 id="gatheringTitle">گردهمایی و اسناد هویتی</h2>
+<p>
+ثبت دیدارها، گردهمایی‌های فامیلی، مستندسازی اسناد دست‌نویس و عکس‌های یادگاری خاندان باراتاشویلی به منظور پاسداشت حافظه جمعی در این بخش گردآوری می‌شود.
+</p>
+</section>
+
+<section class="section" id="archive">
+<div class="archive-box">
+<h2 id="archiveTitle">آرشیو اسناد خاندان باراتاشویلی</h2>
+<p>
+بانک جامع تصاویر، دست‌نوشته‌های کهن، اسناد خطی و تبارنامه‌های متعلق به خاندان باراتاشویلی.
+</p>
+</div>
+</section>
+
+<a href="../index.html" class="back-button" id="backButton">← بازگشت به صفحه اصلی</a>
 
 </div>
-
 
 <footer>
-
-© 2026
-
-<br>
-
-مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی
-
-<br>
-
-Digital Archive of Georgian Families
-
+© 2026<br>
+مرجع دیجیتال تاریخ و هویت خاندان‌های گرجی<br>
+Digital Archive of Georgian Families<br>
+ბარათაშვილი
 </footer>
 
-</body>
+<script>
+var translations = {
+fa:{
+pageTitle:"خاندان باراتاشویلی",
+navHome:"صفحه اصلی",
+navHistory:"تاریخ خاندان",
+navBranches:"شاخه‌های تباری",
+navFereydan:"گرجیان فریدن",
+navGenealogy:"تبارشناسی",
+navGathering:"گردهمایی",
+navArchive:"آرشیو",
+heroTitle:"خاندان باراتاشویلی",
+heroText:"پرونده تاریخی، تبارشناسی و اسناد کهن خاندان نامدار باراتاشویلی و تداوم نسل آنان در تاریخ گرجستان و فریدن.",
+familyNameTitle:"نام خاندان",
+historicalFiguresTitle:"چهره‌های تاریخی",
+locationTitle:"محل زیست و اسکان",
+specialStoryTitle:"ویژگی برجسته",
+historyTitle:"تاریخ خاندان باراتاشویلی",
+branchesTitle:"شاخه‌ها و پیوندهای اشرافی",
+fereydanTitle:"حضور در فریدن و تداوم نسل",
+timelineTitle:"خط زمانی و فرازهای مهم تاریخی",
+genealogyTitle:"شجره و پیوند خانوادگی باراتاشویلی",
+genealogyText:"این بخش به نمودار تبارشناسی و شجره‌نامه تصویری خاندان باراتاشویلی و شاخه‌های ثبت‌شده در گرجستان و ایران اختصاص دارد.",
+genealogySource:"این داده‌های تبارشناسی بر مبنای اسناد رسمی، تبارنامه‌های تاریخی گرجی و روایات مستند تدوین گردیده است.",
+gatheringTitle:"گردهمایی و اسناد هویتی",
+archiveTitle:"آرشیو اسناد خاندان باراتاشویلی",
+backButton:"← بازگشت به صفحه اصلی"
+},
+ka:{
+pageTitle:"ბარათაშვილების საგვარეულო",
+navHome:"მთავარი",
+navHistory:"საგვარეულოს ისტორია",
+navBranches:"საგვარეულო შტოები",
+navFereydan:"ფერეიდნელი ქართველები",
+navGenealogy:"გენეალოგია",
+navGathering:"შეკრება",
+navArchive:"არქივი",
+heroTitle:"ბარათაშვილების საგვარეულო",
+heroText:"ბარათაშვილების ცნობილი საგვარეულოს ისტორიული, გენეალოგიური და საარქივო ჩანაწერები საქართველოში და ფერეიდანში.",
+familyNameTitle:"საგვარეულოს სახელი",
+historicalFiguresTitle:"ისტორიული პირები",
+locationTitle:"დასახლების ადგილი",
+specialStoryTitle:"მთავარი მახასიათებელი",
+historyTitle:"ბარათაშვილების საგვარეულოს ისტორია",
+branchesTitle:"დიდგვაროვანი შტოები და კავშირები",
+fereydanTitle:"ფერეიდანში დამკვიდრება და შთამომავლობა",
+timelineTitle:"ისტორიული ქრონოლოგია",
+genealogyTitle:"ბარათაშვილების საგვარეულო ხე",
+genealogyText:"ამ ნაწილში წარმოდგენილია ბარათაშვილების საგვარეულო ხე და ცნობილი ისტორიული შტოები.",
+genealogySource:"გენეალოგიური მონაცემები ეფუძნება ისტორიულ ქართულ საბუთებსა და საგვარეულო გადმოცემებს.",
+gatheringTitle:"საგვარეულო შეკრება და დოკუმენტები",
+archiveTitle:"ბარათაშვილების არქივი",
+backButton:"← მთავარ გვერდზე დაბრუნება"
+},
+en:{
+pageTitle:"The Baratashvili Family",
+navHome:"Home",
+navHistory:"Family History",
+navBranches:"Lineage Branches",
+navFereydan:"Fereydan Georgians",
+navGenealogy:"Genealogy",
+navGathering:"Family Gathering",
+navArchive:"Archive",
+heroTitle:"The Baratashvili Family",
+heroText:"Historical, genealogical, and archival record of the noble Baratashvili dynasty and its legacy in Georgia and Fereydan.",
+familyNameTitle:"Family Name",
+historicalFiguresTitle:"Historical Figures",
+locationTitle:"Settlement & Domain",
+specialStoryTitle:"Distinction",
+historyTitle:"History of the Baratashvili Family",
+branchesTitle:"Noble Branches and Affiliations",
+fereydanTitle:"Presence in Fereydan and Descendants",
+timelineTitle:"Historical Timeline",
+genealogyTitle:"Baratashvili Family Tree & Genealogy",
+genealogyText:"This section presents the visual family tree and genealogical branches of the Baratashvili family.",
+genealogySource:"Genealogical records are based on historical Georgian documents, archives, and documented oral history.",
+gatheringTitle:"Family Gathering & Heritage Records",
+archiveTitle:"Baratashvili Family Archive",
+backButton:"← Back to Home"
+}
+};
 
+function changeLanguage(language){
+var t=translations[language];
+if(!t) return;
+
+document.documentElement.lang=language;
+document.documentElement.dir=language==="fa" ? "rtl" : "ltr";
+
+document.getElementById("pageTitle").innerText=t.pageTitle;
+document.getElementById("navHome").innerText=t.navHome;
+document.getElementById("navHistory").innerText=t.navHistory;
+document.getElementById("navBranches").innerText=t.navBranches;
+document.getElementById("navFereydan").innerText=t.navFereydan;
+document.getElementById("navGenealogy").innerText=t.navGenealogy;
+document.getElementById("navGathering").innerText=t.navGathering;
+document.getElementById("navArchive").innerText=t.navArchive;
+document.getElementById("heroTitle").innerText=t.heroTitle;
+document.getElementById("heroText").innerText=t.heroText;
+document.getElementById("familyNameTitle").innerText=t.familyNameTitle;
+document.getElementById("historicalFiguresTitle").innerText=t.historicalFiguresTitle;
+document.getElementById("locationTitle").innerText=t.locationTitle;
+document.getElementById("specialStoryTitle").innerText=t.specialStoryTitle;
+document.getElementById("historyTitle").innerText=t.historyTitle;
+document.getElementById("branchesTitle").innerText=t.branchesTitle;
+document.getElementById("fereydanTitle").innerText=t.fereydanTitle;
+document.getElementById("timelineTitle").innerText=t.timelineTitle;
+document.getElementById("genealogyTitle").innerText=t.genealogyTitle;
+document.getElementById("genealogyText").innerText=t.genealogyText;
+document.getElementById("genealogySource").innerText=t.genealogySource;
+document.getElementById("gatheringTitle").innerText=t.gatheringTitle;
+document.getElementById("archiveTitle").innerText=t.archiveTitle;
+document.getElementById("backButton").innerText=t.backButton;
+}
+
+document.addEventListener("DOMContentLoaded",function(){changeLanguage("fa");});
+</script>
+
+</body>
 </html>
